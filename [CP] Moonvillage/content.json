@@ -1,0 +1,89 @@
+{
+  "Format": "2.9.0",
+
+  "CustomLocations": [
+    {
+      "Name": "Custom_Moonvillage",
+      "FromMapFile": "assets/Maps/CustomMoonvillage.tmx"
+    },
+    {
+      "Name": "Custom_Maze",
+      "FromMapFile": "assets/Maps/Mazequest.tmx"
+    },
+    {
+      "Name": "Custom_Annettehouse",
+      "FromMapFile": "assets/Maps/Annettehouse.tmx"
+    },
+    {
+      "Name": "Custom_Wizardfary",
+      "FromMapFile": "assets/Maps/wizardfary.tmx"
+    },
+    {
+      "Name": "Custom_AnnetteHouseInside",
+      "FromMapFile": "assets/Maps/AnnetteHouseInside.tmx"
+    },
+    {
+      "Name": "Custom_oldMooninn",
+      "FromMapFile": "assets/Maps/oldMooninn.tmx"
+    },
+    {
+      "Name": "Custom_Spritshouse",
+      "FromMapFile": "assets/Maps/Spritshouse.tmx"
+    },
+    {
+      "Name": "Custom_herbhouse",
+      "FromMapFile": "assets/Maps/herbhouse.tmx"
+    },
+    {
+      "Name": "Custom_Moongranary",
+      "FromMapFile": "assets/Maps/Moongranary.tmx"
+    },
+    {
+      "Name": "Custom_Moongrocery",
+      "FromMapFile": "assets/Maps/Moongrocery.tmx"
+    }
+  ],
+
+  "Changes": [
+    /* --- 1. INKLUDERA KARTFILER --- */ 
+    { "LogName": "Ladda in Woods-ändringar", "Action": "Include", "FromFile": "assets/Maps/Woods_Edits.json" },
+    { "LogName": "Ladda in Moonvillage-ändringar", "Action": "Include", "FromFile": "assets/Maps/Moonvillage_Edits.json" },
+    { "LogName": "Ladda in Annettehouse-ändringar", "Action": "Include", "FromFile": "assets/Maps/Annettehouse_Edits.json" },
+    { "LogName": "Ladda in AnnetteHouseInside-ändringar", "Action": "Include", "FromFile": "assets/Maps/AnnetteHouseInside_Edits.json" },
+    { "LogName": "Ladda in Wizardfary-ändringar", "Action": "Include", "FromFile": "assets/Maps/wizardfary_Edits.json" },
+	{ "LogName": "Ladda in BusStop-ändringar", "Action": "Include", "FromFile": "assets/Maps/BusStop_Edits.json" },
+
+    /* --- 2. INKLUDERA DATA OCH KARAKTÄRER --- */
+    { "LogName": "Ladda in Bundles", "Action": "Include", "FromFile": "assets/Data/Bundles.json" },
+    { "LogName": "Ladda in Events", "Action": "Include", "FromFile": "assets/Data/Events.json" },
+    { "LogName": "Ladda in Quests", "Action": "Include", "FromFile": "assets/Data/Quests.json" },
+    { "LogName": "Ladda in Strängar", "Action": "Include", "FromFile": "assets/Data/Strings.json" },
+    { "LogName": "Ladda in Karaktärer och Resurser", "Action": "Include", "FromFile": "assets/Data/Characters.json" },
+    { "LogName": "Ladda in Brev", "Action": "Include", "FromFile": "assets/Data/Mail.json" },
+    { "LogName": "Ladda in Butiker", "Action": "Include", "FromFile": "assets/Data/Shops.json" },
+    { "LogName": "Ladda in Drycker", "Action": "Include", "FromFile": "assets/Data/Drinks.json" },
+    { "LogName": "Ladda in Special Orders", "Action": "Include", "FromFile": "assets/Data/SpecialOrders.json" },
+    { "LogName": "Ladda in Special Order Strings", "Action": "Include", "FromFile": "assets/Data/SOStrings.json" },
+
+    /* --- 3. INKLUDERA NYA HUS (FRÅN BUNDLES) --- */
+    { "LogName": "Ladda in Moon Inn", "Action": "Include", "FromFile": "assets/Maps/oldMooninn_Edits.json" },
+    { "LogName": "Ladda in Spirits House", "Action": "Include", "FromFile": "assets/Maps/Spritshouse_Edits.json" },
+    { "LogName": "Ladda in Herb House", "Action": "Include", "FromFile": "assets/Maps/herbhouse_Edits.json" },
+    { "LogName": "Ladda in Moon Granary", "Action": "Include", "FromFile": "assets/Maps/Moongranary_Edits.json" },
+    { "LogName": "Ladda in Moon Grocery", "Action": "Include", "FromFile": "assets/Maps/Moongrocery_Edits.json" },
+
+    /* --- 4. LADDA IN GRAFIK / SPRITES --- */
+    {
+      "LogName": "Ladda in MoonBat_Unique Sprite",
+      "Action": "Load",
+      "Target": "Characters/Monsters/MoonBat_Unique",
+      "FromFile": "assets/Characters/Monsters/MoonBat_Unique.png"
+    },
+    {
+      "LogName": "Ladda in Boss_moon Sprite",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Boss_moon",
+      "FromFile": "assets/Characters/Monsters/Boss_moon.png"
+    }
+  ]
+}
