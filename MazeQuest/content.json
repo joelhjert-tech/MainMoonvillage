@@ -1,0 +1,78 @@
+{
+  "MazeQuest_Main": {
+    "gameLocation": "Custom_Maze",
+    "corner": {
+      "X": 0,
+      "Y": 0
+    },
+    "mapSize": {
+      "X": 49,
+      "Y": 49
+    },
+    "entranceSide": "Top",
+    "entranceOffset": 24,
+    "AddTorches": true,
+    "HideMaze": false,
+    "SlimeMin": 3,
+    "SlimeMax": 6,
+    "BatMin": 2,
+    "BatMax": 4,
+    "SerpentMin": 0,
+    "SerpentMax": 2,
+    "ShadowBruteMin": 0,
+    "ShadowBruteMax": 2,
+    "ShadowShamanMin": 0,
+    "ShadowShamanMax": 1,
+    "SkeletonMin": 0,
+    "SkeletonMax": 2,
+    "SquidMin": 0,
+    "SquidMax": 0,
+    "DustSpriteMin": 0,
+    "DustSpriteMax": 2,
+    "ForageMin": 2,
+    "ForageMax": 5,
+    "FairiesMin": 1,
+    "FairiesMax": 3,
+    "TreasureMin": 1,
+    "TreasureMax": 2,
+    "MineLevelMin": 40,
+    "MineLevelMax": 80,
+    "ChestItemMin": 2,
+    "ChestItemMax": 4,
+    "CoinBaseMin": 50,
+    "CoinBaseMax": 300,
+    "TreasureLoot": [
+      "(O)72",
+      "(O)60",
+      "(O)62",
+      "(O)64",
+      "(O)66",
+      "(O)68",
+      "(O)749",
+      "(O)535",
+      "(O)536",
+      "(O)537",
+      "(O)645",
+      "(O)432",
+      "(W)4",
+      "(H)27",
+      "(B)506",
+
+      "(O)Moonvillage.AnnetteNPC_DefenseTea",
+      "(O)Moonvillage.AnnetteNPC_LuckTea",
+      "(O)Moonvillage.AnnetteNPC_HealingTea",
+      "(O)Moonvillage.AnnetteNPC_FarmingTea",
+      "(O)Moonvillage.AnnetteNPC_MiningTea",
+      "(O)Moonvillage.AnnetteNPC_FishingTea",
+      "(O)Moonvillage.AnnetteNPC_AttackTea",
+      "(O)Moonvillage.AnnetteNPC_SpeedTea"
+    ],
+    "mapAsset": "Maps/Custom_Maze",
+    "mapAssets": [
+      "Maps/Custom_Maze",
+      "Maps/Mazequest",
+      "assets/Maps/Mazequest",
+      "assets/Maps/Mazequest.tmx"
+    ]
+  }
+}

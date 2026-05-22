@@ -1,0 +1,11 @@
+{
+  "Name": "Moon Village Boss",
+  "Author": "JoelHjert",
+  "Version": "1.0.0",
+  "Description": "Adds the 64x64 Moon Boss using Custom Monsters.",
+  "UniqueID": "JoelHjert.MoonVillageBoss",
+  "MinimumApiVersion": "3.14.0",
+  "ContentPackFor": {
+    "UniqueID": "aedenthorn.CustomMonsters"
+  }
+}

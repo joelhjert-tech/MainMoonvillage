@@ -1,0 +1,10 @@
+{
+  "Name": "MazeQuest",
+  "Author": "Joel Hjertstedt",
+  "Version": "0.1.1",
+  "Description": "Procedurally generates a maze on the Custom_Maze map.",
+  "UniqueID": "Joelpoel.moonvillagemazequest",
+  "EntryDll": "MazeQuest.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": []
+}
