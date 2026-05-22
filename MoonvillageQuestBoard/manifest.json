@@ -1,0 +1,13 @@
+{
+  "Name": "Moonvillage Quest Board",
+  "Author": "Joel Hjertstedt",
+  "Version": "1.0.0",
+  "Description": "Standalone Moonvillage quest board and special request system. Does not depend on More Quests Framework.",
+  "UniqueID": "JoelHjert.MoonvillageQuestBoard",
+  "EntryDll": "MoonvillageQuestBoard.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [],
+  "Dependencies": [
+    { "UniqueID": "Moonvillage.AnnetteNPC", "IsRequired": true }
+  ]
+}

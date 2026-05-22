@@ -1,0 +1,84 @@
+{
+  "Quests": {
+    "JoelHjert.MoonVillage.StopTheGathering": {
+      "Title": "Stop the Gathering",
+      "Type": "Quest",
+      "Category": "Moonvillage",
+      "Giver": "DittModID_Annette",
+      "Description": "Annette has seen signs of monsters gathering near the hidden maze. Find the maze and stop them before Moonvillage is threatened again.",
+      "AcceptText": "Annette's warning has been added to your Moonvillage requests.",
+      "CompleteText": "The gathering has been stopped. Moonvillage breathes easier tonight.",
+      "ObjectiveText": "Enter the hidden maze and defeat 10 Green Slimes.",
+      "Weight": 100,
+      "CooldownDays": 7,
+      "DeadlineDays": 7,
+      "Conditions": {
+        "eventseen": "991001",
+        "npcmet": "DittModID_Annette"
+      },
+      "Objectives": [
+        {
+          "Kind": "VisitLocation",
+          "Target": "Custom_Maze",
+          "Count": 1
+        },
+        {
+          "Kind": "SlayMonster",
+          "Target": "Green Slime",
+          "Count": 10
+        }
+      ],
+      "Rewards": [
+        {
+          "Kind": "Money",
+          "Amount": 1500
+        },
+        {
+          "Kind": "Friendship",
+          "Target": "DittModID_Annette",
+          "Amount": 150
+        },
+        {
+          "Kind": "Mail",
+          "Target": "JoelHjert.MoonVillage.HiddenMazeCleared"
+        }
+      ],
+      "CompletionMailFlag": "JoelHjert.MoonVillage.HiddenMazeCleared"
+    },
+    "JoelHjert.MoonVillage.ForestSupplies": {
+      "Title": "Forest Supplies",
+      "Type": "Quest",
+      "Category": "Moonvillage",
+      "Giver": "DittModID_Annette",
+      "Description": "Moonvillage needs sturdy wood for repairs around the old paths.",
+      "AcceptText": "Forest Supplies accepted.",
+      "CompleteText": "The repair supplies have been delivered.",
+      "ObjectiveText": "Bring 50 wood to the Moon Village Requests board.",
+      "Weight": 80,
+      "CooldownDays": 3,
+      "DeadlineDays": 5,
+      "Conditions": {
+        "eventseen": "991001"
+      },
+      "Objectives": [
+        {
+          "Kind": "DeliverItem",
+          "Target": "(O)388",
+          "Count": 50,
+          "RemoveItemsOnComplete": true
+        }
+      ],
+      "Rewards": [
+        {
+          "Kind": "Money",
+          "Amount": 500
+        },
+        {
+          "Kind": "Friendship",
+          "Target": "DittModID_Annette",
+          "Amount": 50
+        }
+      ]
+    }
+  }
+}

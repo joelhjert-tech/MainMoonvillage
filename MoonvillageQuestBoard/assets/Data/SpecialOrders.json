@@ -1,0 +1,44 @@
+{
+  "SpecialOrders": {
+    "JoelHjert.MoonVillage.MoonlitPatrol": {
+      "Title": "Moonlit Patrol",
+      "Type": "SpecialOrder",
+      "Category": "Moonvillage",
+      "Giver": "DittModID_Annette",
+      "Description": "Annette wants the old maze checked before the next moonrise.",
+      "AcceptText": "Moonlit Patrol accepted.",
+      "CompleteText": "The moonlit patrol is complete.",
+      "ObjectiveText": "Go to Custom_Maze, then return and talk to Annette.",
+      "Weight": 40,
+      "CooldownDays": 14,
+      "DeadlineDays": 14,
+      "Conditions": {
+        "eventseen": "991001",
+        "npcmet": "DittModID_Annette"
+      },
+      "Objectives": [
+        {
+          "Kind": "VisitLocation",
+          "Target": "Custom_Maze",
+          "Count": 1
+        },
+        {
+          "Kind": "TalkToNpc",
+          "Target": "DittModID_Annette",
+          "Count": 1
+        }
+      ],
+      "Rewards": [
+        {
+          "Kind": "Money",
+          "Amount": 2500
+        },
+        {
+          "Kind": "Friendship",
+          "Target": "DittModID_Annette",
+          "Amount": 250
+        }
+      ]
+    }
+  }
+}
