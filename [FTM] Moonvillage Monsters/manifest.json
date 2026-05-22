@@ -1,0 +1,21 @@
+{
+  "Name": "Moonvillage Monsters FTM",
+  "Author": "Du",
+  "Version": "1.0.0",
+  "Description": "Spawnar monster i Moonvillage.",
+  "UniqueID": "Annette.MoonvillageFTM",
+  "MinimumApiVersion": "3.14.0",
+  "ContentPackFor": {
+    "UniqueID": "Esca.FarmTypeManager"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "Esca.FarmTypeManager",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "aedenthorn.CustomMonsters",
+      "IsRequired": false
+    }
+  ]
+}

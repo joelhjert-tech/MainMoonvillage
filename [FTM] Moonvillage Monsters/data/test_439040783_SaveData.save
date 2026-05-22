@@ -1,0 +1,61 @@
+{
+  "WeatherForYesterday": "Sun",
+  "LNOSCounter": {
+    "MoonvillageBossSpawn": 1
+  },
+  "ExistingObjectLocations": {},
+  "SavedObjects": [
+    {
+      "MapName": "Custom_Moonvillage",
+      "Name": "22",
+      "Tile": "2, 6",
+      "Type": "Forage",
+      "ID": "22",
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Moonvillage",
+      "Name": "20",
+      "Tile": "94, 59",
+      "Type": "Forage",
+      "ID": "20",
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Moonvillage",
+      "Name": "20",
+      "Tile": "21, 28",
+      "Type": "Forage",
+      "ID": "20",
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Moonvillage",
+      "Name": "16",
+      "Tile": "28, 40",
+      "Type": "Forage",
+      "ID": "16",
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    }
+  ]
+}
