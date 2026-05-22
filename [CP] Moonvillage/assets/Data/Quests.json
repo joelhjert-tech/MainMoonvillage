@@ -1,0 +1,17 @@
+{
+  "Changes": [
+    {
+      "LogName": "Moon Village - Quests",
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "JoelHjert.MoonVillage.SecretWoodsQuest": "Location/{{i18n:quest.secret_woods_title}}/{{i18n:quest.secret_woods_description}}/{{i18n:quest.secret_woods_objective}}/Woods/-1/1000/{{i18n:quest.reward_1000g_random_tea}}/false",
+        "JoelHjert.MoonVillage.MeetWizardQuest": "Location/{{i18n:quest.meet_wizard_title}}/{{i18n:quest.meet_wizard_description}}/{{i18n:quest.meet_wizard_objective}}/WizardHouse/-1/1000/{{i18n:quest.reward_1000g_random_tea}}/false",
+        "JoelHjert.MoonVillage.WizardQuest": "Location/{{i18n:quest.wizard_title}}/{{i18n:quest.wizard_description}}/{{i18n:quest.wizard_objective}}/Woods/-1/1000/{{i18n:quest.reward_1000g_random_tea}}/false",
+        "JoelHjert.MoonVillage.GuildMeetingQuest": "Location/{{i18n:quest.guild_meeting_title}}/{{i18n:quest.guild_meeting_description}}/{{i18n:quest.guild_meeting_objective}}/AdventureGuild/-1/1000/{{i18n:quest.reward_1000g_random_tea}}/false",
+        "JoelHjert.MoonVillage.ActivateWarp": "ItemDelivery/{{i18n:quest.arcane_key_title}}/{{i18n:quest.arcane_key_description}}/{{i18n:quest.arcane_key_objective}}/Wizard/75 1 386 1 80 5/JoelHjert.MoonVillage.WarpActive/1000/{{i18n:quest.reward_1000g_random_tea}}/false/{{i18n:quest.arcane_key_complete}}",
+        "JoelHjert.MoonVillage.HiddenMazeQuest": "Location/{{i18n:quest.hidden_maze_title}}/{{i18n:quest.hidden_maze_description}}/{{i18n:quest.hidden_maze_objective}}/Custom_Maze/-1/1500/{{i18n:quest.reward_1500g_random_tea}}/false"
+      }
+    }
+  ]
+}

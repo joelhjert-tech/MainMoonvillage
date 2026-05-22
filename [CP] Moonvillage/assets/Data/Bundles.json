@@ -1,0 +1,113 @@
+{
+  "Changes": [
+    {
+      "LogName": "Moon Village - Bundle Chain",
+      "Action": "EditData",
+      "Target": "UnlockableBundles/Bundles",
+      "Entries": {
+        "TownhallBundle": {
+          "ShopType": "Dialogue",
+          "Location": "Custom_Annettehouse",
+          "ShopPosition": "5, 5",
+          "BundleName": "{{i18n:bundle.townhall.name}}",
+          "BundleDescription": "{{i18n:bundle.townhall.description}}",
+          "DrawQuestionMark": true,
+          "Price": {
+            "(O)388": 500,
+            "(O)390": 250
+          },
+          "BundleCompletedActions": [
+            "UB_PlaceBundle HerbalistHouseBundle",
+            "AddMail Current JoelHjert.MoonVillage.TownhallBundleComplete Received",
+            "AddMail Current AnnetteHouse_Ready Received"
+          ]
+        },
+        "HerbalistHouseBundle": {
+          "ShopType": "CCBundle",
+          "Location": "Custom_AnnetteHouseInside",
+          "ShopPosition": "58, 48",
+          "BundleName": "{{i18n:bundle.herbalist.name}}",
+          "BundleDescription": "{{i18n:bundle.herbalist.desc}}",
+          "DrawQuestionMark": true,
+          "Price": {
+            "(O)771": 500,
+            "(O)256": 50,
+            "(O)595": 20
+          },
+          "BundleCompletedActions": [
+            "UB_PlaceBundle MoonGroceryBundle",
+            "AddMail Current HerbalistHouse_Ready Received"
+          ]
+        },
+        "MoonGroceryBundle": {
+          "ShopType": "CCBundle",
+          "Location": "Custom_AnnetteHouseInside",
+          "ShopPosition": "24, 15",
+          "BundleName": "{{i18n:bundle.moon_grocery.name}}",
+          "BundleDescription": "{{i18n:bundle.moon_grocery.desc}}",
+          "DrawQuestionMark": true,
+          "Price": {
+            "(O)388": 500,
+            "(O)424": 50,
+            "(O)262": 100
+          },
+          "BundleCompletedActions": [
+            "UB_PlaceBundle SpiritHealerBundle",
+            "AddMail Current MoonGrocery_Ready Received"
+          ]
+        },
+        "SpiritHealerBundle": {
+          "ShopType": "CCBundle",
+          "Location": "Custom_AnnetteHouseInside",
+          "ShopPosition": "15, 19",
+          "BundleName": "{{i18n:bundle.spirit_healer.name}}",
+          "BundleDescription": "{{i18n:bundle.spirit_healer.desc}}",
+          "DrawQuestionMark": true,
+          "Price": {
+            "(O)768": 50,
+            "(O)769": 50,
+            "(O)66": 50
+          },
+          "BundleCompletedActions": [
+            "UB_PlaceBundle MoonInnBundle",
+            "AddMail Current SpiritHealer_Ready Received"
+          ]
+        },
+        "MoonInnBundle": {
+          "ShopType": "CCBundle",
+          "Location": "Custom_AnnetteHouseInside",
+          "ShopPosition": "6, 14",
+          "BundleName": "{{i18n:bundle.moon_inn.name}}",
+          "BundleDescription": "{{i18n:bundle.moon_inn.desc}}",
+          "DrawQuestionMark": true,
+          "Price": {
+            "(O)709": 150,
+            "(O)346": 50,
+            "(O)303": 50
+          },
+          "BundleCompletedActions": [
+            "UB_PlaceBundle MoonGranaryBundle",
+            "AddMail Current MoonInn_Ready Received"
+          ]
+        },
+        "MoonGranaryBundle": {
+          "ShopType": "CCBundle",
+          "Location": "Custom_AnnetteHouseInside",
+          "ShopPosition": "18, 16",
+          "BundleName": "{{i18n:bundle.moon_granary.name}}",
+          "BundleDescription": "{{i18n:bundle.moon_granary.desc}}",
+          "DrawQuestionMark": true,
+          "Price": {
+            "(O)262": 200,
+            "(O)270": 100,
+            "(O)300": 50
+          },
+          "BundleCompletedActions": [
+            "AddMail Current MoonGranary_Ready Received",
+            "AddMail Current JoelHjert.MoonVillage.AllBundlesDone Received"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "Changes": [
+    /* --- 1. LADDA IN ALLA BILDER INDIVIDUELLT --- */
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/DefenseTea",
+      "FromFile": "assets/drinks/Emeraldte.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/LuckTea",
+      "FromFile": "assets/drinks/Rainbowte.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/HealingTea",
+      "FromFile": "assets/drinks/Flowerte.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/FarmingTea",
+      "FromFile": "assets/drinks/Rainte.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/MiningTea",
+      "FromFile": "assets/drinks/Spoonte.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/FishingTea",
+      "FromFile": "assets/drinks/Cloudte.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/AttackTea",
+      "FromFile": "assets/drinks/te1.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/SpeedTea",
+      "FromFile": "assets/drinks/te2.png"
+    },
+
+    /* --- 2. SKAPA SJÄLVA DRYCKERNA (OBJECTS) --- */
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_DefenseTea": {
+          "Name": "{{ModId}}_DefenseTea",
+          "DisplayName": "{{i18n:defensetea.name}}",
+          "Description": "{{i18n:defensetea.desc}}",
+          "Type": "Drink",
+          "Category": -25,
+          "Price": 250,
+          "Texture": "Mods/{{ModId}}/DefenseTea",
+          "SpriteIndex": 0,
+          "Edibility": 40,
+          "IsDrink": true,
+          "Buffs": [{
+            "Id": "Drink",
+            "Duration": 360,
+            "CustomAttributes": { "Defense": 3.0 }
+          }],
+          "ContextTags": [ "drink_item" ]
+        },
+
+        "{{ModId}}_LuckTea": {
+          "Name": "{{ModId}}_LuckTea",
+          "DisplayName": "{{i18n:lucktea.name}}",
+          "Description": "{{i18n:lucktea.desc}}",
+          "Type": "Drink",
+          "Category": -25,
+          "Price": 250,
+          "Texture": "Mods/{{ModId}}/LuckTea",
+          "SpriteIndex": 0,
+          "Edibility": 40,
+          "IsDrink": true,
+          "Buffs": [{
+            "Id": "Drink",
+            "Duration": 360,
+            "CustomAttributes": { "LuckLevel": 2.0 }
+          }],
+          "ContextTags": [ "drink_item" ]
+        },
+
+        "{{ModId}}_HealingTea": {
+          "Name": "{{ModId}}_HealingTea",
+          "DisplayName": "{{i18n:healingtea.name}}",
+          "Description": "{{i18n:healingtea.desc}}",
+          "Type": "Drink",
+          "Category": -25,
+          "Price": 250,
+          "Texture": "Mods/{{ModId}}/HealingTea",
+          "SpriteIndex": 0,
+          "Edibility": 120,
+          "IsDrink": true,
+          "Buffs": [], 
+          "ContextTags": [ "drink_item" ]
+        },
+
+        "{{ModId}}_FarmingTea": {
+          "Name": "{{ModId}}_FarmingTea",
+          "DisplayName": "{{i18n:farmingtea.name}}",
+          "Description": "{{i18n:farmingtea.desc}}",
+          "Type": "Drink",
+          "Category": -25,
+          "Price": 250,
+          "Texture": "Mods/{{ModId}}/FarmingTea",
+          "SpriteIndex": 0,
+          "Edibility": 20,
+          "IsDrink": true,
+          "Buffs": [{
+            "Id": "Drink",
+            "Duration": 360,
+            "CustomAttributes": { "FarmingLevel": 3.0 }
+          }],
+          "ContextTags": [ "drink_item" ]
+        },
+
+        "{{ModId}}_MiningTea": {
+          "Name": "{{ModId}}_MiningTea",
+          "DisplayName": "{{i18n:miningtea.name}}",
+          "Description": "{{i18n:miningtea.desc}}",
+          "Type": "Drink",
+          "Category": -25,
+          "Price": 250,
+          "Texture": "Mods/{{ModId}}/MiningTea",
+          "SpriteIndex": 0,
+          "Edibility": 20,
+          "IsDrink": true,
+          "Buffs": [{
+            "Id": "Drink",
+            "Duration": 360,
+            "CustomAttributes": { "MiningLevel": 3.0 }
+          }],
+          "ContextTags": [ "drink_item" ]
+        },
+
+        "{{ModId}}_FishingTea": {
+          "Name": "{{ModId}}_FishingTea",
+          "DisplayName": "{{i18n:fishingtea.name}}",
+          "Description": "{{i18n:fishingtea.desc}}",
+          "Type": "Drink",
+          "Category": -25,
+          "Price": 250,
+          "Texture": "Mods/{{ModId}}/FishingTea",
+          "SpriteIndex": 0,
+          "Edibility": 20,
+          "IsDrink": true,
+          "Buffs": [{
+            "Id": "Drink",
+            "Duration": 360,
+            "CustomAttributes": { "FishingLevel": 3.0 }
+          }],
+          "ContextTags": [ "drink_item" ]
+        },
+
+        "{{ModId}}_AttackTea": {
+          "Name": "{{ModId}}_AttackTea",
+          "DisplayName": "{{i18n:attacktea.name}}",
+          "Description": "{{i18n:attacktea.desc}}",
+          "Type": "Drink",
+          "Category": -25,
+          "Price": 250,
+          "Texture": "Mods/{{ModId}}/AttackTea",
+          "SpriteIndex": 0,
+          "Edibility": 20,
+          "IsDrink": true,
+          "Buffs": [{
+            "Id": "Drink",
+            "Duration": 360,
+            "CustomAttributes": { "Attack": 3.0 }
+          }],
+          "ContextTags": [ "drink_item" ]
+        },
+
+        "{{ModId}}_SpeedTea": {
+          "Name": "{{ModId}}_SpeedTea",
+          "DisplayName": "{{i18n:speedtea.name}}",
+          "Description": "{{i18n:speedtea.desc}}",
+          "Type": "Drink",
+          "Category": -25,
+          "Price": 250,
+          "Texture": "Mods/{{ModId}}/SpeedTea",
+          "SpriteIndex": 0,
+          "Edibility": 20,
+          "IsDrink": true,
+          "Buffs": [{
+            "Id": "Drink",
+            "Duration": 360,
+            "CustomAttributes": { "Speed": 1.0 }
+          }],
+          "ContextTags": [ "drink_item" ]
+        }
+      }
+    },
+
+    /* --- 3. GÖR DEM CRAFTABLE I MENYN --- */
+    {
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "{{ModId}}_DefenseTea": "88 1 562 1 / Home / {{ModId}}_DefenseTea 1 / false / default / {{i18n:defensetea.name}}",
+        "{{ModId}}_LuckTea": "637 1 70 1 / Home / {{ModId}}_LuckTea 1 / false / default / {{i18n:lucktea.name}}",
+        "{{ModId}}_HealingTea": "410 1 80 1 / Home / {{ModId}}_HealingTea 1 / false / default / {{i18n:healingtea.name}}",
+        "{{ModId}}_FarmingTea": "248 1 399 1 / Home / {{ModId}}_FarmingTea 1 / false / default / {{i18n:farmingtea.name}}",
+        "{{ModId}}_MiningTea": "260 1 72 1 / Home / {{ModId}}_MiningTea 1 / false / default / {{i18n:miningtea.name}}",
+        "{{ModId}}_FishingTea": "152 1 372 1 / Home / {{ModId}}_FishingTea 1 / false / default / {{i18n:fishingtea.name}}",
+        "{{ModId}}_AttackTea": "829 1 577 1 / Home / {{ModId}}_AttackTea 1 / false / default / {{i18n:attacktea.name}}",
+        "{{ModId}}_SpeedTea": "Carrot 1 834 1 / Home / {{ModId}}_SpeedTea 1 / false / default / {{i18n:speedtea.name}}"
+      }
+    },
+
+    /* --- 4. GÖR ALLA DRYCKER UNIVERSALLY LIKED --- */
+    {
+      "LogName": "Make Moonvillage drinks universally liked",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Target": [ "Entries", "Universal_Like" ],
+          "Operation": "Append",
+          "Delimiter": " ",
+          "Value": "{{ModId}}_DefenseTea {{ModId}}_LuckTea {{ModId}}_HealingTea {{ModId}}_FarmingTea {{ModId}}_MiningTea {{ModId}}_FishingTea {{ModId}}_AttackTea {{ModId}}_SpeedTea"
+        }
+      ]
+    }
+  ]
+}

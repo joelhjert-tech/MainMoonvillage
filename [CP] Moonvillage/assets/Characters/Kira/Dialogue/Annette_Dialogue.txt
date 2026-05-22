@@ -1,0 +1,52 @@
+{
+  "Introduction": "Hej! Du måste vara @, den nya farmaren. Jag heter Annette. Om du någonsin behöver något är det bara att fråga. $1",
+
+  // Veckodagar
+  "Mon": "Måndagar är en bra dag att börja på nytt. Ta ett steg i taget så går det lättare.",
+  "Tue": "Solen skiner fint idag, eller hur? Jag hoppas att du tar hand om dig, @. Arbetet kan vänta lite ibland.",
+  "Wed": "Jag tycker om att promenera runt i staden på onsdagar. Har du varit nere vid sjön på sistone? Det är en bra plats för att rensa tankarna. $1",
+  "Thu": "Snart är det helg, det ska bli skönt. Pelican Town har sina lugna dagar, och jag tror det är då folk behöver lite extra vänlighet som mest. $0",
+  "Fri": "Fredagar har alltid en speciell känsla i luften. Ska du till saloonen ikväll, @? Stanna inte ute för länge bara om du är trött.",
+  "Sat": "Saturdagar är min lediga dag. Jag gillar att använda dem till att sakta ner lite. $1",
+  "Sun": "Söndagar är till för att vila. En lugn söndag kan hela mer än vad folk tror.",
+
+  // Regn och väder
+  "rain": "Åh, jag hoppas du har stövlar på dig, @! Det är ganska blött idag. Jag gillar ljudet av regnet mot taket, det gör att hemmet känns varmare.",
+  "GreenRain": "Vad är allt det här gröna fluffet överallt?! Snälla, var försiktig där ute, @. $5",
+
+  // Säsongsdialog (Exempel)
+  "spring_Mon": "Våren är så vacker! Känner du hur gott luften luktar?",
+  "summer_Wed": "Det är så varmt idag. Kom ihåg att dricka mycket vatten när du jobbar.",
+  "fall_Fri": "Löven börjar ändra färg. Hösten är nog min favoritårstid.",
+  "winter_Sun": "Brrr... det är iskallt! Gå hem och sätt dig framför elden, @.",
+
+  // Vänskapsnivåer (Hearts)
+  "Hearts_2": "Det är trevligt att prata med dig, @. Jag känner att vi börjar bli bra vänner.",
+  "Hearts_4": "Du är en av de snällaste personerna i dalen, vet du det? Det känns tryggt att ha dig här.",
+  "Hearts_6": "Jag är så glad att du flyttade hit. Pelican Town kändes lite tomt innan du kom. Du börjar bli en person som gör att den här platsen känns säkrare.",
+  "Hearts_8": "Vet du, @... jag litar verkligen på dig. Det känns som om jag kan berätta vad som helst för dig.",
+  "Hearts_10": "Tack för att du alltid finns där. Du är min allra bästa vän i hela dalen.",
+
+  // Gåvodialog (1.6 Standard)
+  "AcceptGift_Neutral": "Tack, den här blir fin.",
+  "AcceptGift_Hated": "Varför ger du mig det här? Jag tycker verkligen inte om det.",
+  
+  // Specifika reaktioner (Unika föremål)
+  "AcceptGift_(O)724": "Lönnsirap! Åh, tack så mycket, det är fantastiskt!",
+  "AcceptGift_(O)72": "Diamant!! Åh, tack så mycket, det är fantastiskt! Har du verkligen råd att ge bort den?",
+  "AcceptGift_(O)80": "Kvarts? Den är vacker... Tack, den här ska jag spara!",
+  "AcceptGift_(O)233": "Oh! Glass! Tack @, det var precis vad jag behövde.",
+  "AcceptGift_(O)152": "Tång? Ehm... tack, antar jag. Men jag vet inte riktigt vad jag ska göra med den.",
+  "AcceptGift_(O)167": "Joja Cola? Nej tack, jag dricker verkligen inte sånt här. Det är bara socker och kemikalier.",
+  "AcceptGift_(O)StardropTea": "Oh, Stardrop Tea... det är min favorit. Du behöver verkligen inte skämma bort mig så här. $1",
+
+  // Födelsedagar och Event
+  "AcceptBirthdayGift_Loved": "Kom du ihåg min födelsedag? Det är otroligt snällt av dig, @. Tack! $1",
+  "AcceptBirthdayGift_Liked": "En födelsedagspresent? Det var omtänksamt. Tack, @. $1",
+  "FlowerDance_Accept": "Ja, jag skulle gärna vilja dansa med dig, @. $1",
+  "FlowerDance_Decline": "Det är väldigt snällt att du frågar, men jag måste säga nej tyvärr. $2",
+
+  // Specialscenarion
+  "Dumped_Girls": "Jag trodde vi hade något speciellt, @. Men jag antar att jag hade fel.",
+  "Divorce": "Jag vill inte prata med dig just nu. Snälla, lämna mig ifred."
+}

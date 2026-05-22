@@ -1,0 +1,16 @@
+{
+  "Changes": [
+    {
+      "LogName": "Kiras arbetsschema - Moonvillage local only",
+      "Action": "EditData",
+      "Target": "Characters/Schedules/Moonvillage_Kira",
+      "Entries": {
+        "Tue": "610 Custom_AnnetteHouseInside 17 7 2/900 Custom_Moonvillage 21 25 2/930 Custom_Moongrocery 11 21 2/1700 Custom_Moonvillage 28 13 2/1800 Custom_AnnetteHouseInside 17 7 2",
+        "Thu": "610 Custom_AnnetteHouseInside 17 7 2/900 Custom_Moonvillage 21 25 2/930 Custom_Moongrocery 11 21 2/1700 Custom_Moonvillage 28 13 2/1800 Custom_AnnetteHouseInside 17 7 2"
+      },
+      "When": {
+        "HasFlag": "MoonGrocery_Ready"
+      }
+    }
+  ]
+}

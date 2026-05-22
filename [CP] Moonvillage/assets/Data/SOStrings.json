@@ -1,0 +1,17 @@
+{
+  "Changes": [
+    {
+      "LogName": "Moonvillage Special Order Strings",
+      "Action": "EditData",
+      "Target": "Strings/SpecialOrderStrings",
+      "Entries": {
+        "Moonvillage.SpecialOrder.FinalRestoration_Name": "A New Beginning for Moonvillage",
+        "Moonvillage.SpecialOrder.FinalRestoration_Text": "With the village buildings restored, Annette wants to prepare Moonvillage for visitors, trade, and new life. The last step is gathering supplies for the whole village.",
+        "Moonvillage.SpecialOrder.FinalRestoration_Objective1_Text": "Deliver 100 wood",
+        "Moonvillage.SpecialOrder.FinalRestoration_Objective2_Text": "Deliver 50 stone",
+        "Moonvillage.SpecialOrder.FinalRestoration_Objective3_Text": "Deliver 20 fiber",
+        "Moonvillage.SpecialOrder.FinalRestoration_Objective4_Text": "Deliver 10 maple syrup"
+      }
+    }
+  ]
+}

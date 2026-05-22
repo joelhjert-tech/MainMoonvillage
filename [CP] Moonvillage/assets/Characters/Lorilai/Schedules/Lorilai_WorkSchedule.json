@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "LogName": "Lorilais arbetsschema",
+      "Action": "EditData",
+      "Target": "Characters/Schedules/Moonvillage_Lorilai",
+      "Entries": {
+        "spring": "0700 Custom_Moonvillage 20 25 2/0750 Custom_Moongrocery 7 20 2/1900 Custom_Moonvillage 20 25 2/1920 Custom_Moonvillage 27 13 2/1940 Custom_AnnetteHouseInside 21 44 2"
+      },
+      "When": {
+        "HasFlag": "MoonGrocery_Ready"
+      }
+    }
+  ]
+}

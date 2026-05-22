@@ -1,0 +1,217 @@
+{
+  "Changes": [
+    {
+      "LogName": "Define Annette, Kira, Lorilai and Venessa properties",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Moonvillage_Annette": {
+          "DisplayName": "Annette",
+          "Gender": "Female",
+          "Age": "Adult",
+          "BirthSeason": "summer",
+          "BirthDay": 5,
+          "HomeRegion": "Other",
+          "CanSocialize": true,
+          "CanReceiveGifts": true,
+          "UnlockConditions": "PLAYER_HAS_MAIL Any JoelHjert.MoonVillage.AnnetteMet",
+          "GiftTastes": "Moonvillage_Annette",
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Custom_AnnetteHouseInside",
+              "Tile": {
+                "X": 16,
+                "Y": 7
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "Moonvillage_Kira": {
+          "DisplayName": "Kira",
+          "Gender": "Female",
+          "Age": "Adult",
+          "BirthSeason": "spring",
+          "BirthDay": 1,
+          "HomeRegion": "Other",
+          "CanSocialize": true,
+          "CanReceiveGifts": true,
+          "UnlockConditions": "PLAYER_HAS_MAIL Any JoelHjert.MoonVillage.AnnetteMet",
+          "GiftTastes": "Moonvillage_Kira",
+          "Size": {
+            "X": 32,
+            "Y": 32
+          },
+          "FrameSize": {
+            "X": 32,
+            "Y": 32
+          },
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Custom_AnnetteHouseInside",
+              "Tile": {
+                "X": 14,
+                "Y": 7
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "Moonvillage_Lorilai": {
+          "DisplayName": "Lorilai",
+          "Gender": "Female",
+          "Age": "Adult",
+          "BirthSeason": "spring",
+          "BirthDay": 10,
+          "HomeRegion": "Other",
+          "CanSocialize": true,
+          "CanReceiveGifts": true,
+          "UnlockConditions": "PLAYER_HAS_MAIL Any AnnetteHouse_Ready",
+          "GiftTastes": "Moonvillage_Lorilai",
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Custom_AnnetteHouseInside",
+              "Tile": {
+                "X": 21,
+                "Y": 8
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "Moonvillage_Venessa": {
+          "DisplayName": "Venessa",
+          "Gender": "Female",
+          "Age": "Adult",
+          "BirthSeason": "spring",
+          "BirthDay": 28,
+          "HomeRegion": "Other",
+          "CanSocialize": true,
+          "CanReceiveGifts": true,
+          "UnlockConditions": "PLAYER_HAS_MAIL Any MoonGrocery_Ready",
+          "GiftTastes": "Moonvillage_Venessa",
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Custom_AnnetteHouseInside",
+              "Tile": {
+                "X": 10,
+                "Y": 8
+              },
+              "Direction": "down"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Moonvillage_Annette",
+      "FromFile": "assets/Characters/Annette/Portraits/Annette_Portraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Moonvillage_Annette",
+      "FromFile": "assets/Characters/Annette/Sprites/Annette_Sprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Moonvillage_Annette",
+      "FromFile": "assets/Characters/Annette/Dialogue/Annette_Dialogue.json"
+    },
+    {
+      "LogName": "Ladda in Annette arbetsschema",
+      "Action": "Include",
+      "FromFile": "assets/Characters/Annette/Schedules/Annette_WorkSchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/Moonvillage_Annette",
+      "FromFile": "assets/Characters/Annette/Schedules/Annette_Schedules.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Moonvillage_Kira",
+      "FromFile": "assets/Characters/Kira/Portraits/Kira_Portraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Moonvillage_Kira",
+      "FromFile": "assets/Characters/Kira/Sprites/Kira_Sprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Moonvillage_Kira",
+      "FromFile": "assets/Characters/Kira/Dialogue/Kira_Dialogue.json"
+    },
+    {
+      "LogName": "Ladda in Kiras arbetsschema",
+      "Action": "Include",
+      "FromFile": "assets/Characters/Kira/Schedules/Kira_Workschedules.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/Moonvillage_Kira",
+      "FromFile": "assets/Characters/Kira/Schedules/Kira_Schedules.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Moonvillage_Lorilai",
+      "FromFile": "assets/Characters/Lorilai/Portraits/Lorilai_Portraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Moonvillage_Lorilai",
+      "FromFile": "assets/Characters/Lorilai/Sprites/Lorilai_Sprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Moonvillage_Lorilai",
+      "FromFile": "assets/Characters/Lorilai/Dialogue/Lorilai_Dialogue.json"
+    },
+    {
+      "LogName": "Ladda in Lorilais arbetsschema",
+      "Action": "Include",
+      "FromFile": "assets/Characters/Lorilai/Schedules/Lorilai_WorkSchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/Moonvillage_Lorilai",
+      "FromFile": "assets/Characters/Lorilai/Schedules/Lorilai_Schedules.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Moonvillage_Venessa",
+      "FromFile": "assets/Characters/Venessa/Portraits/Venessa_Portraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Moonvillage_Venessa",
+      "FromFile": "assets/Characters/Venessa/Sprites/Venessa_Sprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Moonvillage_Venessa",
+      "FromFile": "assets/Characters/Venessa/Dialogue/Venessa_Dialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/Moonvillage_Venessa",
+      "FromFile": "assets/Characters/Venessa/Schedules/Venessa_Schedules.json"
+    },
+    {
+      "LogName": "Define Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Moonvillage_Annette": "724 72 StardropTea / 80 233 / 152 / 167 / / ",
+        "Moonvillage_Kira": "68 580 582 / / / / / ",
+        "Moonvillage_Lorilai": "773 256 16 / 18 22 20 404 / 206 211 / 167 420 / / ",
+        "Moonvillage_Venessa": "768 769 422 / 66 259 82 / 346 303 / 766 684 / / "
+      }
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "Changes": [
+    {
+      "LogName": "Moon Village - Forest Anomaly Trigger",
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "Entries": {
+        "991000/t 600 2400": "none/-1000 -1000 2/farmer -1000 -1000 2/skippable/viewport 6 10 true/pause 1000/message \"{{i18n:event.secret_woods_anomaly}}\"/pause 500/viewport -1000 -1000/mail JoelHjert.MoonVillage.SecretWoodsQuestMail/addMailReceived JoelHjert.MoonVillage.SecretWoodsQuest/end"
+      }
+    },
+    {
+      "LogName": "Moon Village - Wizard Tower Event",
+      "Action": "EditData",
+      "Target": "Data/Events/WizardHouse",
+      "When": {
+        "HasFlag": "JoelHjert.MoonVillage.WizardInvite"
+      },
+      "Entries": {
+        "991001/t 600 2400": "none/8 20/farmer 8 20 0 Wizard 2 17 3/skippable/playMusic WizardSong/globalFadeToClear/pause 500/emote farmer 8/emote Wizard 32/move Wizard 6 0 2/move Wizard 0 1 2/pause 500/speak Wizard \"{{i18n:event.wizard_tower_1}}\"/pause 400/speak Wizard \"{{i18n:event.wizard_tower_2}}\"/globalFade/viewport -1000 -1000/changeLocation Woods/warp Wizard 45 15/warp farmer 45 17/viewport 45 15 true/pause 500/speak Wizard \"{{i18n:event.wizard_tower_3}}\"/mail JoelHjert.MoonVillage.WizardQuestMail/addMailReceived JoelHjert.MoonVillage.WizardQuestStarted/end"
+      }
+    },
+    {
+      "LogName": "Moon Village - Annette Intro",
+      "Action": "EditData",
+      "Target": "Data/Events/Woods",
+      "When": {
+        "HasFlag": "JoelHjert.MoonVillage.WizardQuestStarted"
+      },
+      "Entries": {
+        "991002/t 600 1900": "spring1/56 56 1/farmer 56 56 1 Moonvillage_Kira 63 56 3 Moonvillage_Annette 62 57 3/skippable/viewport 56 56 true/move Moonvillage_Annette 0 -4 3/move Moonvillage_Annette 0 -4 2 true/move Moonvillage_Kira 0 -7 3/move Moonvillage_Kira 0 -2 2/speak Moonvillage_Annette \"{{i18n:event.annette_intro_1}}\"/pause 500/emote farmer 8/pause 800/speak Moonvillage_Annette \"{{i18n:event.annette_intro_2}}\"/pause 500/emote farmer 32/pause 800/speak Moonvillage_Annette \"{{i18n:event.annette_intro_3}}\"/pause 500/speak Moonvillage_Annette \"{{i18n:event.annette_intro_4}}\"/pause 500/emote farmer 32/pause 800/speak Moonvillage_Annette \"{{i18n:event.annette_intro_5}}\"/move Moonvillage_Annette 0 -10 0/move Moonvillage_Kira 0 -10 0/mail JoelHjert.MoonVillage.WizardGuildInvite/addMailReceived JoelHjert.MoonVillage.AnnetteMet/end"
+      }
+    },
+    {
+      "LogName": "Moon Village - The Guild Meeting",
+      "Action": "EditData",
+      "Target": "Data/Events/AdventureGuild",
+      "When": {
+        "HasFlag": "JoelHjert.MoonVillage.WizardGuildInvite"
+      },
+      "Entries": {
+        "991004/t 600 2300": "Upper_Ambience/6 11 1/Wizard 7 10 2 Moonvillage_Annette 9 12 3 Marlon 8 9 2/skippable/viewport 8 11 true/pause 1000/speak Wizard \"{{i18n:event.guild_meeting.wizard_1}}\"/speak Marlon \"{{i18n:event.guild_meeting.marlon_1}}\"/pause 500/faceDirection Wizard 1/speak Wizard \"{{i18n:event.guild_meeting.wizard_2}}\"/faceDirection Marlon 3/speak Marlon \"{{i18n:event.guild_meeting.marlon_2}}\"/pause 500/speak Moonvillage_Annette \"{{i18n:event.guild_meeting.annette_1}}\"/pause 500/question fork1 \"{{i18n:event.guild_meeting.q1}}#{{i18n:event.guild_meeting.q2}}\"/fork guild_meeting_explained/pause 500/speak Marlon \"{{i18n:event.guild_meeting.marlon_3}}\"/speak Moonvillage_Annette \"{{i18n:event.guild_meeting.annette_2}}\"/speak Marlon \"{{i18n:event.guild_meeting.marlon_4}}\"/speak Wizard \"{{i18n:event.guild_meeting.wizard_3}}\"/speak Wizard \"{{i18n:event.guild_meeting.wizard_4}}\"/faceDirection Moonvillage_Annette 3/speak Moonvillage_Annette \"{{i18n:event.guild_meeting.annette_3}}\"/speak Wizard \"{{i18n:event.guild_meeting.wizard_5}}\"/addMailReceived JoelHjert.MoonVillage.GuildMeetingDone/end",
+        "guild_meeting_explained": "pause 500/speak Marlon \"{{i18n:event.guild_meeting.marlon_3}}\"/speak Moonvillage_Annette \"{{i18n:event.guild_meeting.annette_2}}\"/speak Marlon \"{{i18n:event.guild_meeting.marlon_4}}\"/speak Wizard \"{{i18n:event.guild_meeting.wizard_3}}\"/speak Wizard \"{{i18n:event.guild_meeting.wizard_4}}\"/faceDirection Moonvillage_Annette 3/speak Moonvillage_Annette \"{{i18n:event.guild_meeting.annette_3}}\"/speak Wizard \"{{i18n:event.guild_meeting.wizard_5}}\"/addMailReceived JoelHjert.MoonVillage.GuildMeetingDone/end"
+      }
+    },
+    {
+      "LogName": "Moon Village - First Arrival",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_Moonvillage",
+      "When": {
+        "HasFlag": "JoelHjert.MoonVillage.GuildMeetingDone"
+      },
+      "Entries": {
+        "991005/t 600 2400": "night_market/25 25 0/Moonvillage_Annette 25 20 2/skippable/viewport 25 23 true/pause 1000/move Moonvillage_Annette 0 3 2/speak Moonvillage_Annette \"{{i18n:event.moonvillage_arrival.annette_1}}\"/pause 500/emote farmer 8/speak Moonvillage_Annette \"{{i18n:event.moonvillage_arrival.annette_2}}\"/pause 500/speak Moonvillage_Annette \"{{i18n:event.moonvillage_arrival.annette_3}}\"/addMailReceived JoelHjert.MoonVillage.ArrivalDone/end"
+      }
+    },
+	{
+      "LogName": "Moon Village - Annette Hidden Maze Quest",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_Moonvillage",
+      "When": {
+        "HasFlag": "JoelHjert.MoonVillage.ArrivalDone"
+      },
+      "Entries": {
+        "991007/t 600 2400": "none/25 25 0/Moonvillage_Annette 25 20 2/skippable/viewport 25 22 true/pause 800/move Moonvillage_Annette 0 3 2/speak Moonvillage_Annette \"{{i18n:event.hidden_maze.annette_1}}\"/pause 500/emote farmer 8/pause 500/speak Moonvillage_Annette \"{{i18n:event.hidden_maze.annette_2}}\"/pause 500/speak Moonvillage_Annette \"{{i18n:event.hidden_maze.annette_3}}\"/mail JoelHjert.MoonVillage.HiddenMazeQuestMail/addMailReceived JoelHjert.MoonVillage.HiddenMazeQuestStarted/end"
+      }
+    },
+    {
+      "LogName": "Moon Village - Townhall Fixed",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_Moonvillage",
+      "When": {
+        "HasFlag": "JoelHjert.MoonVillage.TownhallBundleComplete"
+      },
+      "Entries": {
+        "991006/t 600 2400": "none/25 25 0/Moonvillage_Annette 25 20 2 Moonvillage_Lorilai 26 20 2/skippable/viewport 25 22 true/pause 1000/playSound reward/screenFlash 3 1000/pause 1000/speak Moonvillage_Annette \"{{i18n:event.townhall_fixed.annette_1}}\"/pause 500/emote Moonvillage_Lorilai 16/pause 800/speak Moonvillage_Lorilai \"{{i18n:event.townhall_fixed.lorilai_1}}\"/pause 500/speak Moonvillage_Annette \"{{i18n:event.townhall_fixed.annette_2}}\"/pause 500/faceDirection Moonvillage_Lorilai 3/speak Moonvillage_Lorilai \"{{i18n:event.townhall_fixed.lorilai_2}}\"/addMailReceived JoelHjert.MoonVillage.TownhallFixed/end"
+      }
+    },
+    {
+      "LogName": "Moon Village - Quest Tea Rewards",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_Moonvillage",
+      "Entries": {
+        "991100/q JoelHjert.MoonVillage.SecretWoodsQuest": "none/25 25 0/skippable/pause 500/addItem (O){{Random:{{ModId}}_DefenseTea,{{ModId}}_LuckTea,{{ModId}}_HealingTea,{{ModId}}_FarmingTea,{{ModId}}_MiningTea,{{ModId}}_FishingTea,{{ModId}}_AttackTea,{{ModId}}_SpeedTea|key=SecretWoodsTeaReward}} 1/message \"{{i18n:event.quest_reward_random_tea}}\"/end",
+        "991101/q JoelHjert.MoonVillage.MeetWizardQuest": "none/25 25 0/skippable/pause 500/addItem (O){{Random:{{ModId}}_DefenseTea,{{ModId}}_LuckTea,{{ModId}}_HealingTea,{{ModId}}_FarmingTea,{{ModId}}_MiningTea,{{ModId}}_FishingTea,{{ModId}}_AttackTea,{{ModId}}_SpeedTea|key=MeetWizardTeaReward}} 1/message \"{{i18n:event.quest_reward_random_tea}}\"/end",
+        "991102/q JoelHjert.MoonVillage.WizardQuest": "none/25 25 0/skippable/pause 500/addItem (O){{Random:{{ModId}}_DefenseTea,{{ModId}}_LuckTea,{{ModId}}_HealingTea,{{ModId}}_FarmingTea,{{ModId}}_MiningTea,{{ModId}}_FishingTea,{{ModId}}_AttackTea,{{ModId}}_SpeedTea|key=WizardQuestTeaReward}} 1/message \"{{i18n:event.quest_reward_random_tea}}\"/end",
+        "991103/q JoelHjert.MoonVillage.GuildMeetingQuest": "none/25 25 0/skippable/pause 500/addItem (O){{Random:{{ModId}}_DefenseTea,{{ModId}}_LuckTea,{{ModId}}_HealingTea,{{ModId}}_FarmingTea,{{ModId}}_MiningTea,{{ModId}}_FishingTea,{{ModId}}_AttackTea,{{ModId}}_SpeedTea|key=GuildMeetingTeaReward}} 1/message \"{{i18n:event.quest_reward_random_tea}}\"/end",
+        "991105/q JoelHjert.MoonVillage.HiddenMazeQuest": "none/25 25 0/skippable/pause 500/addItem (O){{Random:{{ModId}}_DefenseTea,{{ModId}}_LuckTea,{{ModId}}_HealingTea,{{ModId}}_FarmingTea,{{ModId}}_MiningTea,{{ModId}}_FishingTea,{{ModId}}_AttackTea,{{ModId}}_SpeedTea|key=HiddenMazeTeaReward}} 1/message \"{{i18n:event.quest_reward_random_tea}}\"/end",
+		"991104/q JoelHjert.MoonVillage.ActivateWarp": "none/25 25 0/skippable/pause 500/addItem (O){{Random:{{ModId}}_DefenseTea,{{ModId}}_LuckTea,{{ModId}}_HealingTea,{{ModId}}_FarmingTea,{{ModId}}_MiningTea,{{ModId}}_FishingTea,{{ModId}}_AttackTea,{{ModId}}_SpeedTea|key=ActivateWarpTeaReward}} 1/message \"{{i18n:event.quest_reward_random_tea}}\"/end"
+      }
+    }
+  ]
+}

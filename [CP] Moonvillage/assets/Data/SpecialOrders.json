@@ -1,0 +1,92 @@
+{
+  "Changes": [
+    {
+      "LogName": "Moonvillage Special Orders",
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "Moonvillage.SpecialOrder.FinalRestoration": {
+          "Name": "[Moonvillage.SpecialOrder.FinalRestoration_Name]",
+          "Requester": "Moonvillage_Annette",
+          "Duration": "Month",
+          "Repeatable": "False",
+          "RequiredTags": "mail_AnnetteHouse_Ready, mail_MoonInn_Ready, mail_SpiritHealer_Ready, mail_HerbalistHouse_Ready, mail_MoonGranary_Ready, mail_MoonGrocery_Ready, !mail_Moonvillage_FinalRestorationComplete",
+          "OrderType": "SpecialOrder",
+          "SpecialRule": "",
+          "Text": "[Moonvillage.SpecialOrder.FinalRestoration_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Objectives": [
+            {
+              "Type": "Donate",
+              "Text": "[Moonvillage.SpecialOrder.FinalRestoration_Objective1_Text]",
+              "RequiredCount": "100",
+              "Data": {
+                "DropBox": "MoonvillageFinalRestoration",
+                "DropBoxGameLocation": "Custom_Moonvillage",
+                "DropBoxIndicatorLocation": "31.5 18.4",
+                "AcceptedContextTags": "item_wood"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[Moonvillage.SpecialOrder.FinalRestoration_Objective2_Text]",
+              "RequiredCount": "50",
+              "Data": {
+                "DropBox": "MoonvillageFinalRestoration",
+                "DropBoxGameLocation": "Custom_Moonvillage",
+                "DropBoxIndicatorLocation": "31.5 18.4",
+                "AcceptedContextTags": "item_stone"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[Moonvillage.SpecialOrder.FinalRestoration_Objective3_Text]",
+              "RequiredCount": "20",
+              "Data": {
+                "DropBox": "MoonvillageFinalRestoration",
+                "DropBoxGameLocation": "Custom_Moonvillage",
+                "DropBoxIndicatorLocation": "31.5 18.4",
+                "AcceptedContextTags": "item_fiber"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[Moonvillage.SpecialOrder.FinalRestoration_Objective4_Text]",
+              "RequiredCount": "10",
+              "Data": {
+                "DropBox": "MoonvillageFinalRestoration",
+                "DropBoxGameLocation": "Custom_Moonvillage",
+                "DropBoxIndicatorLocation": "31.5 18.4",
+                "AcceptedContextTags": "item_maple_syrup"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": {
+                "Amount": "25000"
+              }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {
+                "Amount": "250",
+                "TargetName": "Moonvillage_Annette"
+              }
+            },
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "Moonvillage_FinalRestorationComplete",
+                "NoLetter": "true"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

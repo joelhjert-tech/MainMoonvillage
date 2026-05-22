@@ -1,0 +1,25 @@
+{
+  "Changes": [
+    {
+      "LogName": "Moon Village - Mail Data (i18n)",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "JoelHjert.MoonVillage.MysteriousRumor": "{{i18n:mail.mysterious_rumor}}",
+        "JoelHjert.MoonVillage.WizardInvite": "{{i18n:mail.wizard_invite}} %item quest JoelHjert.MoonVillage.MeetWizardQuest%%",
+        "JoelHjert.MoonVillage.WizardQuestMail": "{{i18n:mail.wizard_quest_mail}} %item quest JoelHjert.MoonVillage.WizardQuest%%",
+        "JoelHjert.MoonVillage.WizardGuildInvite": "{{i18n:mail.wizard_guild_invite}} %item quest JoelHjert.MoonVillage.GuildMeetingQuest%%",
+        "JoelHjert.MoonVillage.AnnetteParty": "{{i18n:mail.annette_party}}",
+        "JoelHjert.MoonVillage.SecretWoodsQuestMail": "{{i18n:mail.mysterious_rumor}} %item quest JoelHjert.MoonVillage.SecretWoodsQuest%%",
+		"JoelHjert.MoonVillage.HiddenMazeQuestMail": "{{i18n:mail.hidden_maze_quest}} %item quest JoelHjert.MoonVillage.HiddenMazeQuest%%",
+        "AnnetteHouse_Ready": "{{i18n:mail.annette_house_ready}}",
+        "MoonInn_Ready": "{{i18n:mail.inn_ready}}",
+        "SpiritHealer_Ready": "{{i18n:mail.spirit_healer_ready}}",
+        "HerbalistHouse_Ready": "{{i18n:mail.herbalist_ready}}",
+        "MoonGranary_Ready": "{{i18n:mail.granary_ready}}",
+        "LorilaiBedroom_Ready": "{{i18n:mail.lorilai_bedroom_ready}}",
+        "MoonGrocery_Ready": "{{i18n:mail.grocery_ready}}"
+      }
+    }
+  ]
+}

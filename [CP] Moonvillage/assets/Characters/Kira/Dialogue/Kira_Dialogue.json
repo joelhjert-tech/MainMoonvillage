@@ -1,0 +1,15 @@
+{
+  "Introduction": "{{i18n:kira.dialogue.Introduction}}",
+  "Mon": "{{i18n:kira.dialogue.Mon}}",
+  "Tue": "{{i18n:kira.dialogue.Tue}}",
+  "Wed": "{{i18n:kira.dialogue.Wed}}",
+  "Thu": "{{i18n:kira.dialogue.Thu}}",
+  "Fri": "{{i18n:kira.dialogue.Fri}}",
+  "Sat": "{{i18n:kira.dialogue.Sat}}",
+  "Sun": "{{i18n:kira.dialogue.Sun}}",
+  "Rainy": "{{i18n:kira.dialogue.Rainy}}",
+  "GreenRain": "{{i18n:kira.dialogue.GreenRain}}",
+  "AcceptGift_(O)68": "{{i18n:kira.dialogue.AcceptGift_(O)68}}",
+  "AcceptGift_Generic": "{{i18n:kira.dialogue.AcceptGift_Generic}}",
+  "RejectGift_Generic": "{{i18n:kira.dialogue.RejectGift_Generic}}"
+}

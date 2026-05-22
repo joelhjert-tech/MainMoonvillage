@@ -1,0 +1,77 @@
+{
+  "Changes": [
+    {
+      "LogName": "Moon Village - Load Boss Moon Sprite",
+      "Action": "Load",
+      "Target": "{{ModId}}/Boss_moon",
+      "FromFile": "assets/Characters/Monsters/Boss_moon.png"
+    },
+    {
+      "LogName": "Moon Village - Register Boss Moon Monster",
+      "Action": "EditData",
+      "Target": "aedenthorn.CustomMonsters/dict",
+      "Entries": {
+        "Moonvillage_MoonBoss": {
+          "Type": "ShadowBrute",
+          "Parameters": "position",
+          "Sprite": "{{ModId}}/Boss_moon",
+          "Health": 1000,
+          "Damage": 30,
+          "Speed": 3,
+          "Experience": 100,
+          "Resilience": 12,
+          "ClearDrops": true,
+          "Drops": [
+            {
+              "ItemId": "(O)72",
+              "MinQuantity": 1,
+              "MaxQuantity": 3,
+              "Chance": 100
+            },
+            {
+              "ItemId": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1,
+              "Chance": 25
+            },
+            {
+              "ItemId": "(O)Moonvillage.AnnetteNPC_DefenseTea",
+              "MinQuantity": 1,
+              "MaxQuantity": 1,
+              "Chance": 15
+            },
+            {
+              "ItemId": "(O)Moonvillage.AnnetteNPC_AttackTea",
+              "MinQuantity": 1,
+              "MaxQuantity": 1,
+              "Chance": 15
+            },
+            {
+              "ItemId": "(O)Moonvillage.AnnetteNPC_HealingTea",
+              "MinQuantity": 1,
+              "MaxQuantity": 1,
+              "Chance": 15
+            }
+          ],
+          "LocationSpawns": [
+            {
+              "Location": "Custom_Maze",
+              "MinSpawn": 1,
+              "MaxSpawn": 1,
+              "MaxAmount": 1,
+              "MinTile": {
+                "X": 5,
+                "Y": 5
+              },
+              "MaxTile": {
+                "X": 45,
+                "Y": 45
+              },
+              "Respawn": "Daily"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

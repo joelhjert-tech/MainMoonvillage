@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "LogName": "Define map message strings",
+      "Action": "EditData",
+      "Target": "Strings/StringsFromMaps",
+      "Entries": {
+        "Moonvillage.FoodPrep": "Food is being prepared.",
+        "Moonvillage.RoadSign": "Down YE MOoN INN, RIGHT TOWN CENTER",
+        "Moonvillage.RoadSignenter": "Warning SLIMES are loose!"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "Changes": [
+    {
+      "LogName": "Definiera Moonvillage Matbutik",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "Moonvillage.AnnetteNPC_GroceryShop": {
+          "Currency": 0,
+          "Owners": [
+            {
+              "Id": "LorilaiOwner",
+              "Name": "Any",
+              "Portrait": "Moonvillage_Lorilai"
+            }
+          ],
+          "OpenRules": [
+            {
+              "Id": "LorilaiMasteVaraDar",
+              "Condition": "LOCATION_HAS_NPC Custom_Moongrocery Moonvillage_Lorilai",
+              "ErrorMessage": "Butiken är stängd. Lorilai är inte här just nu!"
+            }
+          ],
+          "Items": [
+            { "Id": "Coffee", "ItemId": "(O)395", "Price": 300 },
+            { "Id": "Bread", "ItemId": "(O)216", "Price": 120 },
+            { "Id": "Pizza", "ItemId": "(O)206", "Price": 600 },
+            { "Id": "Salad", "ItemId": "(O)196", "Price": 220 },
+            { "Id": "Beer", "ItemId": "(O)346", "Price": 400 },
+            { "Id": "Amaranth Seeds", "ItemId": "(O)299", "Price": 400 },
+            { "Id": "Qi Bean", "ItemId": "(O)890", "Price": 400 },
+            { "Id": "Taro Tuber", "ItemId": "(O)831", "Price": 450 },
+            { "Id": "SellDefenseTea", "ItemId": "(O){{ModId}}_DefenseTea", "Price": 500, "AvailableStock": 4 },
+            { "Id": "SellLuckTea", "ItemId": "(O){{ModId}}_LuckTea", "Price": 500, "AvailableStock": 4 },
+            { "Id": "SellHealingTea", "ItemId": "(O){{ModId}}_HealingTea", "Price": 500, "AvailableStock": 4 },
+            { "Id": "SellFarmingTea", "ItemId": "(O){{ModId}}_FarmingTea", "Price": 500, "AvailableStock": 4 },
+            { "Id": "SellMiningTea", "ItemId": "(O){{ModId}}_MiningTea", "Price": 500, "AvailableStock": 4 },
+            { "Id": "SellFishingTea", "ItemId": "(O){{ModId}}_FishingTea", "Price": 500, "AvailableStock": 4 },
+            { "Id": "SellAttackTea", "ItemId": "(O){{ModId}}_AttackTea", "Price": 500, "AvailableStock": 4 },
+            { "Id": "SellSpeedTea", "ItemId": "(O){{ModId}}_SpeedTea", "Price": 500, "AvailableStock": 4 }
+          ]
+        }
+      }
+    }
+  ]
+}
