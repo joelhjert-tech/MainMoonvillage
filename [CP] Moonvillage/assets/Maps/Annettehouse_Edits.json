@@ -1,0 +1,63 @@
+{
+  "Changes": [
+    {
+      "LogName": "Lägg till utgångar från Annettes hus",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Annettehouse",
+      "AddWarps": [
+        "4 8 Custom_Moonvillage 32 21",
+        "5 8 Custom_Moonvillage 31 21"
+      ],
+      "MapProperties": {
+        "NPCWarp": "4 8 Custom_Moonvillage 32 21 5 8 Custom_Moonvillage 31 21 4 4 Custom_AnnetteHouseInside 23 48 5 4 Custom_AnnetteHouseInside 23 48"
+      }
+    },
+    {
+      "LogName": "Unlock Annette's door only after the bundle is completed and day passed",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Annettehouse",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 3
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Door Moonvillage_Annette"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag": "AnnetteHouse_Ready"
+      }
+    },
+    {
+      "LogName": "Update Annette's house visuals after bundle completion and day passed",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Annettehouse",
+      "FromFile": "assets/Maps/AnnetteHousebundlecomplete.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 10,
+        "Height": 10
+      },
+      "When": {
+        "HasFlag": "AnnetteHouse_Ready"
+      }
+    },
+    {
+      "LogName": "Lägg till warps in i Annettes hus när det är klart",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Annettehouse",
+      "AddWarps": [
+        "4 4 Custom_AnnetteHouseInside 23 48",
+        "5 4 Custom_AnnetteHouseInside 23 48"
+      ],
+      "When": {
+        "HasFlag": "AnnetteHouse_Ready"
+      }
+    }
+  ]
+}

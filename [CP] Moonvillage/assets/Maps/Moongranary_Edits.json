@@ -1,0 +1,16 @@
+{
+  "Changes": [
+    {
+      "LogName": "Vägen ut från magasinet",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Moongranary",
+      "AddWarps": [
+        "4 9 Custom_Moonvillage 43 55",
+        "5 9 Custom_Moonvillage 43 55"
+      ],
+      "MapProperties": {
+        "NPCWarp": "4 9 Custom_Moonvillage 14 13 5 9 Custom_Moonvillage 15 13"
+      }
+    }
+  ]
+}

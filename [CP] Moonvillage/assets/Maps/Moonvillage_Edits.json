@@ -1,0 +1,255 @@
+{
+  "Changes": [
+    {
+      "LogName": "Add warps and interaction messages to Moonvillage",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Moonvillage",
+      "AddWarps": [
+        "83 0 Custom_Wizardfary 8 59",
+        "84 0 Custom_Wizardfary 9 59",
+        "85 0 Custom_Wizardfary 7 59",
+        "86 0 Custom_Wizardfary 7 59",
+        "99 18 Farm 4 6",
+        "99 19 Farm 4 6",
+        "99 20 Farm 4 6",
+        "31 18 Custom_Annettehouse 4 6",
+        "32 18 Custom_Annettehouse 4 6"
+      ],
+      "MapProperties": {
+        "NPCWarp": "37 21 BusStop 0 23 31 21 Custom_Annettehouse 4 8 32 21 Custom_Annettehouse 5 8 31 20 Custom_Annettehouse 4 8 32 20 Custom_Annettehouse 5 8 31 21 Custom_AnnetteHouseInside 23 48 32 21 Custom_AnnetteHouseInside 23 48 19 44 Custom_Moongrocery 15 39 20 44 Custom_Moongrocery 15 39 46 33 Custom_oldMooninn 4 9 47 33 Custom_oldMooninn 4 9 34 33 Custom_Spritshouse 4 9 52 10 Custom_herbhouse 4 9 52 11 Custom_herbhouse 4 9 14 13 Custom_Moongranary 4 9 15 13 Custom_Moongranary 5 9 83 0 Custom_Wizardfary 8 59 84 0 Custom_Wizardfary 9 59 85 0 Custom_Wizardfary 7 59 86 0 Custom_Wizardfary 7 59 99 18 Farm 4 6 99 19 Farm 4 6 99 20 Farm 4 6"
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 57,
+            "Y": 31
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message Moonvillage.FoodPrep"
+          }
+        },
+        {
+          "Position": {
+            "X": 58,
+            "Y": 31
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message Moonvillage.FoodPrep"
+          }
+        },
+        {
+          "Position": {
+            "X": 91,
+            "Y": 15
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message Moonvillage.RoadSignenter"
+          }
+        },
+        {
+          "Position": {
+            "X": 63,
+            "Y": 1
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message Moonvillage.RoadSign"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Annette Bundle Notification Action",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "AnnetteHouse_BundleComplete": {
+          "Id": "AnnetteHouse_BundleComplete",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"You've dropped off all the materials! Annette needs some time to build. Come back tomorrow!\"",
+            "AddMail Current AnnetteHouse_Ready"
+          ],
+          "Condition": "LOCATION_NAME Here Custom_Moonvillage, !PLAYER_HAS_MAIL Current AnnetteHouse_Ready"
+        }
+      },
+      "When": {
+        "DLX.Bundles/Purchased": "AnnetteHouseBundle"
+      }
+    },
+    {
+      "LogName": "MoonInn Bundle Notification Action",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "MoonInn_BundleComplete": {
+          "Id": "MoonInn_BundleComplete",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Materials delivered! The Moon Inn is being restored.\"",
+            "AddMail Current MoonInn_Ready"
+          ],
+          "Condition": "LOCATION_NAME Here Custom_Moonvillage, !PLAYER_HAS_MAIL Current MoonInn_Ready"
+        }
+      },
+      "When": {
+        "DLX.Bundles/Purchased": "MoonInnBundle"
+      }
+    },
+    {
+      "LogName": "SpiritHealer Bundle Notification Action",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "SpiritHealer_BundleComplete": {
+          "Id": "SpiritHealer_BundleComplete",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Materials delivered! The Spirit Healer's home is being restored.\"",
+            "AddMail Current SpiritHealer_Ready"
+          ],
+          "Condition": "LOCATION_NAME Here Custom_Moonvillage, !PLAYER_HAS_MAIL Current SpiritHealer_Ready"
+        }
+      },
+      "When": {
+        "DLX.Bundles/Purchased": "SpiritHealerBundle"
+      }
+    },
+    {
+      "LogName": "Herbalist Bundle Notification Action",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "Herbalist_BundleComplete": {
+          "Id": "Herbalist_BundleComplete",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Materials delivered! The Herbalist House is being restored.\"",
+            "AddMail Current HerbalistHouse_Ready"
+          ],
+          "Condition": "LOCATION_NAME Here Custom_Moonvillage, !PLAYER_HAS_MAIL Current HerbalistHouse_Ready"
+        }
+      },
+      "When": {
+        "DLX.Bundles/Purchased": "HerbalistHouseBundle"
+      }
+    },
+    {
+      "LogName": "MoonGranary Bundle Notification Action",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "MoonGranary_BundleComplete": {
+          "Id": "MoonGranary_BundleComplete",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Materials delivered! The Moon Granary is being restored.\"",
+            "AddMail Current MoonGranary_Ready"
+          ],
+          "Condition": "LOCATION_NAME Here Custom_Moonvillage, !PLAYER_HAS_MAIL Current MoonGranary_Ready"
+        }
+      },
+      "When": {
+        "DLX.Bundles/Purchased": "MoonGranaryBundle"
+      }
+    },
+    {
+      "LogName": "MoonGrocery Bundle Notification Action",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "MoonGrocery_BundleComplete": {
+          "Id": "MoonGrocery_BundleComplete",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Materials delivered! The Moon Grocery Store is being restored.\"",
+            "AddMail Current MoonGrocery_Ready"
+          ],
+          "Condition": "LOCATION_NAME Here Custom_Moonvillage, !PLAYER_HAS_MAIL Current MoonGrocery_Ready"
+        }
+      },
+      "When": {
+        "DLX.Bundles/Purchased": "MoonGroceryBundle"
+      }
+    },
+    {
+      "LogName": "Lorilai Bedroom Completion Trigger",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "LorilaiBedroom_BundleComplete": {
+          "Id": "LorilaiBedroom_BundleComplete",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"The bedroom is finished! Lorilai can now rest comfortably.\"",
+            "AddMail Current LorilaiBedroom_Ready"
+          ],
+          "Condition": "LOCATION_NAME Here Custom_Moongrocery, !PLAYER_HAS_MAIL Current LorilaiBedroom_Ready"
+        }
+      },
+      "When": {
+        "DLX.Bundles/Purchased": "LorilaiBedroomBundle"
+      }
+    },
+    {
+      "LogName": "Add Moon Inn Door",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Moonvillage",
+      "AddWarps": [
+        "46 33 Custom_oldMooninn 5 6",
+        "47 33 Custom_oldMooninn 5 6"
+      ],
+      "When": {
+        "HasFlag": "MoonInn_Ready"
+      }
+    },
+    {
+      "LogName": "Add Spirit Healer Door",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Moonvillage",
+      "AddWarps": [
+        "34 33 Custom_Spritshouse 5 6"
+      ],
+      "When": {
+        "HasFlag": "SpiritHealer_Ready"
+      }
+    },
+    {
+      "LogName": "Add Herbalist Door",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Moonvillage",
+      "AddWarps": [
+        "52 12 Custom_herbhouse 5 6"
+      ],
+      "When": {
+        "HasFlag": "HerbalistHouse_Ready"
+      }
+    },
+    {
+      "LogName": "Add Moon Granary Door",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Moonvillage",
+      "AddWarps": [
+        "14 14 Custom_Moongranary 5 6"
+      ],
+      "When": {
+        "HasFlag": "MoonGranary_Ready"
+      }
+    },
+    {
+      "LogName": "Lägg till dörr till matbutiken efter bundle",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Moonvillage",
+      "AddWarps": [
+        "21sd 44 Custom_Moongrocery 15 38",
+        "20 44 Custom_Moongrocery 15 38"
+      ],
+      "When": {
+        "HasFlag": "MoonGrocery_Ready"
+      }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "Changes": [
+    {
+      "LogName": "Vägen ut från matbutiken",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Moongrocery",
+      "AddWarps": [
+        "14 39 Custom_Moonvillage 20 26",
+        "16 39 Custom_Moonvillage 20 26",
+        "17 39 Custom_Moonvillage 20 26",
+        "15 39 Custom_Moonvillage 20 26"
+      ],
+      "MapProperties": {
+        "NPCWarp": "14 39 Custom_Moonvillage 20 26 15 39 Custom_Moonvillage 20 26 16 39 Custom_Moonvillage 20 26 17 39 Custom_Moonvillage 20 26"
+      }
+    },
+    {
+      "LogName": "Aktivera kassan på specifika rutor efter bundle",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Moongrocery",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 8,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "OpenShop Moonvillage.AnnetteNPC_GroceryShop"
+          }
+        },
+        {
+          "Position": {
+            "X": 9,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "OpenShop Moonvillage.AnnetteNPC_GroceryShop"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag": "MoonGrocery_Ready"
+      }
+    },
+    {
+      "LogName": "Byt insidan av Moongrocery efter bundle",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Moongrocery",
+      "FromFile": "assets/Maps/MoongroceryBundlecomplete.tmx",
+      "When": {
+        "HasFlag": "LorilaiBedroom_Ready"
+      }
+    },
+    {
+      "LogName": "Lägg till låst dörr till Lorilais sovrum",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Moongrocery",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 25,
+            "Y": 15
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Door Lorilai"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag": "LorilaiBedroom_Ready"
+      }
+    }
+  ]
+}

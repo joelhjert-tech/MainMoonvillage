@@ -1,0 +1,59 @@
+{
+  "Changes": [
+    {
+      "LogName": "Add visual road and player warps to Woods",
+      "Action": "EditMap",
+      "Target": "Maps/Woods",
+      "FromFile": "assets/Maps/Woodsedits.tmx",
+      "ToArea": {
+        "X": 63,
+        "Y": 49,
+        "Width": 26,
+        "Height": 19
+      },
+      "AddWarps": [
+        "76 65 Custom_Moonvillage 37 21",
+        "77 65 Custom_Moonvillage 37 20"
+      ],
+      "MapProperties": {
+        "NPCWarp": "76 65 Custom_Moonvillage 37 21 77 65 Custom_Moonvillage 37 20"
+      }
+    },
+    {
+      "LogName": "Add Secret Woods Magic Warp (After Wizard Quest)",
+      "Action": "EditMap",
+      "Target": "Maps/Woods",
+      "When": {
+        "HasFlag": "JoelHjert.MoonVillage.GuildMeetingDone"
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 75,
+            "Y": 58
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "MagicWarp Custom_Moonvillage 25 25"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Secret Woods Magic Disturbance Message",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "JoelHjert.MoonVillage.ForestMagicDisturbance": {
+          "Id": "JoelHjert.MoonVillage.ForestMagicDisturbance",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "spacechase0.SpaceCore_PlayEvent none/-1000 -1000/message \"{{i18n:message.magic_disturbance}}\"/end",
+            "AddMail Current JoelHjert.MoonVillage.WizardInvite"
+          ],
+          "Condition": "LOCATION_NAME Here Woods, !PLAYER_HAS_MAIL Current JoelHjert.MoonVillage.WizardInvite"
+        }
+      }
+    }
+  ]
+}

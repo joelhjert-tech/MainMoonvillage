@@ -1,0 +1,16 @@
+{
+  "Changes": [
+    {
+      "LogName": "Add exits from Wizardfary to Maze",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Wizardfary",
+      "AddWarps": [
+        "25 38 Custom_Maze 1 1",
+        "25 37 Custom_Maze 1 1"
+      ],
+      "MapProperties": {
+        "NPCWarp": "25 38 Custom_Maze 1 1 25 37 Custom_Maze 1 1"
+      }
+    }
+  ]
+}

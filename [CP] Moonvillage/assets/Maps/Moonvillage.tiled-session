@@ -1,0 +1,1162 @@
+{
+    "activeFile": "CustomMoonvillage.tmx",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "Alla filer (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "AnnetteHouseInside.tmx": {
+            "scale": 0.9594999999999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 399.68733715476816,
+                "y": 399.6873371547681
+            }
+        },
+        "AnnetteHouseInside.tmx#ElliottHouseTiles": {
+            "scaleInDock": 1
+        },
+        "AnnetteHouseInside.tmx#pirates_tilesheet": {
+            "scaleInDock": 1
+        },
+        "AnnetteHouseInside.tmx#summer_outdoorsTileSheet": {
+            "scaleInDock": 1
+        },
+        "AnnetteHouseInside.tmx#summer_town": {
+            "scaleInDock": 1
+        },
+        "AnnetteHouseInside.tmx#townInterior": {
+            "scaleInDock": 1
+        },
+        "AnnetteHouseInside.tmx#townInterior_2": {
+            "scaleInDock": 1
+        },
+        "AnnetteHousebundlecomplete.tmx": {
+            "scale": 4.797499999999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 79.93746743095363,
+                "y": 104.32516935904118
+            }
+        },
+        "AnnetteHousebundlecomplete.tmx#townInterior": {
+            "scaleInDock": 1
+        },
+        "AnnetteHousebundlecomplete.tmx#townInterior_2": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin": {
+            "scale": 0.8142857142857142,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 120.35087719298258,
+                "y": 279.38596491228077
+            }
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#p": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#untitled tile sheet": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#v16_TownInterior_2": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#zVanillaCraftables": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#zVanillaFurniture": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#zVanillaWallsAndFloors": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#z_SVEbuildingShadow": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#z_WizardTowerLights": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#zspring_z_extras": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#ztownInterior_2": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/Alesia_WarpRoom.tbin": {
+            "scale": 5.318303571428571,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 56.032905229581125,
+                "y": 56.03290522958113
+            }
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/Alesia_WarpRoom.tbin#paths": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/Alesia_WarpRoom.tbin#spring_outdoorsTileSheet": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/Alesia_WarpRoom.tbin#spring_town": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/Alesia_WarpRoom.tbin#spring_z_extras": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/ForbiddenMaze.tmx": {
+            "scale": 0.3075320512820513,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1209.6300156331422,
+                "y": 952.74622199062
+            }
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/ForbiddenMaze.tmx#ForbiddenMaze_Darkness": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/ForbiddenMaze.tmx#ForbiddenMaze_Shadow": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/ForbiddenMaze.tmx#paths": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/ForbiddenMaze.tmx#spring_Shadows": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/ForbiddenMaze.tmx#swamptiles": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/ForbiddenMaze.tmx#z_SVEbuildingShadow": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/SpouseRooms/WizardsRoom.tbin": {
+            "scale": 2.7075,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 60.57248384118188,
+                "y": 84.39519852262234
+            }
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/SpouseRooms/WizardsRoom.tbin#VanillaCraftables": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/SpouseRooms/WizardsRoom.tbin#VanillaFurniture": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/SpouseRooms/WizardsRoom.tbin#indoor": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/SpouseRooms/WizardsRoom.tbin#paths": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/SpouseRooms/WizardsRoom.tbin#spring_z_extras": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/Forest.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 248,
+                "y": 185.25
+            }
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/Forest.tmx#Paths": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/Forest.tmx#outdoors": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/Forest.tmx#untitled tile sheet2": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/Forest.tmx#v16_Shadows": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/Forest.tmx#v16_Waterfalls": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/Forest.tmx#zGrandpasFarm_CanopyShadow": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/Forest.tmx#zGrandpasFarm_UnderCanopyShadow": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/Forest.tmx#z_SVEbuildingShadow": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/Forest.tmx#z_outdoors2": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/Forest.tmx#zspring_SVE_Tilesheet2": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/Forest.tmx#zspring_beach": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/Forest.tmx#zspring_island_tilesheet_1": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/Forest.tmx#zspring_town": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/Forest.tmx#zspring_z_extras": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouseBasement.tmx": {
+            "scale": 3.8801562499999993,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 156.952442314662,
+                "y": 87.10989409253817
+            }
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouseBasement.tmx#indoor2": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouseBasement.tmx#paths": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouseBasement.tmx#wizardhouse": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouseBasement.tmx#zspring_Shadows": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/MapPatches/DeepWoodsCompatibility.tmx": {
+            "scale": 2.375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 87.78947368421055,
+                "y": 96
+            }
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/MapPatches/DeepWoodsCompatibility.tmx#CastleVillage_Tilesheet": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/MapPatches/DeepWoodsCompatibility.tmx#Paths": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/MapPatches/DeepWoodsCompatibility.tmx#untitled tile sheet": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/MapPatches/WoodsFaerieForageSVEPatch.tmx": {
+            "scale": 3.7228125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 104.0879711239822,
+                "y": 128.39754889616387
+            }
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/MapPatches/WoodsFaerieForageSVEPatch.tmx#Paths": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/MapPatches/WoodsFaerieForageSVEPatch.tmx#untitled tile sheet": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/MapPatches/WoodsFaerieForageSVEPatch.tmx#z_SVEbuildingShadow": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/MapPatches/WoodsFaerieForageSVEPatch.tmx#zspring_RedBaneberry_Tilesheet": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/MapPatches/WoodsFaerieForageSVEPatch.tmx#zspring_town": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/MapPatches/WoodsFaerieForageSVEPatch.tmx#zspring_z_Waterfalls": {
+            "scaleInDock": 1
+        },
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Maps/MapPatches/WoodsFaerieForageSVEPatch.tmx#zspring_z_extras": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Documents/Annette/Maps/CustomMoonvillage.tmx": {
+            "scale": 0.47974999999999995,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 803.5435122459614,
+                "y": 1315.2683689421574
+            }
+        },
+        "C:/Users/Joel_/Documents/Annette/Maps/CustomMoonvillage.tmx#island_tilesheet_1": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Documents/Annette/Maps/CustomMoonvillage.tmx#moon_house": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Documents/Annette/Maps/CustomMoonvillage.tmx#paths": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Documents/Annette/Maps/CustomMoonvillage.tmx#pirates_tilesheet": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Documents/Annette/Maps/CustomMoonvillage.tmx#summer_outdoorTileSheet_extra": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Documents/Annette/Maps/CustomMoonvillage.tmx#summer_outdoorsTileSheet": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Documents/Annette/Maps/CustomMoonvillage.tmx#summer_town": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Documents/Annette/Maps/CustomMoonvillage.tmx#townInterior": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Documents/Annette/Maps/CustomMoonvillage.tmx#townInterior_2": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/Forest.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 318,
+                "y": 268.75
+            }
+        },
+        "C:/Users/Joel_/Downloads/Forest.tmx#Paths": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/Forest.tmx#outdoors": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/Forest.tmx#untitled tile sheet2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/Forest.tmx#v16_Shadows": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/Forest.tmx#v16_Waterfalls": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/Forest.tmx#zGrandpasFarm_CanopyShadow": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/Forest.tmx#zGrandpasFarm_UnderCanopyShadow": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/Forest.tmx#z_SVEbuildingShadow": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/Forest.tmx#z_outdoors2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/Forest.tmx#zspring_SVE_Tilesheet2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/Forest.tmx#zspring_beach": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/Forest.tmx#zspring_island_tilesheet_1": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/Forest.tmx#zspring_town": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/Forest.tmx#zspring_z_extras": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPathWESTFOREST.tmx": {
+            "scale": 3.5625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 63.85964912280703,
+                "y": 100.91228070175438
+            }
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPathWESTFOREST.tmx#Paths": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPathWESTFOREST.tmx#untitled tile sheet": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPathWESTFOREST.tmx#v16_Outdoors2": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPathWESTFOREST.tmx#z_Azathii_ForgottenWoods": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPeak.tmx": {
+            "scale": 0.9594999999999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 387.1808233454925,
+                "y": 211.56852527358004
+            }
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPeak.tmx#Paths": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPeak.tmx#Z_spring_town": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPeak.tmx#outdoors": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPeak.tmx#untitled tile sheet2": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPeak.tmx#v16_Shadows": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPeak.tmx#v16_Waterfalls": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPeak.tmx#z_Forgotten Woods": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPeak.tmx#z_panorama": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPeak.tmx#z_spring_daisyextras": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPicnic.tmx": {
+            "scale": 1.2409374999999998,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 159.9597078821456,
+                "y": 312.6668345504911
+            }
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPicnic.tmx#Paths": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPicnic.tmx#Z_spring_town": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPicnic.tmx#outdoors": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPicnic.tmx#untitled tile sheet2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPicnic.tmx#v16_Shadows": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPicnic.tmx#v16_Waterfalls": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPicnic.tmx#z_Forgotten Woods": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPicnic.tmx#z_spring_daisyextras": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/Woods2.tmx": {
+            "scale": 2,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 1231.5,
+                "y": 988.75
+            }
+        },
+        "C:/Users/Joel_/Downloads/Woods2.tmx#Paths": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/Woods2.tmx#untitled tile sheet": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/Woods2.tmx#v16_Outdoors2": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/Woods2.tmx#v16_Shadows": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/Woods2.tmx#v16_Waterfalls": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/Woods2.tmx#zspring_RedBaneberry_Tilesheet": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Joel_/Downloads/Woods2.tmx#zspring_island_tilesheet_1": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/Woods2.tmx#zspring_town": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Joel_/Downloads/Woods2.tmx#zspring_z_extras": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "CustomMoonvillage.tbin": {
+            "scale": 3,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 240,
+                "y": 159.83333333333331
+            }
+        },
+        "CustomMoonvillage.tbin#summer_outdoorsTileSheet": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx": {
+            "scale": 3,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 456,
+                "y": 496.49999999999994
+            }
+        },
+        "CustomMoonvillage.tmx#Festivals": {
+            "scaleInDock": 1.5
+        },
+        "CustomMoonvillage.tmx#Inn": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#Paths": {
+            "scaleInDock": 1.5
+        },
+        "CustomMoonvillage.tmx#Store": {
+            "scaleInDock": 1.5
+        },
+        "CustomMoonvillage.tmx#Storev2": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#Townhall": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#Townhallv6-1.png": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#Townhallv9": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#castle3": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#farmbuilding": {
+            "scaleInDock": 1.5
+        },
+        "CustomMoonvillage.tmx#island_tilesheet_1": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#moon_house": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#oldmoonin": {
+            "scaleInDock": 1.5
+        },
+        "CustomMoonvillage.tmx#paths": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#pirates_tilesheet": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#storev2": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#summer_outdoorTileSheet_extra": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#summer_outdoorsTileSheet": {
+            "scaleInDock": 1.5
+        },
+        "CustomMoonvillage.tmx#summer_town": {
+            "scaleInDock": 1.5
+        },
+        "CustomMoonvillage.tmx#summer_z_extras": {
+            "scaleInDock": 1.5
+        },
+        "CustomMoonvillage.tmx#test-removebg-preview": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "CustomMoonvillage.tmx#townInterior": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#townInterior_2": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#townhall": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "CustomMoonvillage.tmx#townhallv5-removebg-preview-1.png": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#untitled tile sheet": {
+            "scaleInDock": 1.5
+        },
+        "CustomMoonvillage.tmx#v16_Outdoors2": {
+            "scaleInDock": 1.5
+        },
+        "CustomMoonvillage.tmx#v16_Shadows": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#v16_Waterfalls": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#wizardtower2": {
+            "scaleInDock": 1
+        },
+        "CustomMoonvillage.tmx#z_SVEbuildingShadow": {
+            "scaleInDock": 1.5
+        },
+        "CustomMoonvillage.tmx#zspring_RedBaneberry_Tilesheet": {
+            "scaleInDock": 1.5
+        },
+        "CustomMoonvillage.tmx#zspring_island_tilesheet_1": {
+            "scaleInDock": 1.5
+        },
+        "CustomMoonvillage.tmx#zspring_town": {
+            "scaleInDock": 1.5
+        },
+        "CustomMoonvillage.tmx#zspring_z_extras": {
+            "scaleInDock": 1.5
+        },
+        "Forestv2.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 16,
+            "viewCenter": {
+                "x": 682.6666666666666,
+                "y": 337.66666666666663
+            }
+        },
+        "Forestv2.tmx#Paths": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Forestv2.tmx#outdoors": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Forestv2.tmx#untitled tile sheet2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Forestv2.tmx#v16_Shadows": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "Forestv2.tmx#v16_Waterfalls": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Forestv2.tmx#zGrandpasFarm_CanopyShadow": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Forestv2.tmx#zGrandpasFarm_UnderCanopyShadow": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Forestv2.tmx#z_SVEbuildingShadow": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Forestv2.tmx#z_outdoors2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Forestv2.tmx#zspring_SVE_Tilesheet2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Forestv2.tmx#zspring_beach": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Forestv2.tmx#zspring_island_tilesheet_1": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Forestv2.tmx#zspring_town": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Forestv2.tmx#zspring_z_extras": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "ForgottenFarm.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 712.6666666666665,
+                "y": 64.33333333333331
+            }
+        },
+        "ForgottenFarm.tmx#Paths": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "ForgottenFarm.tmx#Z_spring_town": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "ForgottenFarm.tmx#outdoors": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "ForgottenFarm.tmx#untitled tile sheet2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "ForgottenFarm.tmx#v16_Shadows": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "ForgottenFarm.tmx#v16_Waterfalls": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "ForgottenFarm.tmx#z_Azathii_ForgottenWoods2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "ForgottenFarm.tmx#z_Forgotten Woods": {
+            "scaleInDock": 1
+        },
+        "ForgottenFarm.tmx#z_spring_beach": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "ForgottenFarm.tmx#z_spring_daisyextras": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Lance_WarpRoom.tbin": {
+            "scale": 5.318303571428571,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 56.032905229581125,
+                "y": 60.921682195920425
+            }
+        },
+        "Lance_WarpRoom.tbin#paths": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Lance_WarpRoom.tbin#spring_outdoorsTileSheet": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Lance_WarpRoom.tbin#spring_town": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Lance_WarpRoom.tbin#spring_z_extras": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Mazequest.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1620,
+                "y": -31
+            }
+        },
+        "Mazequest.tmx#Festivals": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "Mazequest.tmx#Town": {
+            "scaleInDock": 1
+        },
+        "Mazequest.tmx#spring_outdoorsTileSheet": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "Mazequest.tmx#summer_outdoorsTileSheet": {
+            "scaleInDock": 1
+        },
+        "Mazequest.tmx#v16_Shadows": {
+            "scaleInDock": 1
+        },
+        "Mazequest.tmx#zLandscape": {
+            "scaleInDock": 1
+        },
+        "Mazequest.tmx#zPaths": {
+            "scaleInDock": 1
+        },
+        "Moongrocery.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 280.5,
+                "y": 540.25
+            }
+        },
+        "Moongrocery.tmx#summer_z_extras": {
+            "scaleInDock": 1
+        },
+        "Moongrocery.tmx#townInterior": {
+            "scaleInDock": 1.5
+        },
+        "Moongrocery.tmx#townInterior_2": {
+            "scaleInDock": 1
+        },
+        "MoongroceryBundlecomplete.tmx": {
+            "expandedObjectLayers": [
+                7
+            ],
+            "scale": 1.1993749999999999,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 240.1250651380928,
+                "y": 319.7498697238146
+            }
+        },
+        "MoongroceryBundlecomplete.tmx#townInterior": {
+            "scaleInDock": 1
+        },
+        "MoongroceryBundlecomplete.tmx#townInterior_2": {
+            "scaleInDock": 1
+        },
+        "Moonvillage.tmx": {
+            "scale": 2,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 151.5,
+                "y": 417.25
+            }
+        },
+        "Moonvillage.tmx#island_tilesheet_1": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Moonvillage.tmx#moon_house": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Moonvillage.tmx#paths": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Moonvillage.tmx#pirates_tilesheet": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Moonvillage.tmx#summer_outdoorTileSheet_extra": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Moonvillage.tmx#summer_outdoorsTileSheet": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Moonvillage.tmx#summer_town": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Moonvillage.tmx#townInterior": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Moonvillage.tmx#townInterior_2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 22,
+            "viewCenter": {
+                "x": 403.66666666666663,
+                "y": 274.33333333333337
+            }
+        },
+        "Town-SVE-Halloween2.tmx#Fest": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx#Landscape": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx#Paths": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx#Town": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx#characters": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx#v16_Shadows": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx#v16_Waterfalls": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx#v16_landscape2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx#zLandscape": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx#zPaths": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx#zTown": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx#z_SVEbuildingShadow": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx#zspring_beach": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx#zspring_island_tilesheet_1": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx#zspring_z_extras": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx#ztownInterior_2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town-SVE-Halloween2.tmx#zv16_landscape2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 901.3333333333333,
+                "y": 343.66666666666663
+            }
+        },
+        "Town.tmx#Landscape": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town.tmx#Paths": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town.tmx#Town": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town.tmx#pixellab-use-blue-stone-bricks-like-a-c-1779437820162-1.png": {
+            "scaleInDock": 1
+        },
+        "Town.tmx#v16_Shadows": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town.tmx#v16_Waterfalls": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town.tmx#v16_landscape2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town.tmx#z_SVEbuildingShadow": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town.tmx#zspring_SVE_Tilesheet2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town.tmx#zspring_beach": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town.tmx#zspring_island_tilesheet_1": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Town.tmx#zspring_z_extras": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Woods2.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 720.6666666666665,
+                "y": 600.3333333333333
+            }
+        },
+        "Woods2.tmx#Paths": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Woods2.tmx#untitled tile sheet": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Woods2.tmx#v16_Outdoors2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Woods2.tmx#v16_Shadows": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Woods2.tmx#v16_Waterfalls": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Woods2.tmx#zspring_RedBaneberry_Tilesheet": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Woods2.tmx#zspring_island_tilesheet_1": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Woods2.tmx#zspring_town": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Woods2.tmx#zspring_z_extras": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Woodsedits.tmx": {
+            "scale": 2,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 367,
+                "y": 151.75
+            }
+        },
+        "Woodsedits.tmx#JojaEmporiumWarpCircle": {
+            "scaleInDock": 1
+        },
+        "Woodsedits.tmx#summer_SVE_Tilesheet2": {
+            "scaleInDock": 1
+        },
+        "Woodsedits.tmx#summer_outdoorsTileSheet2": {
+            "scaleInDock": 1
+        },
+        "Woodsedits.tmx#untitled tile sheet": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Woodsedits.tmx#zspring_town": {
+            "scaleInDock": 1
+        },
+        "herbhouse.tmx": {
+            "scale": 4.797499999999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 119.12454403335072,
+                "y": 79.93746743095363
+            }
+        },
+        "herbhouse.tmx#townInterior": {
+            "scaleInDock": 1
+        },
+        "herbhouse.tmx#townInterior_2": {
+            "scaleInDock": 1
+        },
+        "wizardfary.tmx": {
+            "scale": 2,
+            "selectedLayer": 9,
+            "viewCenter": {
+                "x": 248,
+                "y": 243.25
+            }
+        },
+        "wizardfary.tmx#Mushroom1": {
+            "scaleInDock": 1
+        },
+        "wizardfary.tmx#Paths": {
+            "scaleInDock": 1
+        },
+        "wizardfary.tmx#outdoors": {
+            "scaleInDock": 1
+        },
+        "wizardfary.tmx#untitled tile sheet2": {
+            "scaleInDock": 1
+        },
+        "wizardfary.tmx#v16_Shadows": {
+            "scaleInDock": 1
+        },
+        "wizardfary.tmx#wizardtower2": {
+            "scaleInDock": 1
+        },
+        "wizardfary.tmx#z_SVEbuildingShadow": {
+            "scaleInDock": 1
+        },
+        "wizardfary.tmx#zspring_SVE_Tilesheet2": {
+            "scaleInDock": 1
+        },
+        "wizardfary.tmx#zspring_island_tilesheet_1": {
+            "scaleInDock": 1
+        },
+        "wizardfary.tmx#zspring_town": {
+            "scaleInDock": 1
+        },
+        "wizardfary.tmx#zspring_z_extras": {
+            "scaleInDock": 1
+        }
+    },
+    "last.exportedFilePath": "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/[CP] Annette/[CP] Moonvillage/assets/Maps",
+    "last.externalTilesetPath": "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/[CP] Annette/[CP] Moonvillage/assets/Maps/Tilesheet",
+    "last.imagePath": "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/[CP] Annette/[CP] Moonvillage/assets/Maps/Tilesheet",
+    "map.height": 50,
+    "map.lastUsedExportFilter": "Alla filer (*)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 50,
+    "openFiles": [
+        "CustomMoonvillage.tmx"
+    ],
+    "project": "Moonvillage.tiled-project",
+    "recentFiles": [
+        "CustomMoonvillage.tmx",
+        "Town.tmx",
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin",
+        "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/SpouseRooms/WizardsRoom.tbin",
+        "Forestv2.tmx",
+        "ForgottenFarm.tmx",
+        "wizardfary.tmx",
+        "Woodsedits.tmx",
+        "Woods2.tmx",
+        "Mazequest.tmx",
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPicnic.tmx",
+        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPeak.tmx"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.lastUsedFilter": "Alla filer (*)",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
