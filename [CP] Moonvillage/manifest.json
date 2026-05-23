@@ -1,0 +1,30 @@
+{
+  "Name": "Moon Village",
+  "Author": "Joel Hjertstedt",
+  "Version": "2.2.1",
+  "Description": "Adds a new custom NPC and content to Moonvillage.",
+  "UniqueID": "Moonvillage.AnnetteNPC",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "DLX.Bundles",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "spacechase0.SpaceCore",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+      "IsRequired": true
+    },
+	{
+      "UniqueID": "aedenthorn.CustomMonsters",
+      "IsRequired": true
+    }
+  ]
+}

@@ -41,7 +41,27 @@
     {
       "Name": "Custom_Moongrocery",
       "FromMapFile": "assets/Maps/Moongrocery.tmx"
-    }
+    },
+	{
+      "LogName": "Load Moon Dungeon data",
+      "Action": "Include",
+      "FromFile": "assets/Data/MoonDungeon.json"
+    },
+    {
+      "LogName": "Load Moon Dungeon spawn data",
+      "Action": "Include",
+      "FromFile": "assets/Data/MoonDungeonSpawns.json"
+    },
+    {
+      "LogName": "Patch Annette house dungeon door",
+      "Action": "Include",
+      "FromFile": "assets/Maps/AnnetteHouseInside_DungeonDoor.json"
+    },
+	{
+      "LogName": "Load Moon Dungeon maps",
+      "Action": "Include",
+      "FromFile": "assets/Data/MoonDungeonMapLoads.json"
+    },
   ],
 
   "Changes": [
@@ -52,6 +72,10 @@
     { "LogName": "Ladda in AnnetteHouseInside-ändringar", "Action": "Include", "FromFile": "assets/Maps/AnnetteHouseInside_Edits.json" },
     { "LogName": "Ladda in Wizardfary-ändringar", "Action": "Include", "FromFile": "assets/Maps/wizardfary_Edits.json" },
 	{ "LogName": "Ladda in BusStop-ändringar", "Action": "Include", "FromFile": "assets/Maps/BusStop_Edits.json" },
+	{ "LogName": "Ladda in AnnetteHouseInside-ändringar", "Action": "Include", "FromFile": "assets/Maps/AnnetteHouseInside_Edits.json" },
+    { "LogName": "Patch Annette house dungeon door", "Action": "Include", "FromFile": "assets/Maps/AnnetteHouseInside_DungeonDoor.json" },
+    { "LogName": "Load Moon Dungeon data", "Action": "Include", "FromFile": "assets/Data/MoonDungeon.json" },
+    { "LogName": "Load Moon Dungeon spawn data", "Action": "Include", "FromFile": "assets/Data/MoonDungeonSpawns.json" },
 
     /* --- 2. INKLUDERA DATA OCH KARAKTÄRER --- */
     { "LogName": "Ladda in Bundles", "Action": "Include", "FromFile": "assets/Data/Bundles.json" },
