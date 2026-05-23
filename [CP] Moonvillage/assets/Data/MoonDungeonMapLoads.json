@@ -1,0 +1,46 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Moon Dungeon early map 01",
+      "Action": "Load",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_early_01",
+      "FromFile": "assets/Maps/Dungeon/moon_dungeon_early_01.tmx"
+    },
+    {
+      "LogName": "Load Moon Dungeon early map 02",
+      "Action": "Load",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_early_02",
+      "FromFile": "assets/Maps/Dungeon/moon_dungeon_early_02.tmx"
+    },
+    {
+      "LogName": "Load Moon Dungeon crystal map 01",
+      "Action": "Load",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_crystal_01",
+      "FromFile": "assets/Maps/Dungeon/moon_dungeon_crystal_01.tmx"
+    },
+    {
+      "LogName": "Load Moon Dungeon crystal map 02",
+      "Action": "Load",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_crystal_02",
+      "FromFile": "assets/Maps/Dungeon/moon_dungeon_crystal_02.tmx"
+    },
+    {
+      "LogName": "Load Moon Dungeon deep map 01",
+      "Action": "Load",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_deep_01",
+      "FromFile": "assets/Maps/Dungeon/moon_dungeon_deep_01.tmx"
+    },
+    {
+      "LogName": "Load Moon Dungeon deep map 02",
+      "Action": "Load",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_deep_02",
+      "FromFile": "assets/Maps/Dungeon/moon_dungeon_deep_02.tmx"
+    },
+    {
+      "LogName": "Load Moon Dungeon boss floor",
+      "Action": "Load",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_boss_50",
+      "FromFile": "assets/Maps/Dungeon/moon_dungeon_boss_50.tmx"
+    }
+  ]
+}

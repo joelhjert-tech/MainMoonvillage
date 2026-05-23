@@ -1,0 +1,279 @@
+{
+  "Changes": [
+    {
+      "LogName": "Moon Dungeon spawn definitions",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/SpawnableDefinitions",
+      "Entries": {
+        "Moonvillage.AnnetteNPC_MoonDungeonStone": {
+          "Type": "Minable",
+          "MinableTool": "Pickaxe",
+          "MinableObjectId": "343",
+          "MinableHealth": 2,
+          "MinableExperienceGranted": 1,
+          "MinableDrops": [
+            [
+              {
+                "ItemId": "(O)390",
+                "MinimumStack": 1,
+                "MaximumStack": 2,
+                "Weight": 1.0
+              }
+            ]
+          ]
+        },
+
+        "Moonvillage.AnnetteNPC_MoonDungeonBat": {
+          "Type": "Monster",
+          "MonsterType": "Bat",
+          "MonsterTextureOverride": "Characters/Monsters/MoonBat_Unique",
+          "MonsterDropOverride": [
+            [
+              {
+                "ItemId": "(O)769",
+                "MinimumStack": 1,
+                "MaximumStack": 1,
+                "Weight": 1.0
+              }
+            ]
+          ]
+        },
+
+        "Moonvillage.AnnetteNPC_MoonDungeonSlime": {
+          "Type": "Monster",
+          "MonsterType": "GreenSlime",
+          "MonsterAdditionalData": {
+            "GreenSlime": {
+              "Color": { "R": 120, "G": 80, "B": 180 }
+            }
+          }
+        },
+
+        "Moonvillage.AnnetteNPC_MoonDungeonCrate": {
+          "Type": "Breakable",
+          "BreakableBigCraftableId": "118",
+          "BreakableHealth": 2,
+          "BreakableDrops": [
+            [
+              {
+                "ItemId": "(O)390",
+                "MinimumStack": 1,
+                "MaximumStack": 5,
+                "Weight": 1.0
+              },
+              {
+                "ItemId": "(O)382",
+                "MinimumStack": 1,
+                "MaximumStack": 1,
+                "Weight": 0.2
+              }
+            ]
+          ]
+        },
+
+        "Moonvillage.AnnetteNPC_MoonDungeonChest": {
+          "Type": "LootChest",
+          "LootChestBigCraftableId": "130",
+          "LootChestDrops": [
+            [
+              {
+                "ItemId": "(O)72",
+                "MinimumStack": 1,
+                "MaximumStack": 1,
+                "Weight": 0.2
+              },
+              {
+                "ItemId": "(O)535",
+                "MinimumStack": 1,
+                "MaximumStack": 2,
+                "Weight": 0.6
+              },
+              {
+                "ItemId": "(O)749",
+                "MinimumStack": 1,
+                "MaximumStack": 2,
+                "Weight": 0.6
+              }
+            ]
+          ]
+        }
+      }
+    },
+
+    {
+      "LogName": "Moon Dungeon spawn groups",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/SpawningGroups",
+      "Entries": {
+        "Moonvillage.AnnetteNPC_MoonDungeonEarlyGroup": {
+          "SpawnablesToSpawn": [
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonStone"
+                }
+              ],
+              "Minimum": 20,
+              "Maximum": 35
+            },
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonBat"
+                },
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonSlime"
+                }
+              ],
+              "Minimum": 3,
+              "Maximum": 7
+            },
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonCrate"
+                }
+              ],
+              "Minimum": 2,
+              "Maximum": 5
+            }
+          ]
+        },
+
+        "Moonvillage.AnnetteNPC_MoonDungeonCrystalGroup": {
+          "SpawnablesToSpawn": [
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonStone"
+                }
+              ],
+              "Minimum": 25,
+              "Maximum": 45
+            },
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonBat"
+                },
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonSlime"
+                }
+              ],
+              "Minimum": 6,
+              "Maximum": 10
+            }
+          ]
+        },
+
+        "Moonvillage.AnnetteNPC_MoonDungeonDeepGroup": {
+          "SpawnablesToSpawn": [
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonStone"
+                }
+              ],
+              "Minimum": 35,
+              "Maximum": 60
+            },
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonBat"
+                },
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonSlime"
+                }
+              ],
+              "Minimum": 8,
+              "Maximum": 14
+            },
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonChest"
+                }
+              ],
+              "Minimum": 0,
+              "Maximum": 1
+            }
+          ]
+        },
+
+        "Moonvillage.AnnetteNPC_MoonDungeonBossGroup": {
+          "SpawnablesToSpawn": [
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonChest"
+                }
+              ],
+              "Minimum": 1,
+              "Maximum": 1
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "LogName": "Moon Dungeon trigger actions",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "Moonvillage.AnnetteNPC_MoonDungeonEarlySpawns": {
+          "Id": "Moonvillage.AnnetteNPC_MoonDungeonEarlySpawns",
+          "Trigger": "Manual",
+          "Actions": [
+            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonEarlyGroup Target"
+          ],
+          "HostOnly": true,
+          "MarkActionApplied": false
+        },
+
+        "Moonvillage.AnnetteNPC_MoonDungeonCrystalSpawns": {
+          "Id": "Moonvillage.AnnetteNPC_MoonDungeonCrystalSpawns",
+          "Trigger": "Manual",
+          "Actions": [
+            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonCrystalGroup Target"
+          ],
+          "HostOnly": true,
+          "MarkActionApplied": false
+        },
+
+        "Moonvillage.AnnetteNPC_MoonDungeonDeepSpawns": {
+          "Id": "Moonvillage.AnnetteNPC_MoonDungeonDeepSpawns",
+          "Trigger": "Manual",
+          "Actions": [
+            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonDeepGroup Target"
+          ],
+          "HostOnly": true,
+          "MarkActionApplied": false
+        },
+
+        "Moonvillage.AnnetteNPC_MoonDungeonBossSpawns": {
+          "Id": "Moonvillage.AnnetteNPC_MoonDungeonBossSpawns",
+          "Trigger": "Manual",
+          "Actions": [
+            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonBossGroup Target"
+          ],
+          "HostOnly": true,
+          "MarkActionApplied": false
+        }
+      }
+    }
+  ]
+}

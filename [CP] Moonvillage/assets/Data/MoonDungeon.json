@@ -1,0 +1,23 @@
+{
+  "Changes": [
+    {
+      "LogName": "Register Moonvillage Moon Dungeon",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/Dungeons",
+      "Entries": {
+        "Moonvillage.AnnetteNPC_MoonDungeon": {
+          "ViewportFollowsPlayer": true,
+          "LadderExitLocation": "Custom_AnnetteHouseInside",
+          "LadderExitTile": "31, 15",
+          "ElevatorExitLocation": "Custom_AnnetteHouseInside",
+          "ElevatorExitTile": "31, 15",
+          "FloorsWithElevator": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50],
+          "SpawnLadders": true,
+          "SpawnMineshafts": false,
+          "AdditionalTimeMilliseconds": 2000,
+          "Regions": {}
+        }
+      }
+    }
+  ]
+}
