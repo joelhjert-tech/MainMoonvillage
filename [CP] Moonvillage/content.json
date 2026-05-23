@@ -64,6 +64,11 @@
       "FromFile": "assets/Maps/AnnetteHouseInside_Edits.json"
     },
     {
+      "LogName": "Patch Annette house dungeon door",
+      "Action": "Include",
+      "FromFile": "assets/Maps/AnnetteHouseInside_DungeonDoor.json"
+    },
+    {
       "LogName": "Ladda in Wizardfary-ändringar",
       "Action": "Include",
       "FromFile": "assets/Maps/wizardfary_Edits.json"
