@@ -5,24 +5,25 @@
     "file.lastUsedOpenFilter": "Alla filer (*)",
     "fileStates": {
         "": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "AnnetteHouseInside.tmx": {
-            "scale": 0.9594999999999999,
-            "selectedLayer": 0,
+            "scale": 2,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 399.68733715476816,
-                "y": 399.6873371547681
+                "x": 236.5,
+                "y": 400.25
             }
         },
         "AnnetteHouseInside.tmx#ElliottHouseTiles": {
-            "scaleInDock": 1
+            "scaleInDock": 2
         },
         "AnnetteHouseInside.tmx#pirates_tilesheet": {
-            "scaleInDock": 1
+            "scaleInDock": 2
         },
         "AnnetteHouseInside.tmx#summer_outdoorsTileSheet": {
-            "scaleInDock": 1
+            "scaleInDock": 2
         },
         "AnnetteHouseInside.tmx#summer_town": {
             "scaleInDock": 1
@@ -31,14 +32,14 @@
             "scaleInDock": 1
         },
         "AnnetteHouseInside.tmx#townInterior_2": {
-            "scaleInDock": 1
+            "scaleInDock": 2
         },
         "AnnetteHousebundlecomplete.tmx": {
             "scale": 4.797499999999999,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 79.93746743095363,
-                "y": 104.32516935904118
+                "x": 156.3314226159458,
+                "y": 79.93746743095365
             }
         },
         "AnnetteHousebundlecomplete.tmx#townInterior": {
@@ -515,8 +516,8 @@
             "scale": 3,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 456,
-                "y": 496.49999999999994
+                "x": 800.3333333333333,
+                "y": 479.8333333333333
             }
         },
         "CustomMoonvillage.tmx#Festivals": {
@@ -625,6 +626,75 @@
         },
         "CustomMoonvillage.tmx#zspring_z_extras": {
             "scaleInDock": 1.5
+        },
+        "Dungeon/moon_dungeon_boss_50.tmx": {
+            "scale": 0.1959375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 4516.746411483254,
+                "y": 364.9122807017543
+            }
+        },
+        "Dungeon/moon_dungeon_boss_50.tmx#Town": {
+            "scaleInDock": 1
+        },
+        "Dungeon/moon_dungeon_boss_50.tmx#summer_outdoorsTileSheet": {
+            "scaleInDock": 1
+        },
+        "Dungeon/moon_dungeon_boss_50.tmx#summer_town": {
+            "scaleInDock": 1
+        },
+        "Dungeon/moon_dungeon_boss_50.tmx#v16_Shadows": {
+            "scaleInDock": 1
+        },
+        "Dungeon/moon_dungeon_boss_50.tmx#zLandscape": {
+            "scaleInDock": 1
+        },
+        "Dungeon/moon_dungeon_boss_50.tmx#zPaths": {
+            "scaleInDock": 1
+        },
+        "Dungeon/moon_dungeon_deep_01.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 384,
+                "y": 399
+            }
+        },
+        "Dungeon/moon_dungeon_deep_01.tmx#Festivals": {
+            "scaleInDock": 1
+        },
+        "Dungeon/moon_dungeon_deep_01.tmx#Town": {
+            "scaleInDock": 1
+        },
+        "Dungeon/moon_dungeon_deep_01.tmx#spring_outdoorsTileSheet": {
+            "scaleInDock": 1
+        },
+        "Dungeon/moon_dungeon_deep_01.tmx#summer_outdoorsTileSheet": {
+            "scaleInDock": 1
+        },
+        "Dungeon/moon_dungeon_deep_01.tmx#summer_town": {
+            "scaleInDock": 1
+        },
+        "Dungeon/moon_dungeon_deep_01.tmx#v16_Shadows": {
+            "scaleInDock": 1
+        },
+        "Dungeon/moon_dungeon_deep_01.tmx#zLandscape": {
+            "scaleInDock": 1
+        },
+        "Dungeon/moon_dungeon_deep_01.tmx#zPaths": {
+            "scaleInDock": 1
+        },
+        "Dungeon/moon_dungeon_early_02.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 390,
+                "y": 233.5
+            }
+        },
+        "Dungeon/moon_dungeon_early_02.tmx#summer_town": {
+            "scaleInDock": 1
         },
         "Forestv2.tmx": {
             "scale": 1.5,
@@ -736,6 +806,32 @@
         "ForgottenFarm.tmx#z_spring_daisyextras": {
             "scaleInDock": 1,
             "scaleInEditor": 1
+        },
+        "HighlandsCavernPrison.tbin": {
+            "scale": 0.7735714285714286,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 336.1034164358265,
+                "y": 295.38319482917825
+            }
+        },
+        "HighlandsCavernPrison.tbin#HighlandsCavern_LightingTilesheet": {
+            "scaleInDock": 1
+        },
+        "HighlandsCavernPrison.tbin#HighlandsCavern_OreTilesheet": {
+            "scaleInDock": 1
+        },
+        "HighlandsCavernPrison.tbin#HighlandsCavern_ShadowTilesheet": {
+            "scaleInDock": 1
+        },
+        "HighlandsCavernPrison.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "HighlandsCavernPrison.tbin#paths": {
+            "scaleInDock": 1
+        },
+        "HighlandsCavernPrison.tbin#spring_z_extras": {
+            "scaleInDock": 1
         },
         "Lance_WarpRoom.tbin": {
             "scale": 5.318303571428571,
@@ -1126,7 +1222,7 @@
             "scaleInDock": 1
         }
     },
-    "last.exportedFilePath": "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/[CP] Annette/[CP] Moonvillage/assets/Maps",
+    "last.exportedFilePath": "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/[CP] Annette/[CP] Moonvillage/assets/Maps/Dungeon",
     "last.externalTilesetPath": "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/[CP] Annette/[CP] Moonvillage/assets/Maps/Tilesheet",
     "last.imagePath": "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/[CP] Annette/[CP] Moonvillage/assets/Maps/Tilesheet",
     "map.height": 50,
@@ -1141,17 +1237,17 @@
     "project": "Moonvillage.tiled-project",
     "recentFiles": [
         "CustomMoonvillage.tmx",
+        "AnnetteHousebundlecomplete.tmx",
+        "AnnetteHouseInside.tmx",
+        "Dungeon/moon_dungeon_deep_01.tmx",
+        "Dungeon/moon_dungeon_boss_50.tmx",
+        "Dungeon/moon_dungeon_early_02.tmx",
+        "HighlandsCavernPrison.tbin",
         "Town.tmx",
         "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin",
         "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Stardrop Installed Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/SpouseRooms/WizardsRoom.tbin",
         "Forestv2.tmx",
-        "ForgottenFarm.tmx",
-        "wizardfary.tmx",
-        "Woodsedits.tmx",
-        "Woods2.tmx",
-        "Mazequest.tmx",
-        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPicnic.tmx",
-        "C:/Users/Joel_/Downloads/The Forgotten Woods-32260-1-4-1-1775767453/[CP] [FTM] Forgotten Woods/[CP] The Forgotten Woods/assets/Maps/ForgottenPeak.tmx"
+        "ForgottenFarm.tmx"
     ],
     "tileset.embedInMap": true,
     "tileset.lastUsedFilter": "Alla filer (*)",

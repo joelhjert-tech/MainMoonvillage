@@ -1,0 +1,13 @@
+{
+  "Changes": [
+    {
+      "LogName": "Set SpaceCore dungeon map properties for moon_dungeon_early_02",
+      "Action": "EditMap",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_early_02",
+      "MapProperties": {
+        "spacechase0.SpaceCore_DungeonLadderEntrance": "5 5",
+        "spacechase0.SpaceCore_DungeonElevatorEntrance": "5 5"
+      }
+    }
+  ]
+}
