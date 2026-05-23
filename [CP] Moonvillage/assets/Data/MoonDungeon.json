@@ -7,20 +7,29 @@
       "Entries": {
         "Moonvillage.AnnetteNPC_MoonDungeon": {
           "ViewportFollowsPlayer": true,
-
           "LadderExitLocation": "Custom_AnnetteHouseInside",
           "LadderExitTile": "31, 15",
-
           "ElevatorExitLocation": "Custom_AnnetteHouseInside",
           "ElevatorExitTile": "31, 15",
-
-          "FloorsWithElevator": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50],
-
+          "FloorsWithElevator": [
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40,
+            45,
+            50
+          ],
           "SpawnLadders": true,
           "SpawnMineshafts": false,
-
+          "LadderTileSheet": "Maps/Mines/mine_desert",
+          "LadderTileIndex": 173,
+          "MineshaftTileSheet": "Maps/Mines/mine_desert",
+          "MineshaftTileIndex": 174,
           "AdditionalTimeMilliseconds": 2000,
-
           "Regions": {
             "EarlyMoonDungeon": {
               "LevelRange": {
@@ -37,10 +46,11 @@
                   "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_early_02"
                 }
               ],
-              "TriggerActionsOnEntry": [],
+              "TriggerActionsOnEntry": [
+                "Moonvillage.AnnetteNPC_MoonDungeonEarlySpawns"
+              ],
               "LocationDataEntry": "UndergroundMine"
             },
-
             "CrystalMoonDungeon": {
               "LevelRange": {
                 "Begin": 11,
@@ -56,10 +66,11 @@
                   "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_crystal_02"
                 }
               ],
-              "TriggerActionsOnEntry": [],
+              "TriggerActionsOnEntry": [
+                "Moonvillage.AnnetteNPC_MoonDungeonCrystalSpawns"
+              ],
               "LocationDataEntry": "UndergroundMine"
             },
-
             "DeepMoonDungeon": {
               "LevelRange": {
                 "Begin": 26,
@@ -75,10 +86,11 @@
                   "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_deep_02"
                 }
               ],
-              "TriggerActionsOnEntry": [],
+              "TriggerActionsOnEntry": [
+                "Moonvillage.AnnetteNPC_MoonDungeonDeepSpawns"
+              ],
               "LocationDataEntry": "UndergroundMine"
             },
-
             "MoonDungeonBoss": {
               "LevelRange": {
                 "Begin": 50,
@@ -90,7 +102,9 @@
                   "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_boss_50"
                 }
               ],
-              "TriggerActionsOnEntry": [],
+              "TriggerActionsOnEntry": [
+                "Moonvillage.AnnetteNPC_MoonDungeonBossSpawns"
+              ],
               "LocationDataEntry": "UndergroundMine"
             }
           }

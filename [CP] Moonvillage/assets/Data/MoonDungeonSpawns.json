@@ -1,7 +1,7 @@
 {
   "Changes": [
     {
-      "LogName": "Moon Dungeon spawn definitions",
+      "LogName": "Moon Dungeon spawnable definitions",
       "Action": "EditData",
       "Target": "spacechase0.SpaceCore/SpawnableDefinitions",
       "Entries": {
@@ -16,39 +16,37 @@
               {
                 "ItemId": "(O)390",
                 "MinimumStack": 1,
-                "MaximumStack": 2,
+                "MaximumStack": 3,
                 "Weight": 1.0
               }
             ]
           ]
         },
-
-        "Moonvillage.AnnetteNPC_MoonDungeonBat": {
-          "Type": "Monster",
-          "MonsterType": "Bat",
-          "MonsterTextureOverride": "Characters/Monsters/MoonBat_Unique",
-          "MonsterDropOverride": [
+        "Moonvillage.AnnetteNPC_MoonDungeonCopperNode": {
+          "Type": "Minable",
+          "MinableTool": "Pickaxe",
+          "MinableObjectId": "751",
+          "MinableHealth": 3,
+          "MinableExperienceGranted": 5,
+          "MinableDrops": [
             [
               {
-                "ItemId": "(O)769",
+                "ItemId": "(O)378",
                 "MinimumStack": 1,
-                "MaximumStack": 1,
+                "MaximumStack": 3,
                 "Weight": 1.0
               }
             ]
           ]
         },
-
+        "Moonvillage.AnnetteNPC_MoonDungeonBat": {
+          "Type": "Monster",
+          "MonsterType": "Bat"
+        },
         "Moonvillage.AnnetteNPC_MoonDungeonSlime": {
           "Type": "Monster",
-          "MonsterType": "GreenSlime",
-          "MonsterAdditionalData": {
-            "GreenSlime": {
-              "Color": { "R": 120, "G": 80, "B": 180 }
-            }
-          }
+          "MonsterType": "GreenSlime"
         },
-
         "Moonvillage.AnnetteNPC_MoonDungeonCrate": {
           "Type": "Breakable",
           "BreakableBigCraftableId": "118",
@@ -70,7 +68,6 @@
             ]
           ]
         },
-
         "Moonvillage.AnnetteNPC_MoonDungeonChest": {
           "Type": "LootChest",
           "LootChestBigCraftableId": "130",
@@ -99,7 +96,6 @@
         }
       }
     },
-
     {
       "LogName": "Moon Dungeon spawn groups",
       "Action": "EditData",
@@ -116,6 +112,16 @@
               ],
               "Minimum": 20,
               "Maximum": 35
+            },
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonCopperNode"
+                }
+              ],
+              "Minimum": 3,
+              "Maximum": 8
             },
             {
               "SpawnableIds": [
@@ -143,7 +149,6 @@
             }
           ]
         },
-
         "Moonvillage.AnnetteNPC_MoonDungeonCrystalGroup": {
           "SpawnablesToSpawn": [
             {
@@ -151,9 +156,13 @@
                 {
                   "Weight": 1.0,
                   "Value": "Moonvillage.AnnetteNPC_MoonDungeonStone"
+                },
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonCopperNode"
                 }
               ],
-              "Minimum": 25,
+              "Minimum": 30,
               "Maximum": 45
             },
             {
@@ -169,10 +178,19 @@
               ],
               "Minimum": 6,
               "Maximum": 10
+            },
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonCrate"
+                }
+              ],
+              "Minimum": 3,
+              "Maximum": 7
             }
           ]
         },
-
         "Moonvillage.AnnetteNPC_MoonDungeonDeepGroup": {
           "SpawnablesToSpawn": [
             {
@@ -180,9 +198,13 @@
                 {
                   "Weight": 1.0,
                   "Value": "Moonvillage.AnnetteNPC_MoonDungeonStone"
+                },
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonCopperNode"
                 }
               ],
-              "Minimum": 35,
+              "Minimum": 40,
               "Maximum": 60
             },
             {
@@ -211,9 +233,18 @@
             }
           ]
         },
-
         "Moonvillage.AnnetteNPC_MoonDungeonBossGroup": {
           "SpawnablesToSpawn": [
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonStone"
+                }
+              ],
+              "Minimum": 10,
+              "Maximum": 20
+            },
             {
               "SpawnableIds": [
                 {
@@ -228,7 +259,6 @@
         }
       }
     },
-
     {
       "LogName": "Moon Dungeon trigger actions",
       "Action": "EditData",
@@ -238,37 +268,38 @@
           "Id": "Moonvillage.AnnetteNPC_MoonDungeonEarlySpawns",
           "Trigger": "Manual",
           "Actions": [
-            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonEarlyGroup Target"
+            "spacechase0.SpaceCore_ShowHudMessage \"Moon Dungeon early spawns triggered.\"",
+            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonEarlyGroup Target 2,2,46,46"
           ],
           "HostOnly": true,
           "MarkActionApplied": false
         },
-
         "Moonvillage.AnnetteNPC_MoonDungeonCrystalSpawns": {
           "Id": "Moonvillage.AnnetteNPC_MoonDungeonCrystalSpawns",
           "Trigger": "Manual",
           "Actions": [
-            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonCrystalGroup Target"
+            "spacechase0.SpaceCore_ShowHudMessage \"Moon Dungeon crystal spawns triggered.\"",
+            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonCrystalGroup Target 2,2,46,46"
           ],
           "HostOnly": true,
           "MarkActionApplied": false
         },
-
         "Moonvillage.AnnetteNPC_MoonDungeonDeepSpawns": {
           "Id": "Moonvillage.AnnetteNPC_MoonDungeonDeepSpawns",
           "Trigger": "Manual",
           "Actions": [
-            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonDeepGroup Target"
+            "spacechase0.SpaceCore_ShowHudMessage \"Moon Dungeon deep spawns triggered.\"",
+            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonDeepGroup Target 2,2,46,46"
           ],
           "HostOnly": true,
           "MarkActionApplied": false
         },
-
         "Moonvillage.AnnetteNPC_MoonDungeonBossSpawns": {
           "Id": "Moonvillage.AnnetteNPC_MoonDungeonBossSpawns",
           "Trigger": "Manual",
           "Actions": [
-            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonBossGroup Target"
+            "spacechase0.SpaceCore_ShowHudMessage \"Moon Dungeon boss spawns triggered.\"",
+            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonBossGroup Target 2,2,46,46"
           ],
           "HostOnly": true,
           "MarkActionApplied": false
