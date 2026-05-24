@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>MazeQuest</RootNamespace>
+    <AssemblyName>MazeQuest</AssemblyName>
+    <Version>0.1.0</Version>
+    <Nullable>enable</Nullable>
+
+    <!-- Let Pathoschild.Stardew.ModBuildConfig add the correct 0Harmony reference. -->
+    <EnableHarmony>true</EnableHarmony>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Keep these files next to MazeQuest.dll in the built mod folder. -->
+    <None Update="manifest.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="content.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
