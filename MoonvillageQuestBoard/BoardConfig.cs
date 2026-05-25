@@ -27,6 +27,10 @@ public sealed class BoardConfig
 
 	public int MaxOffersPerDay { get; set; } = 3;
 
+	public int MaxOffersPerGiverPerDay { get; set; } = 1;
+
+	public int RecentOfferCooldownDays { get; set; } = 2;
+
 	public bool DrawBoardSprite { get; set; } = true;
 
 	public float WorldScale { get; set; } = 4f;
@@ -35,8 +39,8 @@ public sealed class BoardConfig
 
 	public Dictionary<string, string> UnlockConditions { get; set; } = new Dictionary<string, string>
 	{
-		["eventseen"] = "991001",
-		["npcmet"] = "DittModID_Annette"
+		["eventseen"] = "Moonvillage.AnnetteNPC_WizardTower",
+		["npcmet"] = "Moonvillage_Annette"
 	};
 
 	public Point TilePoint => new Point(Tile.ElementAtOrDefault(0), Tile.ElementAtOrDefault(1));

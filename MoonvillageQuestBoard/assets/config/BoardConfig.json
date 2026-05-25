@@ -3,17 +3,19 @@
   "Location": "Custom_Moonvillage",
   "Tile": [35, 31],
   "FootprintTiles": [1, 1],
-  "Title": "Moon Village Requests",
+  "Title": "i18n:questboard.title",
   "TextureFile": "assets/Textures/MoonQuestBoard.png",
   "BackgroundFile": "assets/Textures/MoonQuestBoardBackground.png",
   "QuestsFile": "assets/Data/Quest.json",
   "SpecialOrdersFile": "assets/Data/SpecialOrders.json",
   "MaxOffersPerDay": 3,
+  "MaxOffersPerGiverPerDay": 1,
+  "RecentOfferCooldownDays": 2,
   "DrawBoardSprite": true,
   "WorldScale": 4.0,
   "DrawOffsetPixels": [0, -64],
   "UnlockConditions": {
-    "eventseen": "991001",
-    "npcmet": "DittModID_Annette"
+    "eventseen": "Moonvillage.AnnetteNPC_WizardTower",
+    "npcmet": "Moonvillage_Annette"
   }
 }

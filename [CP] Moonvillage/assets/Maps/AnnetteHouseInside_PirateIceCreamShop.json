@@ -1,0 +1,23 @@
+{
+  "Changes": [
+    {
+      "LogName": "Add Pirate Ice Cream shop to Annette house",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_AnnetteHouseInside",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 41,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetTilesheet": "summer_town",
+          "SetIndex": 1245,
+          "SetProperties": {
+            "Action": "OpenShop Moonvillage.AnnetteNPC_PirateIceCreamShop"
+          }
+        }
+      ]
+    }
+  ]
+}

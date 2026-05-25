@@ -54,7 +54,9 @@ public sealed class QuestService
 			where !state.ActiveQuests.ContainsKey(boardQuest.Id)
 			where conditions.CheckAll(boardQuest.Conditions)
 			where !state.LastCompletedDay.TryGetValue(boardQuest.Id, out var value) || today - value >= Math.Max(0, boardQuest.CooldownDays)
+			where !state.LastOfferedDay.TryGetValue(boardQuest.Id, out var offeredDay) || today - offeredDay >= Math.Max(0, config.RecentOfferCooldownDays)
 			select boardQuest).ToList();
+		Dictionary<string, int> offersByGiver = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
 		Random random = new Random((int)((long)Game1.uniqueIDForThisGame + (long)today + 991001));
 		while (state.TodaysOfferIds.Count < config.MaxOffersPerDay && candidates.Count > 0)
 		{
@@ -72,7 +74,17 @@ public sealed class QuestService
 				}
 			}
 			state.TodaysOfferIds.Add(chosen.Id);
+			state.LastOfferedDay[chosen.Id] = today;
+			if (!string.IsNullOrWhiteSpace(chosen.Giver))
+			{
+				offersByGiver.TryGetValue(chosen.Giver, out var giverCount);
+				offersByGiver[chosen.Giver] = giverCount + 1;
+			}
 			candidates.Remove(chosen);
+			if (config.MaxOffersPerGiverPerDay > 0 && !string.IsNullOrWhiteSpace(chosen.Giver) && offersByGiver[chosen.Giver] >= config.MaxOffersPerGiverPerDay)
+			{
+				candidates.RemoveAll(q => string.Equals(q.Giver, chosen.Giver, StringComparison.OrdinalIgnoreCase));
+			}
 		}
 		Save();
 	}
@@ -109,7 +121,7 @@ public sealed class QuestService
 			IsSpecialOrder = quest.Type.Equals("SpecialOrder", StringComparison.OrdinalIgnoreCase)
 		};
 		state.TodaysOfferIds.Remove(quest.Id);
-		Game1.addHUDMessage(new HUDMessage(quest.AcceptText));
+		Game1.addHUDMessage(new HUDMessage(I18n.Text(quest.AcceptText)));
 		Save();
 		return true;
 	}
@@ -126,7 +138,7 @@ public sealed class QuestService
 			for (int i = 0; i < quest.Objectives.Count; i++)
 			{
 				ObjectiveDef obj = quest.Objectives[i];
-				if (obj.Kind.Equals("VisitLocation", StringComparison.OrdinalIgnoreCase) && string.Equals(obj.Target, locationName, StringComparison.OrdinalIgnoreCase))
+				if (IsObjectiveUnlocked(quest, active, i) && obj.Kind.Equals("VisitLocation", StringComparison.OrdinalIgnoreCase) && string.Equals(obj.Target, locationName, StringComparison.OrdinalIgnoreCase))
 				{
 					AddProgress(active, i, 1, obj.Count);
 					progressChanged = true;
@@ -150,7 +162,7 @@ public sealed class QuestService
 			for (int i = 0; i < quest.Objectives.Count; i++)
 			{
 				ObjectiveDef obj = quest.Objectives[i];
-				if (obj.Kind.Equals("TalkToNpc", StringComparison.OrdinalIgnoreCase) && (string.Equals(obj.Target, npcName, StringComparison.OrdinalIgnoreCase) || (obj.Target == "$giver" && npcName == quest.Giver)))
+				if (IsObjectiveUnlocked(quest, active, i) && obj.Kind.Equals("TalkToNpc", StringComparison.OrdinalIgnoreCase) && (string.Equals(obj.Target, npcName, StringComparison.OrdinalIgnoreCase) || (obj.Target == "$giver" && npcName == quest.Giver)))
 				{
 					AddProgress(active, i, 1, obj.Count);
 				}
@@ -171,7 +183,7 @@ public sealed class QuestService
 			for (int i = 0; i < quest.Objectives.Count; i++)
 			{
 				ObjectiveDef obj = quest.Objectives[i];
-				if (obj.Kind.Equals("SlayMonster", StringComparison.OrdinalIgnoreCase) && string.Equals(obj.Target, monsterName, StringComparison.OrdinalIgnoreCase))
+				if (IsObjectiveUnlocked(quest, active, i) && obj.Kind.Equals("SlayMonster", StringComparison.OrdinalIgnoreCase) && string.Equals(obj.Target, monsterName, StringComparison.OrdinalIgnoreCase))
 				{
 					AddProgress(active, i, 1, obj.Count);
 					progressChanged = true;
@@ -201,6 +213,10 @@ public sealed class QuestService
 		for (int i = 0; i < quest.Objectives.Count; i++)
 		{
 			ObjectiveDef obj = quest.Objectives[i];
+			if (!IsObjectiveUnlocked(quest, active, i))
+			{
+				return false;
+			}
 			if (obj.Kind.Equals("DeliverItem", StringComparison.OrdinalIgnoreCase))
 			{
 				if (CountItem(obj.Target) < obj.Count)
@@ -217,6 +233,52 @@ public sealed class QuestService
 			}
 		}
 		return true;
+	}
+
+	private bool IsObjectiveUnlocked(BoardQuest quest, ActiveQuestState active, int objectiveIndex)
+	{
+		ObjectiveDef objective = quest.Objectives[objectiveIndex];
+		if (objective.Requires == null || objective.Requires.Count == 0)
+		{
+			return true;
+		}
+
+		foreach (string required in objective.Requires)
+		{
+			int requiredIndex = FindObjectiveIndex(quest, required);
+			if (requiredIndex < 0 || requiredIndex == objectiveIndex || !IsObjectiveComplete(quest, active, requiredIndex))
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+
+	private int FindObjectiveIndex(BoardQuest quest, string required)
+	{
+		if (int.TryParse(required, out var numericIndex) && numericIndex >= 0 && numericIndex < quest.Objectives.Count)
+		{
+			return numericIndex;
+		}
+		for (int i = 0; i < quest.Objectives.Count; i++)
+		{
+			if (string.Equals(quest.Objectives[i].Name, required, StringComparison.OrdinalIgnoreCase))
+			{
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	private bool IsObjectiveComplete(BoardQuest quest, ActiveQuestState active, int objectiveIndex)
+	{
+		ObjectiveDef obj = quest.Objectives[objectiveIndex];
+		if (obj.Kind.Equals("DeliverItem", StringComparison.OrdinalIgnoreCase))
+		{
+			return CountItem(obj.Target) >= obj.Count;
+		}
+		int progress = active.ObjectiveProgress.TryGetValue(objectiveIndex, out var p) ? p : 0;
+		return progress >= Math.Max(1, obj.Count);
 	}
 
 	private bool RemoveDeliveredItemsIfNeeded(BoardQuest quest)
@@ -245,7 +307,7 @@ public sealed class QuestService
 		}
 		state.ActiveQuests.Remove(quest.Id);
 		state.LastCompletedDay[quest.Id] = (int)Game1.stats.DaysPlayed;
-		Game1.addHUDMessage(new HUDMessage(quest.CompleteText));
+		Game1.addHUDMessage(new HUDMessage(I18n.Text(quest.CompleteText)));
 	}
 
 	private void ApplyReward(RewardDef reward, BoardQuest quest)
@@ -267,7 +329,7 @@ public sealed class QuestService
 		case "item":
 		{
 			Item item = ItemRegistry.Create(reward.Target, Math.Max(1, reward.Count), 0, false);
-			Game1.player.addItemByMenuIfNecessary(item, (behaviorOnItemSelect)null, false);
+			Game1.player.addItemByMenuIfNecessary(item);
 			break;
 		}
 		case "mail":
@@ -339,8 +401,7 @@ public sealed class QuestService
 		}
 		if (qualifiedOrObjectId.StartsWith("(O)"))
 		{
-			Object obj = (Object)(object)((item is Object) ? item : null);
-			if (obj != null)
+			if (item is StardewValley.Object obj)
 			{
 				return ((Item)obj).ParentSheetIndex.ToString() == qualifiedOrObjectId.Substring(3);
 			}

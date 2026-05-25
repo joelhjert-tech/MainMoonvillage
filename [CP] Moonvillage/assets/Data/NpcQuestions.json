@@ -1,0 +1,136 @@
+{
+  "Changes": [
+    {
+      "LogName": "Add Moonvillage NPC lore questions",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/Questions",
+      "Entries": {
+        "Moonvillage_Annette": [
+          {
+            "ID": "JoelHjert.MoonVillage.Annette.FirstMoonvillage",
+            "Weight": 4,
+            "QuestionText": "{{i18n:npcquestion.annette.first_moonvillage.question}}",
+            "AnswerText": "{{i18n:npcquestion.annette.first_moonvillage.answer}}",
+            "CanRepeatQuestion": false,
+            "FriendshipModifier": 12,
+            "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_WizardTower"
+          },
+          {
+            "ID": "JoelHjert.MoonVillage.Annette.HiddenMaze",
+            "Weight": 3,
+            "QuestionText": "{{i18n:npcquestion.annette.hidden_maze.question}}",
+            "AnswerText": "{{i18n:npcquestion.annette.hidden_maze.answer}}",
+            "CanRepeatQuestion": false,
+            "FriendshipModifier": 12,
+            "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_WizardTower"
+          },
+          {
+            "ID": "JoelHjert.MoonVillage.Annette.MoonDungeon",
+            "Weight": 2,
+            "QuestionText": "{{i18n:npcquestion.annette.moon_dungeon.question}}",
+            "AnswerText": "{{i18n:npcquestion.annette.moon_dungeon.answer}}",
+            "CanRepeatQuestion": false,
+            "FriendshipModifier": 15,
+            "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_WizardTower"
+          },
+          {
+            "ID": "JoelHjert.MoonVillage.Annette.Lanterns",
+            "Weight": 2,
+            "QuestionText": "{{i18n:npcquestion.annette.lanterns.question}}",
+            "AnswerText": "{{i18n:npcquestion.annette.lanterns.answer}}",
+            "CanRepeatQuestion": true,
+            "FriendshipModifier": 4,
+            "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_WizardTower"
+          }
+        ],
+        "Moonvillage_Kira": [
+          {
+            "ID": "JoelHjert.MoonVillage.Kira.LanternWork",
+            "Weight": 4,
+            "QuestionText": "{{i18n:npcquestion.kira.lantern_work.question}}",
+            "AnswerText": "{{i18n:npcquestion.kira.lantern_work.answer}}",
+            "CanRepeatQuestion": false,
+            "FriendshipModifier": 12,
+            "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_WizardTower"
+          },
+          {
+            "ID": "JoelHjert.MoonVillage.Kira.PathMarks",
+            "Weight": 3,
+            "QuestionText": "{{i18n:npcquestion.kira.path_marks.question}}",
+            "AnswerText": "{{i18n:npcquestion.kira.path_marks.answer}}",
+            "CanRepeatQuestion": false,
+            "FriendshipModifier": 12,
+            "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_WizardTower"
+          },
+          {
+            "ID": "JoelHjert.MoonVillage.Kira.Fear",
+            "Weight": 2,
+            "QuestionText": "{{i18n:npcquestion.kira.fear.question}}",
+            "AnswerText": "{{i18n:npcquestion.kira.fear.answer}}",
+            "CanRepeatQuestion": false,
+            "FriendshipModifier": 15,
+            "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_WizardTower"
+          }
+        ],
+        "Moonvillage_Lorilai": [
+          {
+            "ID": "JoelHjert.MoonVillage.Lorilai.Herbs",
+            "Weight": 4,
+            "QuestionText": "{{i18n:npcquestion.lorilai.herbs.question}}",
+            "AnswerText": "{{i18n:npcquestion.lorilai.herbs.answer}}",
+            "CanRepeatQuestion": false,
+            "FriendshipModifier": 12,
+            "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_WizardTower"
+          },
+          {
+            "ID": "JoelHjert.MoonVillage.Lorilai.SpiritHealer",
+            "Weight": 3,
+            "QuestionText": "{{i18n:npcquestion.lorilai.spirit_healer.question}}",
+            "AnswerText": "{{i18n:npcquestion.lorilai.spirit_healer.answer}}",
+            "CanRepeatQuestion": false,
+            "FriendshipModifier": 15,
+            "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_WizardTower"
+          },
+          {
+            "ID": "JoelHjert.MoonVillage.Lorilai.MoonTea",
+            "Weight": 3,
+            "QuestionText": "{{i18n:npcquestion.lorilai.moon_tea.question}}",
+            "AnswerText": "{{i18n:npcquestion.lorilai.moon_tea.answer}}",
+            "CanRepeatQuestion": true,
+            "FriendshipModifier": 4,
+            "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_WizardTower"
+          }
+        ],
+        "Moonvillage_Venessa": [
+          {
+            "ID": "JoelHjert.MoonVillage.Venessa.Crystals",
+            "Weight": 4,
+            "QuestionText": "{{i18n:npcquestion.venessa.crystals.question}}",
+            "AnswerText": "{{i18n:npcquestion.venessa.crystals.answer}}",
+            "CanRepeatQuestion": false,
+            "FriendshipModifier": 12,
+            "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_WizardTower"
+          },
+          {
+            "ID": "JoelHjert.MoonVillage.Venessa.Records",
+            "Weight": 3,
+            "QuestionText": "{{i18n:npcquestion.venessa.records.question}}",
+            "AnswerText": "{{i18n:npcquestion.venessa.records.answer}}",
+            "CanRepeatQuestion": false,
+            "FriendshipModifier": 15,
+            "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_WizardTower"
+          },
+          {
+            "ID": "JoelHjert.MoonVillage.Venessa.BossRumor",
+            "Weight": 2,
+            "QuestionText": "{{i18n:npcquestion.venessa.boss_rumor.question}}",
+            "AnswerText": "{{i18n:npcquestion.venessa.boss_rumor.answer}}",
+            "CanRepeatQuestion": false,
+            "FriendshipModifier": 15,
+            "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_WizardTower"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,31 +1,34 @@
 {
   "SpecialOrders": {
     "JoelHjert.MoonVillage.MoonlitPatrol": {
-      "Title": "Moonlit Patrol",
+      "Title": "i18n:special_order.moonlit_patrol.title",
       "Type": "SpecialOrder",
       "Category": "Moonvillage",
-      "Giver": "DittModID_Annette",
-      "Description": "Annette wants the old maze checked before the next moonrise.",
-      "AcceptText": "Moonlit Patrol accepted.",
-      "CompleteText": "The moonlit patrol is complete.",
-      "ObjectiveText": "Go to Custom_Maze, then return and talk to Annette.",
+      "Giver": "Moonvillage_Annette",
+      "Description": "i18n:special_order.moonlit_patrol.description",
+      "AcceptText": "i18n:special_order.moonlit_patrol.accept",
+      "CompleteText": "i18n:special_order.moonlit_patrol.complete",
+      "ObjectiveText": "i18n:special_order.moonlit_patrol.objective",
       "Weight": 40,
       "CooldownDays": 14,
       "DeadlineDays": 14,
       "Conditions": {
-        "eventseen": "991001",
-        "npcmet": "DittModID_Annette"
+        "eventseen": "Moonvillage.AnnetteNPC_WizardTower",
+        "npcmet": "Moonvillage_Annette"
       },
       "Objectives": [
         {
+          "Name": "patrol_maze",
           "Kind": "VisitLocation",
           "Target": "Custom_Maze",
           "Count": 1
         },
         {
+          "Name": "report_to_annette",
           "Kind": "TalkToNpc",
-          "Target": "DittModID_Annette",
-          "Count": 1
+          "Target": "Moonvillage_Annette",
+          "Count": 1,
+          "Requires": ["patrol_maze"]
         }
       ],
       "Rewards": [
@@ -35,7 +38,7 @@
         },
         {
           "Kind": "Friendship",
-          "Target": "DittModID_Annette",
+          "Target": "Moonvillage_Annette",
           "Amount": 250
         }
       ]

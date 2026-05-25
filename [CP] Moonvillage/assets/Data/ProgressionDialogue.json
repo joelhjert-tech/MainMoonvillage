@@ -1,0 +1,153 @@
+{
+  "Changes": [
+    {
+      "LogName": "Annette reacts to Townhall restoration",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_Annette",
+      "Entries": {
+        "Mon": "{{i18n:annette.progress.annette_house.mon}}",
+        "Tue": "{{i18n:annette.progress.annette_house.tue}}"
+      },
+      "When": {
+        "HasFlag": "AnnetteHouse_Ready"
+      }
+    },
+    {
+      "LogName": "Annette reacts to hidden maze",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_Annette",
+      "Entries": {
+        "Fri": "{{i18n:annette.progress.hidden_maze.fri}}"
+      },
+      "When": {
+        "HasFlag": "JoelHjert.MoonVillage.HiddenMazeQuestStarted"
+      }
+    },
+    {
+      "LogName": "Annette reacts to final restoration",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_Annette",
+      "Entries": {
+        "Sun": "{{i18n:annette.progress.final.sun}}",
+        "Hearts_8": "{{i18n:annette.progress.final.hearts8}}"
+      },
+      "When": {
+        "HasFlag": "Moonvillage_FinalRestorationComplete"
+      }
+    },
+    {
+      "LogName": "Kira reacts to Townhall restoration",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_Kira",
+      "Entries": {
+        "Wed": "{{i18n:kira.progress.annette_house.wed}}"
+      },
+      "When": {
+        "HasFlag": "AnnetteHouse_Ready"
+      }
+    },
+    {
+      "LogName": "Kira reacts to hidden maze",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_Kira",
+      "Entries": {
+        "Thu": "{{i18n:kira.progress.hidden_maze.thu}}"
+      },
+      "When": {
+        "HasFlag": "JoelHjert.MoonVillage.HiddenMazeQuestStarted"
+      }
+    },
+    {
+      "LogName": "Kira reacts to final restoration",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_Kira",
+      "Entries": {
+        "Sat": "{{i18n:kira.progress.final.sat}}"
+      },
+      "When": {
+        "HasFlag": "Moonvillage_FinalRestorationComplete"
+      }
+    },
+    {
+      "LogName": "Lorilai reacts to waking up",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_Lorilai",
+      "Entries": {
+        "Mon": "{{i18n:lorilai.progress.annette_house.mon}}",
+        "Tue": "{{i18n:lorilai.progress.annette_house.tue}}"
+      },
+      "When": {
+        "HasFlag": "AnnetteHouse_Ready"
+      }
+    },
+    {
+      "LogName": "Lorilai reacts to Herbalist restoration",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_Lorilai",
+      "Entries": {
+        "Wed": "{{i18n:lorilai.progress.herbalist.wed}}",
+        "Thu": "{{i18n:lorilai.progress.herbalist.thu}}"
+      },
+      "When": {
+        "HasFlag": "HerbalistHouse_Ready"
+      }
+    },
+    {
+      "LogName": "Lorilai reacts to Grocery restoration",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_Lorilai",
+      "Entries": {
+        "Fri": "{{i18n:lorilai.progress.grocery.fri}}"
+      },
+      "When": {
+        "HasFlag": "MoonGrocery_Ready"
+      }
+    },
+    {
+      "LogName": "Lorilai reacts to final restoration",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_Lorilai",
+      "Entries": {
+        "Sun": "{{i18n:lorilai.progress.final.sun}}"
+      },
+      "When": {
+        "HasFlag": "Moonvillage_FinalRestorationComplete"
+      }
+    },
+    {
+      "LogName": "Venessa reacts to Spirit Healer restoration",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_Venessa",
+      "Entries": {
+        "Mon": "{{i18n:venessa.progress.spirit_healer.mon}}",
+        "Thu": "{{i18n:venessa.progress.spirit_healer.thu}}"
+      },
+      "When": {
+        "HasFlag": "SpiritHealer_Ready"
+      }
+    },
+    {
+      "LogName": "Venessa reacts to hidden maze",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_Venessa",
+      "Entries": {
+        "Tue": "{{i18n:venessa.progress.hidden_maze.tue}}"
+      },
+      "When": {
+        "HasFlag": "JoelHjert.MoonVillage.HiddenMazeQuestStarted"
+      }
+    },
+    {
+      "LogName": "Venessa reacts to final restoration",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_Venessa",
+      "Entries": {
+        "Sun": "{{i18n:venessa.progress.final.sun}}",
+        "Hearts_8": "{{i18n:venessa.progress.final.hearts8}}"
+      },
+      "When": {
+        "HasFlag": "Moonvillage_FinalRestorationComplete"
+      }
+    }
+  ]
+}

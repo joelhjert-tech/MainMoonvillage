@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="right-down" width="24" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="13">
+ <properties>
+  <property name="DayTiles" value="Front 14 1 256 Front 14 2 288 Front 21 1 256 Front 21 2 288"/>
+  <property name="Doors" value="5 9 1 120 5 13 1 120 10 13 1 120 9 5 1 120 10 5 1 120"/>
+  <property name="NightTiles" value="Front 14 1 1253 Front 14 2 1254 Front 21 1 1253 Front 21 2 1254"/>
+  <property name="Warp" value="10 20 Town 36 56 10 1 HarveyRoom 6 12 9 1 HarveyRoom 6 12"/>
+ </properties>
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="Tilesheet/townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="p" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="Tilesheet/paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="2241" name="v15_TownInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="Tilesheet/townInterior_2.png" width="512" height="656"/>
+ </tileset>
+ <layer id="1" name="Back" width="24" height="20">
+  <data encoding="base64" compression="zlib">
+   eJytld0NgjAQgGvKi+mLE4gb6AKKG+gExkenUCcRJlEH8EXdAxNYwF7g0qNcfyI2+aK0d1/geoVKClE5GInfwQGek+pzViZ2ngixSMz1kYl35YM/V30Kj/+i1w7ST0H8N9Xn7vFfI/yYX8suy3Hz+yb132j3NjHP/pL9PBvMt/e09uw31g7+P1rsmFLzIf3hclEmqgFrh/fB3QudR3/NxNNe4HJjsHuWq0Wu4n2x58fuKRr/Dz/UmquZ77y6/DCm2pcSYC2NmJupsB9Y6biMAGtZxNw60r/TcU9pqGT32jW3J/6y7X3Ob59Hu/6uOXrGud71PdvQHgntPQLvo5DfN7h3nM1Q/9D6hPyxNQx9C7nxBSgzD6c=
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Back2" width="24" height="20">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFgw285B5oF4yCUTC8gPZAO2AUjAIsAAAcRwEg
+  </data>
+ </layer>
+ <objectgroup id="4" name="Back2"/>
+ <layer id="5" name="Buildings" width="24" height="20">
+  <data encoding="base64" compression="zlib">
+   eJytlE1OAzEMhT1NVqWsYccBgGOgguiw4BIsipC4B1SCU7Dg7xgskOAG7ZIVDCuWxVZixWTsKAUsPWnGTr5MXL82ANAoAiPPtdrQ1s8Hev0/+Ddrib8Y9M9ahc/rLxzANgQ9IX+JzKuhzT/H2sgDrPu0j8V52s/rb5F/h+rw5Q35LT6foMCFszj4vH3M7yBj14e1Rz7UpyJP+0v3PW1SfeyC5H0mxI7cM5/2cb4V/HcX9OH6vfhxfnYfjpnv5yRDi0XkzBVeHvfIf0A9+vROz6X51vireiBfJ/sNcaaWBv94WM+v9eee8T0k7pHsk8aT3vpCbWV+076RxHOv1Sy+lTtQ5oznXuOTH8nDl3H+ZP/5N8hzJOlR6QeKTvjn0yUPy7jG4muW49jAMzvhoc14N8mR/WkNzovIT1z4D5Dv1oxLsX9zPWeeJt6hwi8F1eUe6x5/4f82ppX8GpXWluIbTFJNFQ==
+  </data>
+ </layer>
+ <objectgroup id="6" name="Buildings">
+  <object id="1" name="TileData" x="288" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Hospital.1&quot;"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="16" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Hospital.2&quot;"/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="48" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Hospital.3&quot;"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="144" y="80" width="32" height="16">
+   <properties>
+    <property name="Action" value="Door Harvey"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="80" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+  <object id="6" name="TileData" x="112" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Hospital.4&quot;"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="80" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+  <object id="8" name="TileData" x="160" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+  <object id="9" name="TileData" x="192" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Hospital.5&quot;"/>
+   </properties>
+  </object>
+  <object id="10" name="TileData" x="208" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Hospital.6&quot;"/>
+   </properties>
+  </object>
+  <object id="11" name="TileData" x="224" y="224" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Hospital.7&quot;"/>
+   </properties>
+  </object>
+  <object id="12" name="TileData" x="80" y="256" width="48" height="16">
+   <properties>
+    <property name="Action" value="HospitalShop"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="Front" width="24" height="20">
+  <data encoding="base64" compression="zlib">
+   eJyNVUtKA0EQ7UkPCJkgmJ2/hasgJiLZiYa4VQS9gJ+tkjDBleAV/OQC6jU8gC5cGGbpIXQdf6hVTBXTXdPTmQcvM13V9Tr1MjX5jZT6dvAHGKg8PyH+VVDjql+vqRxmILcA8UWRw+UsfMwBgyBfx8Ac16P+jlbqHDRPtL2vU7PPN9dLhv50qNSDUcc53v9YUeoKtBOKP0d2fkqnPIL7Y9FTC+KrobsP+f1M7AZZvqFT1qPUuzLAc7n+Tad8N/zpQvzCc75EDD0MqI8+3fu+P3rxF+X9cOEatG6AwzBbD0n/AHgIvCVukd918sH0o2vsKYOO2MfPa4N82nY8T7ynXbVz6Ekc2j5JfaX8frM+97wGvbWjtB/2yPQJ98t5ZL/n4bpB3KQY/yZM34yyPs9jQjH0m/0fV/IxxlPFntEifVcO/X+l+2WdxRCnE2ackQR2rgd1fVF7FtgzYWIs3gEftL7U6btAnt0q0OkZs98Ue5ra/Ywj74D3pD/S2QwzX+gq9VZ0Xt8H1Ddrivrw6bv+J5jszx7My76YmTKYpM/exaA9qNoemu8MRLfAY59+GXCPRV779P8BpENp4A==
+  </data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+ <layer id="9" name="Front2" width="24" height="20">
+  <properties>
+   <property name="Draw" value="Front"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFxIAlTAPtAgaG45wMDCc4aWf+c6DZL2ho/iggDdzgYGBgHATpbhQgwEZGBgYn5oF2BQL4Mw60CwYHmMsDwUMNAAAF3Ael
+  </data>
+ </layer>
+ <objectgroup id="10" name="Front2"/>
+ <layer id="11" name="Front3" width="24" height="20">
+  <properties>
+   <property name="Draw" value="Front"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUDEYwlweCR8EoGAXDEwAAKBcBUw==
+  </data>
+ </layer>
+ <objectgroup id="12" name="Front3"/>
+ <layer id="13" name="Paths" width="24" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFgwV0cgy0CwgDfG7EJUeq+FADlPpjMIXDQLtluKcVGBiM/kF3EyH+KKAcAAB8sAfv
+  </data>
+ </layer>
+ <objectgroup id="14" name="Paths"/>
+ <layer id="15" name="AlwaysFront" width="24" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAPGNEwtcE/bgaG/1DMwEMDC0bBiARCXAPtglEwCkbBKMAPALpTA0o=
+  </data>
+ </layer>
+ <objectgroup id="16" name="AlwaysFront"/>
+</map>
+

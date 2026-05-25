@@ -1,0 +1,31 @@
+{
+  "Changes": [
+    {
+      "LogName": "Add Moon Dungeon entrance actions",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_AnnetteHouseInside",
+      "MapTiles": [
+        {
+          "Layer": "Buildings",
+          "Position": { "X": 31, "Y": 15 },
+          "SetTilesheet": "townInterior",
+          "SetIndex": 263,
+          "SetProperties": {
+            "Passable": "T",
+            "Action": "spacechase0.SpaceCore_DungeonEntrance Moonvillage.AnnetteNPC_MoonDungeon"
+          }
+        },
+        {
+          "Layer": "Buildings",
+          "Position": { "X": 32, "Y": 15 },
+          "SetTilesheet": "townInterior",
+          "SetIndex": 263,
+          "SetProperties": {
+            "Passable": "T",
+            "Action": "spacechase0.SpaceCore_DungeonElevatorMenu Moonvillage.AnnetteNPC_MoonDungeon"
+          }
+        }
+      ]
+    }
+  ]
+}

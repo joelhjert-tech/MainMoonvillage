@@ -12,7 +12,7 @@ public sealed class BoardQuest
 
 	public string Category { get; set; } = "Moonvillage";
 
-	public string Giver { get; set; } = "DittModID_Annette";
+	public string Giver { get; set; } = "Moonvillage_Annette";
 
 	public string Description { get; set; } = "";
 

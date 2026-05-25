@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="right-down" width="15" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="13">
+ <properties>
+  <property name="AmbientLight" value="120 140 30"/>
+  <property name="DayTiles" value="Front 7 1 256 Front 7 2 288 Back 7 4 228 Back 7 5 260"/>
+  <property name="Doors" value="4 9 1 120"/>
+  <property name="Light" value="9 10 4 10 10 4"/>
+  <property name="NightTiles" value="Front 7 1 1253 Front 7 2 1285 Back 7 4 199 Back 7 5 231"/>
+  <property name="Warp" value="5 20 Town 94 82"/>
+ </properties>
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="Tilesheet/townInterior.png" width="512" height="1088"/>
+  <tile id="936">
+   <animation>
+    <frame tileid="936" duration="100"/>
+    <frame tileid="1864" duration="100"/>
+    <frame tileid="1866" duration="100"/>
+    <frame tileid="1868" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="937">
+   <animation>
+    <frame tileid="937" duration="100"/>
+    <frame tileid="1865" duration="100"/>
+    <frame tileid="1867" duration="100"/>
+    <frame tileid="1869" duration="100"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="2177" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="Tilesheet/paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="2241" name="v15_townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="Tilesheet/townInterior_2.png" width="512" height="656"/>
+ </tileset>
+ <layer id="1" name="Back" width="15" height="20">
+  <data encoding="base64" compression="zlib">
+   eJylkr9Kw1AUxm9uKNzQYLeocXfUycmh6mPooPYNnAXtI/gGopubUx2lXdRN0DfwX8VRl+rS73DOJSclNw0Y+PGRL/nla0KN+d9xDHYbsFfh5mBzDrmgj33L3VEDZt0xuAP3woPKN3X+nBgzSo05sIXrImOSiHOC81/wJ30LPCXsXcC7BH1b3v2UXMa9OVgBq477b3g/YJjW7zZJvUvHFViiXdlfVPje5xm216Oymwn0/Ezuy8TJFNcp+5FyiTUUt5YzxGPKvncpt+B0wSk4wbX3mPG9z9eYfe3Sf4S+IeULrn8I47jov6QjX7u015dd7S60i9/QaRf97O4A3U1cdkNoV7/TRsLf7NyGM/S+83LHhd/XZ89V99suvEtF3e5hzS5906o9neRMAaRta9c=
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Back2" width="15" height="20">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUDBaQy8PAkMdDnt5eoL4+MvUOFQAAIxoCJw==
+  </data>
+ </layer>
+ <objectgroup id="4" name="Back2"/>
+ <layer id="5" name="Buildings" width="15" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYCQRwwCIfZeLgShwjwtTbwAQBxKBg7DYWwDEj4GMJ0B8HcguRMOpQPE0IC7ConcCEDMzMTCwMEHE2oB0OxOmmydh0TuJEVMdMnAEyjsxItQj653CjV0PD5rdRxkx9aKHP7oYMxLGpg4E5kDp2TjcDpNHNxsUB3uAuBKIdzMg4qUDaFknEHcBcTczJJ7Q9YPi4g5U/DYSfwVQ/UogXgXEq5kh8RSEplccS5yAwAmg+pNAfAqITzND4qmIATOMcIGXQD2vmBF8WDzDMBfU3jpmTL3I4BhQ/jgzqt7tzBB8g4eAI6AAWa8WDv9iA5e4iPfvT6CCX0D8G6rwEwl6JYFukgJiaSA+iZSuYfgDAQO4kfy0kRF/mUJM2QMAPa0xnQ==
+  </data>
+ </layer>
+ <objectgroup id="6" name="Buildings">
+  <object id="1" name="TileData" x="32" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Blacksmith.1&quot;"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="80" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Blacksmith.2&quot;"/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="96" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Blacksmith.3&quot;"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="16" y="96" width="16" height="16">
+   <properties>
+    <property name="Action" value="Letter &quot;Blacksmith.4&quot;"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="64" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door Clint"/>
+   </properties>
+  </object>
+  <object id="6" name="TileData" x="144" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Blacksmith.5&quot;"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="160" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Blacksmith.6&quot;"/>
+   </properties>
+  </object>
+  <object id="8" name="TileData" x="192" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Blacksmith.7&quot;"/>
+   </properties>
+  </object>
+  <object id="9" name="TileData" x="208" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Blacksmith.8&quot;"/>
+   </properties>
+  </object>
+  <object id="10" name="TileData" x="48" y="224" width="16" height="16">
+   <properties>
+    <property name="Action" value="Blacksmith"/>
+   </properties>
+  </object>
+  <object id="11" name="TileData" x="208" y="240" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Blacksmith.9&quot;"/>
+   </properties>
+  </object>
+  <object id="12" name="TileData" x="32" y="288" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Blacksmith.10&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="Front" width="15" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgYAJibiIwCwMEMEKxIhBrAbEjK0R8PScDwwZOqBqggqXMEDZIXgdIqyLpdQTiv1wMcHAeqO8CVK8iI4R2BdJuQPwPqM4VTS/YDqDDn0DVpgHZ6UwI89KB4hkwc9D0FjEy4AXtQPkOHHpLuPHrhQFnVlS9C4G4C+i+ZUB6MVTNEgYIH4SP8TAwHOeBsJcD8QokvSAACipQcB4GYksgPsSAGjdzgWbPA2ILNtR4YmBAhBcIRELpo8wIsb1AffuAOIINEk+CSOpBeg8D1R5BUv8UiY0OYPEM0/udQFijA1csbiZH7yuovXZ43AoCy4Dyy5lR9c4A8qcD8UMi3U6umzdxEa/3JtAtt4D4NtRNoLQES1/E2JsP1bcSKV3D7L1AwJ+v0eRhekFpehEDZpo+AUzHJ3kQaRuGYekaHSRC5ZvxuAGWFwApzjvD
+  </data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+ <layer id="9" name="Front2" width="15" height="20">
+  <properties>
+   <property name="Draw" value="Front"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYKAM1HKRr3cuBXphYBMj5WbQCyzCI7cMikfBKBjqgJZpGQB2QQUc
+  </data>
+ </layer>
+ <objectgroup id="10" name="Front2"/>
+ <layer id="11" name="Paths" width="15" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFlIBODuzsUUAYgMKL3DCjRC+x5qOz0Wl6AGrZRQ8308MOAFbPB14=
+  </data>
+ </layer>
+ <objectgroup id="12" name="Paths"/>
+</map>
+

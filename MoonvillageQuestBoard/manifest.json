@@ -8,6 +8,7 @@
   "MinimumApiVersion": "4.0.0",
   "UpdateKeys": [],
   "Dependencies": [
-    { "UniqueID": "Moonvillage.AnnetteNPC", "IsRequired": true }
+    { "UniqueID": "Moonvillage.AnnetteNPC", "IsRequired": true },
+    { "UniqueID": "spacechase0.GenericModConfigMenu", "IsRequired": false }
   ]
 }

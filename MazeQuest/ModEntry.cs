@@ -35,6 +35,7 @@ namespace MazeQuest
         // When a maze chest has been opened and the chest menu is closed, return the player here.
         private const string RETURN_LOCATION = "Custom_Moonvillage";
         private static readonly Vector2 RETURN_TILE = new Vector2(25, 25);
+        private const string CHEST_MONEY_MODDATA_KEY = "MazeQuest.ChestMoney";
 
         // Internal tilesheet IDs added to the map at runtime.
         // Floor/path tiles still use the normal spring outdoor sheet.
@@ -63,6 +64,7 @@ namespace MazeQuest
         public static Dictionary<string, List<MazeInstance>> mazeLocationDict = new Dictionary<string, List<MazeInstance>>();
         public static Dictionary<string, MazeData>           mazeDataDict     = new Dictionary<string, MazeData>();
 
+        private static Random? mazeGenerationRandom;
         private static bool pendingMazeChestReturnWarp;
         private static bool pendingMazeChestMenuWasOpen;
         private static int pendingMazeChestReturnWarpDelayTicks;
@@ -195,7 +197,7 @@ namespace MazeQuest
 
         private void GameLoop_SaveLoaded(object sender, SaveLoadedEventArgs e)
         {
-            if (!Config.ModEnabled || !Game1.IsMasterGame) return;
+            if (!Config.ModEnabled) return;
 
             SMonitor.Log("Save loaded. Loading maze data and invalidating target maps.", LogLevel.Info);
             ReloadMazes();
@@ -213,7 +215,7 @@ namespace MazeQuest
 
         private void GameLoop_DayStarted(object sender, DayStartedEventArgs e)
         {
-            if (!Config.ModEnabled || !Game1.IsMasterGame) return;
+            if (!Config.ModEnabled) return;
             // Defer one tick so the world is fully loaded before we modify maps
             SHelper.Events.GameLoop.UpdateTicked += GameLoop_UpdateTicked_AfterDayStarted;
         }
@@ -227,10 +229,13 @@ namespace MazeQuest
 
         private void Player_Warped(object sender, WarpedEventArgs e)
         {
-            if (!Config.ModEnabled || !Game1.IsMasterGame) return;
+            if (!Config.ModEnabled) return;
             if (e.NewLocation == null) return;
 
             SMonitor.Log($"Warped to location '{e.NewLocation.NameOrUniqueName}' with map path '{e.NewLocation.mapPath?.Value}'.", LogLevel.Info);
+
+            if (e.NewLocation.NameOrUniqueName == "Custom_Maze" || e.NewLocation.Name == "Custom_Maze")
+                Game1.addHUDMessage(new HUDMessage(SHelper.Translation.Get("hud.maze.enter").ToString()));
 
             // If the target map was already loaded before the content asset edit ran,
             // force-apply the maze directly when the player enters the location.
@@ -262,7 +267,7 @@ namespace MazeQuest
 
         private void Content_AssetRequested(object sender, AssetRequestedEventArgs e)
         {
-            if (!Config.ModEnabled || !Game1.IsMasterGame) return;
+            if (!Config.ModEnabled) return;
 
             // When a map that contains a maze is loaded, inject the maze tiles.
             if (e.DataType == typeof(Map))
@@ -329,7 +334,17 @@ namespace MazeQuest
                 if (data.mapSize.Y % 2 == 0) data.mapSize.Y--;
 
                 mazeDataDict[kvp.Key] = data;
-                inst.tiles = MakeMapArray(data, inst);
+
+                var previousMazeGenerationRandom = mazeGenerationRandom;
+                try
+                {
+                    mazeGenerationRandom = new Random(GetStableMazeSeed(kvp.Key));
+                    inst.tiles = MakeMapArray(data, inst);
+                }
+                finally
+                {
+                    mazeGenerationRandom = previousMazeGenerationRandom;
+                }
 
                 // Do NOT require Game1.getLocationFromName(locationName) here.
                 // Content Patcher custom locations may not exist yet when DayStarted runs.
@@ -377,7 +392,8 @@ namespace MazeQuest
             if (mazeLocationDict.Count == 0)
                 SMonitor.Log("No active maze locations were registered. Check content.json.", LogLevel.Warn);
 
-            PopulateMazes();
+            if (Game1.IsMasterGame)
+                PopulateMazes();
         }
 
         /// <summary>
@@ -483,6 +499,9 @@ namespace MazeQuest
 
         public static void PopulateMaze(GameLocation gl, MazeData mazeData, MazeInstance inst)
         {
+            inst.chestTiles.Clear();
+            inst.fairyTiles.Clear();
+
             // Clear any leftovers from the previous day
             for (int x = mazeData.corner.X; x < mazeData.corner.X + mazeData.mapSize.X; x++)
             for (int y = mazeData.corner.Y; y < mazeData.corner.Y + mazeData.mapSize.Y; y++)
@@ -490,7 +509,22 @@ namespace MazeQuest
                 var tile = new Vector2(x, y);
                 gl.terrainFeatures.Remove(tile);
                 gl.objects.Remove(tile);
+                gl.overlayObjects.Remove(tile);
             }
+
+            for (int i = gl.characters.Count - 1; i >= 0; i--)
+            {
+                var ch = gl.characters[i];
+                if (IsTileInMaze(ch.TilePoint, mazeData.mapSize, mazeData.corner)
+                    && (ch is Monster || ch.Name.Equals("Dwarf")))
+                {
+                    gl.characters.RemoveAt(i);
+                }
+            }
+
+            var openTiles = inst.openTiles.ToList();
+            var endTiles = inst.endTiles.ToList();
+            var vertTiles = inst.vertTiles.ToList();
 
             // Roll counts for each entity type
             int slimes    = Game1.random.Next(mazeData.SlimeMin,       mazeData.SlimeMax + 1);
@@ -528,11 +562,11 @@ namespace MazeQuest
                 {
                     for (int i = 0; i < forages; i++)
                     {
-                        if (!inst.vertTiles.Any()) break;
+                        if (!vertTiles.Any()) break;
 
-                        int   idx = Game1.random.Next(inst.vertTiles.Count);
-                        var   v   = inst.vertTiles[idx].ToVector2();
-                        inst.vertTiles.RemoveAt(idx);
+                        int   idx = Game1.random.Next(vertTiles.Count);
+                        var   v   = vertTiles[idx].ToVector2();
+                        vertTiles.RemoveAt(idx);
 
                         var ctx   = new ItemQueryContext(gl, null, Game1.random, $"location '{gl.NameOrUniqueName}' > forage");
                         var pick  = RandomExtensions.ChooseFrom(Game1.random, possibleForage);
@@ -553,11 +587,11 @@ namespace MazeQuest
             {
                 for (int j = 0; j < treasures; j++)
                 {
-                    if (!inst.endTiles.Any()) break;
+                    if (!endTiles.Any()) break;
 
-                    int idx = Game1.random.Next(inst.endTiles.Count);
-                    var v   = inst.endTiles[idx].ToVector2();
-                    inst.endTiles.RemoveAt(idx);
+                    int idx = Game1.random.Next(endTiles.Count);
+                    var v   = endTiles[idx].ToVector2();
+                    endTiles.RemoveAt(idx);
 
                     var chest = MakeSimpleChest(mazeData, v);
                     gl.overlayObjects[v] = chest;
@@ -570,22 +604,22 @@ namespace MazeQuest
             // ---- Fairies ----
             for (int k = 0; k < fairies; k++)
             {
-                if (!inst.endTiles.Any()) break;
+                if (!endTiles.Any()) break;
 
-                int idx = Game1.random.Next(inst.endTiles.Count);
-                var v   = inst.endTiles[idx].ToVector2() - new Vector2(0f, 1f);
-                inst.endTiles.RemoveAt(idx);
+                int idx = Game1.random.Next(endTiles.Count);
+                var v   = endTiles[idx].ToVector2() - new Vector2(0f, 1f);
+                endTiles.RemoveAt(idx);
                 inst.fairyTiles.Add(v);
 
                 if (Config.Debug) SMonitor.Log($"Spawning fairy at {v}", LogLevel.Trace);
             }
 
             // ---- Optional Dwarf NPC ----
-            if (inst.endTiles.Any() && mazeData.AddDwarf)
+            if (endTiles.Any() && mazeData.AddDwarf)
             {
-                int idx = Game1.random.Next(inst.endTiles.Count);
-                var v   = inst.endTiles[idx].ToVector2();
-                inst.endTiles.RemoveAt(idx);
+                int idx = Game1.random.Next(endTiles.Count);
+                var v   = endTiles[idx].ToVector2();
+                endTiles.RemoveAt(idx);
 
                 gl.addCharacter(new NPC(
                     new AnimatedSprite("Characters\\Dwarf", 0, 16, 24),
@@ -599,30 +633,30 @@ namespace MazeQuest
             }
 
             // ---- Monsters ----
-            SpawnMonsters(gl, inst, mazeData, slimes,    (pos) => new GreenSlime(pos, Game1.random.Next(mazeData.MineLevelMin, mazeData.MineLevelMax)), "slime");
-            SpawnMonsters(gl, inst, mazeData, bats,      (pos) => new Bat(pos,        Game1.random.Next(mazeData.MineLevelMin, mazeData.MineLevelMax)), "bat");
-            SpawnMonsters(gl, inst, mazeData, serpents,  (pos) => new Serpent(pos),   "serpent");
-            SpawnMonsters(gl, inst, mazeData, brutes,    (pos) => new ShadowBrute(pos), "shadow brute");
-            SpawnMonsters(gl, inst, mazeData, shamans,   (pos) => new ShadowShaman(pos), "shadow shaman");
-            SpawnMonsters(gl, inst, mazeData, squids,    (pos) => new SquidKid(pos),  "squid kid");
-            SpawnMonsters(gl, inst, mazeData, skeletons, (pos) => new Skeleton(pos, false), "skeleton");
-            SpawnMonsters(gl, inst, mazeData, dusts,     (pos) => new DustSpirit(pos), "dust sprite");
+            SpawnMonsters(gl, openTiles, mazeData, slimes,    (pos) => new GreenSlime(pos, Game1.random.Next(mazeData.MineLevelMin, mazeData.MineLevelMax)), "slime");
+            SpawnMonsters(gl, openTiles, mazeData, bats,      (pos) => new Bat(pos,        Game1.random.Next(mazeData.MineLevelMin, mazeData.MineLevelMax)), "bat");
+            SpawnMonsters(gl, openTiles, mazeData, serpents,  (pos) => new Serpent(pos),   "serpent");
+            SpawnMonsters(gl, openTiles, mazeData, brutes,    (pos) => new ShadowBrute(pos), "shadow brute");
+            SpawnMonsters(gl, openTiles, mazeData, shamans,   (pos) => new ShadowShaman(pos), "shadow shaman");
+            SpawnMonsters(gl, openTiles, mazeData, squids,    (pos) => new SquidKid(pos),  "squid kid");
+            SpawnMonsters(gl, openTiles, mazeData, skeletons, (pos) => new Skeleton(pos, false), "skeleton");
+            SpawnMonsters(gl, openTiles, mazeData, dusts,     (pos) => new DustSpirit(pos), "dust sprite");
         }
 
         /// <summary>
         /// Generic helper that picks random open tiles and spawns monsters onto them.
         /// </summary>
         private static void SpawnMonsters(
-            GameLocation gl, MazeInstance inst, MazeData data,
+            GameLocation gl, List<Point> openTiles, MazeData data,
             int count, Func<Vector2, Monster> factory, string label)
         {
             for (int i = 0; i < count; i++)
             {
-                if (!inst.openTiles.Any()) break;
+                if (!openTiles.Any()) break;
 
-                int idx = Game1.random.Next(inst.openTiles.Count);
-                var v   = inst.openTiles[idx].ToVector2() * 64f;
-                inst.openTiles.RemoveAt(idx);
+                int idx = Game1.random.Next(openTiles.Count);
+                var v   = openTiles[idx].ToVector2() * 64f;
+                openTiles.RemoveAt(idx);
 
                 gl.characters.Add(factory(v));
 
@@ -1094,12 +1128,25 @@ namespace MazeQuest
 
         public static void ShuffleList<T>(List<T> list)
         {
+            Random rng = mazeGenerationRandom ?? Game1.random;
             int i = list.Count;
             while (i > 1)
             {
                 i--;
-                int j = Game1.random.Next(i + 1);
+                int j = rng.Next(i + 1);
                 (list[j], list[i]) = (list[i], list[j]);
+            }
+        }
+
+        private static int GetStableMazeSeed(string mazeId)
+        {
+            unchecked
+            {
+                int seed = Game1.uniqueIDForThisGame.GetHashCode();
+                seed = seed * 397 + Game1.Date.TotalDays;
+                foreach (char c in mazeId)
+                    seed = seed * 397 + c;
+                return seed;
             }
         }
 
@@ -1125,17 +1172,15 @@ namespace MazeQuest
                 if (item != null) items.Add(item);
             }
 
-            // Lägg till guld om konfigurerat
-            if (data.CoinBaseMax > 0)
-            {
-                int coins = Game1.random.Next(data.CoinBaseMin, data.CoinBaseMax + 1);
-                if (coins > 0)
-                    items.Add(new StardewValley.Object("858", coins)); // (O)858 = Qi Gem, byt till 384 för guld-bars
-            }
+            int coins = data.CoinBaseMax > 0
+                ? Game1.random.Next(data.CoinBaseMin, data.CoinBaseMax + 1)
+                : 0;
 
             var chest = new Chest(true, tile);
             chest.Items.AddRange(items);
             chest.CanBeGrabbed = false;
+            if (coins > 0)
+                chest.modData[CHEST_MONEY_MODDATA_KEY] = coins.ToString();
             return chest;
         }
 
@@ -1293,8 +1338,17 @@ namespace MazeQuest
                 {
                     if (inst.chestTiles.Contains(tv)
                         && __instance.overlayObjects.TryGetValue(tv, out StardewValley.Object obj)
-                        && obj is Chest)
+                        && obj is Chest chest)
                     {
+                        if (chest.modData.TryGetValue(CHEST_MONEY_MODDATA_KEY, out string rawCoins)
+                            && int.TryParse(rawCoins, out int coins)
+                            && coins > 0)
+                        {
+                            who.Money += coins;
+                            chest.modData.Remove(CHEST_MONEY_MODDATA_KEY);
+                            Game1.dayTimeMoneyBox.moneyShakeTimer = 1000;
+                        }
+
                         pendingMazeChestReturnWarp = true;
                         pendingMazeChestMenuWasOpen = false;
                         pendingMazeChestReturnWarpDelayTicks = 15;

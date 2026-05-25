@@ -39,7 +39,105 @@
             { "Id": "SellAttackTea", "ItemId": "(O){{ModId}}_AttackTea", "Price": 500, "AvailableStock": 4 },
             { "Id": "SellSpeedTea", "ItemId": "(O){{ModId}}_SpeedTea", "Price": 500, "AvailableStock": 4 }
           ]
+        },
+        "Moonvillage.AnnetteNPC_MonsterMuskShop": {
+          "Currency": 0,
+          "Owners": [
+            {
+              "Id": "AnnetteMonsterMuskOwner",
+              "Name": "Any",
+              "Portrait": "Moonvillage_Annette"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "MonsterMusk",
+              "ItemId": "(O)879",
+              "Price": 1000,
+              "AvailableStock": 5
+            }
+          ]
+        },
+        "Moonvillage.AnnetteNPC_PirateIceCreamShop": {
+          "Currency": 0,
+          "Owners": [
+            {
+              "Id": "PirateIceCreamOwner",
+              "Name": "Any",
+              "Portrait": "Moonvillage_Grandmother"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "IceCream",
+              "ItemId": "(O)233",
+              "Price": 250
+            },
+            {
+              "Id": "ChocolateCake",
+              "ItemId": "(O)220",
+              "Price": 300
+            },
+            {
+              "Id": "PinkCake",
+              "ItemId": "(O)221",
+              "Price": 480
+            },
+            {
+              "Id": "Cookie",
+              "ItemId": "(O)223",
+              "Price": 140
+            },
+            {
+              "Id": "PinaColada",
+              "ItemId": "(O)873",
+              "Price": 600
+            }
+          ]
         }
+      }
+    },
+    {
+      "LogName": "Add SVE ice cream types to Pirate Ice Cream Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Moonvillage.AnnetteNPC_PirateIceCreamShop", "Items" ],
+      "Entries": {
+        "SVEVeganCone": {
+          "Id": "SVEVeganCone",
+          "ItemId": "FlashShifter.StardewValleyExpandedCP_Vegan_Cone",
+          "Price": 750
+        },
+        "SVEIceCreamSundae": {
+          "Id": "SVEIceCreamSundae",
+          "ItemId": "FlashShifter.StardewValleyExpandedCP_Ice_Cream_Sundae",
+          "Price": 500
+        },
+        "SVEPrismaticPop": {
+          "Id": "SVEPrismaticPop",
+          "ItemId": "FlashShifter.StardewValleyExpandedCP_Prismatic_Pop",
+          "Price": 2500,
+          "AvailableStock": 1
+        }
+      },
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+    {
+      "LogName": "Add East Scarp ice cream type to Pirate Ice Cream Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Moonvillage.AnnetteNPC_PirateIceCreamShop", "Items" ],
+      "Entries": {
+        "EastScarpZinfazuIcecream": {
+          "Id": "EastScarpZinfazuIcecream",
+          "ItemId": "Lemurkat.EastScarp_ZinfazuIcecream",
+          "Price": 800
+        }
+      },
+      "When": {
+        "HasMod": "Lemurkat.EastScarp"
       }
     }
   ]

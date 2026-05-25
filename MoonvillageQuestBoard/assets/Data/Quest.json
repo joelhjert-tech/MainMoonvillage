@@ -1,31 +1,34 @@
 {
   "Quests": {
     "JoelHjert.MoonVillage.StopTheGathering": {
-      "Title": "Stop the Gathering",
+      "Title": "i18n:quest.stop_the_gathering.title",
       "Type": "Quest",
       "Category": "Moonvillage",
-      "Giver": "DittModID_Annette",
-      "Description": "Annette has seen signs of monsters gathering near the hidden maze. Find the maze and stop them before Moonvillage is threatened again.",
-      "AcceptText": "Annette's warning has been added to your Moonvillage requests.",
-      "CompleteText": "The gathering has been stopped. Moonvillage breathes easier tonight.",
-      "ObjectiveText": "Enter the hidden maze and defeat 10 Green Slimes.",
+      "Giver": "Moonvillage_Annette",
+      "Description": "i18n:quest.stop_the_gathering.description",
+      "AcceptText": "i18n:quest.stop_the_gathering.accept",
+      "CompleteText": "i18n:quest.stop_the_gathering.complete",
+      "ObjectiveText": "i18n:quest.stop_the_gathering.objective",
       "Weight": 100,
       "CooldownDays": 7,
       "DeadlineDays": 7,
       "Conditions": {
-        "eventseen": "991001",
-        "npcmet": "DittModID_Annette"
+        "eventseen": "Moonvillage.AnnetteNPC_WizardTower",
+        "npcmet": "Moonvillage_Annette"
       },
       "Objectives": [
         {
+          "Name": "enter_maze",
           "Kind": "VisitLocation",
           "Target": "Custom_Maze",
           "Count": 1
         },
         {
+          "Name": "clear_slimes",
           "Kind": "SlayMonster",
           "Target": "Green Slime",
-          "Count": 10
+          "Count": 10,
+          "Requires": ["enter_maze"]
         }
       ],
       "Rewards": [
@@ -35,7 +38,7 @@
         },
         {
           "Kind": "Friendship",
-          "Target": "DittModID_Annette",
+          "Target": "Moonvillage_Annette",
           "Amount": 150
         },
         {
@@ -46,19 +49,19 @@
       "CompletionMailFlag": "JoelHjert.MoonVillage.HiddenMazeCleared"
     },
     "JoelHjert.MoonVillage.ForestSupplies": {
-      "Title": "Forest Supplies",
+      "Title": "i18n:quest.forest_supplies.title",
       "Type": "Quest",
       "Category": "Moonvillage",
-      "Giver": "DittModID_Annette",
-      "Description": "Moonvillage needs sturdy wood for repairs around the old paths.",
-      "AcceptText": "Forest Supplies accepted.",
-      "CompleteText": "The repair supplies have been delivered.",
-      "ObjectiveText": "Bring 50 wood to the Moon Village Requests board.",
+      "Giver": "Moonvillage_Annette",
+      "Description": "i18n:quest.forest_supplies.description",
+      "AcceptText": "i18n:quest.forest_supplies.accept",
+      "CompleteText": "i18n:quest.forest_supplies.complete",
+      "ObjectiveText": "i18n:quest.forest_supplies.objective",
       "Weight": 80,
       "CooldownDays": 3,
       "DeadlineDays": 5,
       "Conditions": {
-        "eventseen": "991001"
+        "eventseen": "Moonvillage.AnnetteNPC_WizardTower"
       },
       "Objectives": [
         {
@@ -75,8 +78,354 @@
         },
         {
           "Kind": "Friendship",
-          "Target": "DittModID_Annette",
+          "Target": "Moonvillage_Annette",
           "Amount": 50
+        }
+      ]
+    },
+    "JoelHjert.MoonVillage.MoonwellStones": {
+      "Title": "i18n:quest.moonwell_stones.title",
+      "Type": "Quest",
+      "Category": "Moonvillage",
+      "Giver": "Moonvillage_Annette",
+      "Description": "i18n:quest.moonwell_stones.description",
+      "AcceptText": "i18n:quest.moonwell_stones.accept",
+      "CompleteText": "i18n:quest.moonwell_stones.complete",
+      "ObjectiveText": "i18n:quest.moonwell_stones.objective",
+      "Weight": 75,
+      "CooldownDays": 4,
+      "DeadlineDays": 5,
+      "Conditions": {
+        "eventseen": "Moonvillage.AnnetteNPC_WizardTower"
+      },
+      "Objectives": [
+        {
+          "Kind": "DeliverItem",
+          "Target": "(O)390",
+          "Count": 75,
+          "RemoveItemsOnComplete": true
+        }
+      ],
+      "Rewards": [
+        {
+          "Kind": "Money",
+          "Amount": 650
+        },
+        {
+          "Kind": "Friendship",
+          "Target": "Moonvillage_Annette",
+          "Amount": 60
+        }
+      ]
+    },
+    "JoelHjert.MoonVillage.LanternResin": {
+      "Title": "i18n:quest.lantern_resin.title",
+      "Type": "Quest",
+      "Category": "Moonvillage",
+      "Giver": "Moonvillage_Kira",
+      "Description": "i18n:quest.lantern_resin.description",
+      "AcceptText": "i18n:quest.lantern_resin.accept",
+      "CompleteText": "i18n:quest.lantern_resin.complete",
+      "ObjectiveText": "i18n:quest.lantern_resin.objective",
+      "Weight": 70,
+      "CooldownDays": 3,
+      "DeadlineDays": 4,
+      "Conditions": {
+        "eventseen": "Moonvillage.AnnetteNPC_WizardTower",
+        "npcmet": "Moonvillage_Kira"
+      },
+      "Objectives": [
+        {
+          "Kind": "DeliverItem",
+          "Target": "(O)92",
+          "Count": 30,
+          "RemoveItemsOnComplete": true
+        }
+      ],
+      "Rewards": [
+        {
+          "Kind": "Money",
+          "Amount": 450
+        },
+        {
+          "Kind": "Friendship",
+          "Target": "Moonvillage_Kira",
+          "Amount": 60
+        }
+      ]
+    },
+    "JoelHjert.MoonVillage.TeaForTheWatch": {
+      "Title": "i18n:quest.tea_for_the_watch.title",
+      "Type": "Quest",
+      "Category": "Moonvillage",
+      "Giver": "Moonvillage_Annette",
+      "Description": "i18n:quest.tea_for_the_watch.description",
+      "AcceptText": "i18n:quest.tea_for_the_watch.accept",
+      "CompleteText": "i18n:quest.tea_for_the_watch.complete",
+      "ObjectiveText": "i18n:quest.tea_for_the_watch.objective",
+      "Weight": 45,
+      "CooldownDays": 7,
+      "DeadlineDays": 7,
+      "Conditions": {
+        "eventseen": "Moonvillage.AnnetteNPC_WizardTower"
+      },
+      "Objectives": [
+        {
+          "Kind": "DeliverItem",
+          "Target": "(O)Moonvillage.AnnetteNPC_HealingTea",
+          "Count": 3,
+          "RemoveItemsOnComplete": true
+        }
+      ],
+      "Rewards": [
+        {
+          "Kind": "Money",
+          "Amount": 1200
+        },
+        {
+          "Kind": "Friendship",
+          "Target": "Moonvillage_Annette",
+          "Amount": 90
+        },
+        {
+          "Kind": "Item",
+          "Target": "(O)Moonvillage.AnnetteNPC_DefenseTea",
+          "Count": 1
+        }
+      ]
+    },
+    "JoelHjert.MoonVillage.MazeScout": {
+      "Title": "i18n:quest.maze_scout.title",
+      "Type": "Quest",
+      "Category": "Moonvillage",
+      "Giver": "Moonvillage_Annette",
+      "Description": "i18n:quest.maze_scout.description",
+      "AcceptText": "i18n:quest.maze_scout.accept",
+      "CompleteText": "i18n:quest.maze_scout.complete",
+      "ObjectiveText": "i18n:quest.maze_scout.objective",
+      "Weight": 65,
+      "CooldownDays": 5,
+      "DeadlineDays": 4,
+      "Conditions": {
+        "eventseen": "Moonvillage.AnnetteNPC_WizardTower",
+        "npcmet": "Moonvillage_Annette"
+      },
+      "Objectives": [
+        {
+          "Name": "scout_maze",
+          "Kind": "VisitLocation",
+          "Target": "Custom_Maze",
+          "Count": 1
+        },
+        {
+          "Name": "report_to_annette",
+          "Kind": "TalkToNpc",
+          "Target": "Moonvillage_Annette",
+          "Count": 1,
+          "Requires": ["scout_maze"]
+        }
+      ],
+      "Rewards": [
+        {
+          "Kind": "Money",
+          "Amount": 900
+        },
+        {
+          "Kind": "Friendship",
+          "Target": "Moonvillage_Annette",
+          "Amount": 100
+        }
+      ]
+    },
+    "JoelHjert.MoonVillage.CrystalLedger": {
+      "Title": "i18n:quest.crystal_ledger.title",
+      "Type": "Quest",
+      "Category": "Moonvillage",
+      "Giver": "Moonvillage_Venessa",
+      "Description": "i18n:quest.crystal_ledger.description",
+      "AcceptText": "i18n:quest.crystal_ledger.accept",
+      "CompleteText": "i18n:quest.crystal_ledger.complete",
+      "ObjectiveText": "i18n:quest.crystal_ledger.objective",
+      "Weight": 55,
+      "CooldownDays": 6,
+      "DeadlineDays": 6,
+      "Conditions": {
+        "eventseen": "Moonvillage.AnnetteNPC_WizardTower",
+        "npcmet": "Moonvillage_Venessa"
+      },
+      "Objectives": [
+        {
+          "Kind": "DeliverItem",
+          "Target": "(O)80",
+          "Count": 5,
+          "RemoveItemsOnComplete": true
+        },
+        {
+          "Kind": "DeliverItem",
+          "Target": "(O)66",
+          "Count": 1,
+          "RemoveItemsOnComplete": true
+        }
+      ],
+      "Rewards": [
+        {
+          "Kind": "Money",
+          "Amount": 950
+        },
+        {
+          "Kind": "Friendship",
+          "Target": "Moonvillage_Venessa",
+          "Amount": 80
+        }
+      ]
+    },
+    "JoelHjert.MoonVillage.WildHerbBasket": {
+      "Title": "i18n:quest.wild_herb_basket.title",
+      "Type": "Quest",
+      "Category": "Moonvillage",
+      "Giver": "Moonvillage_Lorilai",
+      "Description": "i18n:quest.wild_herb_basket.description",
+      "AcceptText": "i18n:quest.wild_herb_basket.accept",
+      "CompleteText": "i18n:quest.wild_herb_basket.complete",
+      "ObjectiveText": "i18n:quest.wild_herb_basket.objective",
+      "Weight": 50,
+      "CooldownDays": 7,
+      "DeadlineDays": 7,
+      "Conditions": {
+        "eventseen": "Moonvillage.AnnetteNPC_WizardTower",
+        "npcmet": "Moonvillage_Lorilai",
+        "season": "spring"
+      },
+      "Objectives": [
+        {
+          "Kind": "DeliverItem",
+          "Target": "(O)16",
+          "Count": 2,
+          "RemoveItemsOnComplete": true
+        },
+        {
+          "Kind": "DeliverItem",
+          "Target": "(O)18",
+          "Count": 2,
+          "RemoveItemsOnComplete": true
+        },
+        {
+          "Kind": "DeliverItem",
+          "Target": "(O)20",
+          "Count": 2,
+          "RemoveItemsOnComplete": true
+        },
+        {
+          "Kind": "DeliverItem",
+          "Target": "(O)22",
+          "Count": 2,
+          "RemoveItemsOnComplete": true
+        }
+      ],
+      "Rewards": [
+        {
+          "Kind": "Money",
+          "Amount": 700
+        },
+        {
+          "Kind": "Friendship",
+          "Target": "Moonvillage_Lorilai",
+          "Amount": 90
+        }
+      ]
+    },
+    "JoelHjert.MoonVillage.ShadowResidue": {
+      "Title": "i18n:quest.shadow_residue.title",
+      "Type": "Quest",
+      "Category": "Moonvillage",
+      "Giver": "Moonvillage_Annette",
+      "Description": "i18n:quest.shadow_residue.description",
+      "AcceptText": "i18n:quest.shadow_residue.accept",
+      "CompleteText": "i18n:quest.shadow_residue.complete",
+      "ObjectiveText": "i18n:quest.shadow_residue.objective",
+      "Weight": 35,
+      "CooldownDays": 10,
+      "DeadlineDays": 7,
+      "Conditions": {
+        "eventseen": "Moonvillage.AnnetteNPC_WizardTower",
+        "mindaysplayed": "28"
+      },
+      "Objectives": [
+        {
+          "Kind": "DeliverItem",
+          "Target": "(O)769",
+          "Count": 2,
+          "RemoveItemsOnComplete": true
+        },
+        {
+          "Kind": "DeliverItem",
+          "Target": "(O)768",
+          "Count": 2,
+          "RemoveItemsOnComplete": true
+        }
+      ],
+      "Rewards": [
+        {
+          "Kind": "Money",
+          "Amount": 1600
+        },
+        {
+          "Kind": "Friendship",
+          "Target": "Moonvillage_Annette",
+          "Amount": 110
+        },
+        {
+          "Kind": "Item",
+          "Target": "(O)Moonvillage.AnnetteNPC_AttackTea",
+          "Count": 1
+        }
+      ]
+    },
+    "JoelHjert.MoonVillage.MoonBossRumor": {
+      "Title": "i18n:quest.moon_boss_rumor.title",
+      "Type": "Quest",
+      "Category": "Moonvillage",
+      "Giver": "Moonvillage_Annette",
+      "Description": "i18n:quest.moon_boss_rumor.description",
+      "AcceptText": "i18n:quest.moon_boss_rumor.accept",
+      "CompleteText": "i18n:quest.moon_boss_rumor.complete",
+      "ObjectiveText": "i18n:quest.moon_boss_rumor.objective",
+      "Weight": 20,
+      "CooldownDays": 14,
+      "DeadlineDays": 10,
+      "Conditions": {
+        "eventseen": "Moonvillage.AnnetteNPC_WizardTower",
+        "mindaysplayed": "42"
+      },
+      "Objectives": [
+        {
+          "Name": "enter_maze",
+          "Kind": "VisitLocation",
+          "Target": "Custom_Maze",
+          "Count": 1
+        },
+        {
+          "Name": "defeat_boss",
+          "Kind": "SlayMonster",
+          "Target": "Moonvillage_MoonBoss",
+          "Count": 1,
+          "Requires": ["enter_maze"]
+        }
+      ],
+      "Rewards": [
+        {
+          "Kind": "Money",
+          "Amount": 3500
+        },
+        {
+          "Kind": "Friendship",
+          "Target": "Moonvillage_Annette",
+          "Amount": 180
+        },
+        {
+          "Kind": "Item",
+          "Target": "(O)Moonvillage.AnnetteNPC_LuckTea",
+          "Count": 1
         }
       ]
     }

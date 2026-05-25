@@ -69,9 +69,24 @@
       "FromFile": "assets/Maps/AnnetteHouseInside_DungeonDoor.json"
     },
     {
+      "LogName": "Patch Annette house Monster Musk shop",
+      "Action": "Include",
+      "FromFile": "assets/Maps/AnnetteHouseInside_MonsterMuskShop.json"
+    },
+    {
+      "LogName": "Patch Annette house Pirate Ice Cream shop",
+      "Action": "Include",
+      "FromFile": "assets/Maps/AnnetteHouseInside_PirateIceCreamShop.json"
+    },
+    {
       "LogName": "Ladda in Wizardfary-ändringar",
       "Action": "Include",
       "FromFile": "assets/Maps/wizardfary_Edits.json"
+    },
+    {
+      "LogName": "Ladda in Mazequest-ändringar",
+      "Action": "Include",
+      "FromFile": "assets/Maps/Mazequest_Edits.json"
     },
     {
       "LogName": "Ladda in BusStop-ändringar",
@@ -122,6 +137,16 @@
       "LogName": "Ladda in Karaktärer och Resurser",
       "Action": "Include",
       "FromFile": "assets/Data/Characters.json"
+    },
+    {
+      "LogName": "Ladda in progression-dialog",
+      "Action": "Include",
+      "FromFile": "assets/Data/ProgressionDialogue.json"
+    },
+    {
+      "LogName": "Ladda in NPC lore questions",
+      "Action": "Include",
+      "FromFile": "assets/Data/NpcQuestions.json"
     },
     {
       "LogName": "Ladda in Brev",

@@ -11,4 +11,6 @@ public sealed class SaveState
 	public Dictionary<string, ActiveQuestState> ActiveQuests { get; set; } = new Dictionary<string, ActiveQuestState>();
 
 	public Dictionary<string, int> LastCompletedDay { get; set; } = new Dictionary<string, int>();
+
+	public Dictionary<string, int> LastOfferedDay { get; set; } = new Dictionary<string, int>();
 }

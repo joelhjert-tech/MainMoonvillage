@@ -1,0 +1,23 @@
+{
+  "Changes": [
+    {
+      "LogName": "Add Monster Musk shop to Annette house",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_AnnetteHouseInside",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 35,
+            "Y": 27
+          },
+          "Layer": "Buildings",
+          "SetTilesheet": "townInterior",
+          "SetIndex": 919,
+          "SetProperties": {
+            "Action": "OpenShop Moonvillage.AnnetteNPC_MonsterMuskShop"
+          }
+        }
+      ]
+    }
+  ]
+}

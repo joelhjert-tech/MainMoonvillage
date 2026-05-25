@@ -268,7 +268,6 @@
           "Id": "Moonvillage.AnnetteNPC_MoonDungeonEarlySpawns",
           "Trigger": "Manual",
           "Actions": [
-            "spacechase0.SpaceCore_ShowHudMessage \"Moon Dungeon early spawns triggered.\"",
             "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonEarlyGroup Target 2,2,46,46"
           ],
           "HostOnly": true,
@@ -278,7 +277,6 @@
           "Id": "Moonvillage.AnnetteNPC_MoonDungeonCrystalSpawns",
           "Trigger": "Manual",
           "Actions": [
-            "spacechase0.SpaceCore_ShowHudMessage \"Moon Dungeon crystal spawns triggered.\"",
             "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonCrystalGroup Target 2,2,46,46"
           ],
           "HostOnly": true,
@@ -288,7 +286,6 @@
           "Id": "Moonvillage.AnnetteNPC_MoonDungeonDeepSpawns",
           "Trigger": "Manual",
           "Actions": [
-            "spacechase0.SpaceCore_ShowHudMessage \"Moon Dungeon deep spawns triggered.\"",
             "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonDeepGroup Target 2,2,46,46"
           ],
           "HostOnly": true,
@@ -298,7 +295,6 @@
           "Id": "Moonvillage.AnnetteNPC_MoonDungeonBossSpawns",
           "Trigger": "Manual",
           "Actions": [
-            "spacechase0.SpaceCore_ShowHudMessage \"Moon Dungeon boss spawns triggered.\"",
             "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonBossGroup Target 2,2,46,46"
           ],
           "HostOnly": true,

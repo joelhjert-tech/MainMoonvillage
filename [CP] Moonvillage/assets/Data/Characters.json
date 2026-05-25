@@ -1,7 +1,7 @@
 {
   "Changes": [
     {
-      "LogName": "Define Annette, Kira, Lorilai and Venessa properties",
+      "LogName": "Define Annette, Kira, Lorilai, Venessa and Grandmother properties",
       "Action": "EditData",
       "Target": "Data/Characters",
       "Entries": {
@@ -100,6 +100,29 @@
               "Tile": {
                 "X": 10,
                 "Y": 8
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "Moonvillage_Grandmother": {
+          "DisplayName": "{{i18n:grandmother.name}}",
+          "Gender": "Female",
+          "Age": "Adult",
+          "BirthSeason": "winter",
+          "BirthDay": 14,
+          "HomeRegion": "Other",
+          "CanSocialize": true,
+          "CanReceiveGifts": true,
+          "UnlockConditions": "PLAYER_HAS_MAIL Any AnnetteHouse_Ready",
+          "GiftTastes": "Moonvillage_Grandmother",
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Custom_AnnetteHouseInside",
+              "Tile": {
+                "X": 21,
+                "Y": 44
               },
               "Direction": "down"
             }
@@ -203,6 +226,26 @@
       "FromFile": "assets/Characters/Venessa/Schedules/Venessa_Schedules.json"
     },
     {
+      "Action": "Load",
+      "Target": "Portraits/Moonvillage_Grandmother",
+      "FromFile": "assets/Characters/Grandmother/Portraits/Grandmother_Portraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Moonvillage_Grandmother",
+      "FromFile": "assets/Characters/Grandmother/Sprites/Grandmother_Sprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Moonvillage_Grandmother",
+      "FromFile": "assets/Characters/Grandmother/Dialogue/Grandmother_Dialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/Moonvillage_Grandmother",
+      "FromFile": "assets/Characters/Grandmother/Schedules/Grandmother_Schedules.json"
+    },
+    {
       "LogName": "Define Gift Tastes",
       "Action": "EditData",
       "Target": "Data/NPCGiftTastes",
@@ -210,7 +253,8 @@
         "Moonvillage_Annette": "724 72 StardropTea / 80 233 / 152 / 167 / / ",
         "Moonvillage_Kira": "68 580 582 / / / / / ",
         "Moonvillage_Lorilai": "773 256 16 / 18 22 20 404 / 206 211 / 167 420 / / ",
-        "Moonvillage_Venessa": "768 769 422 / 66 259 82 / 346 303 / 766 684 / / "
+        "Moonvillage_Venessa": "768 769 422 / 66 259 82 / 346 303 / 766 684 / / ",
+        "Moonvillage_Grandmother": "223 724 StardropTea / 340 348 613 422 / 16 18 20 22 256 / / 167 / "
       }
     }
   ]

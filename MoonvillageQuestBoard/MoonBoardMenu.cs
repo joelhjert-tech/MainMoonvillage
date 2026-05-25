@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using StardewModdingAPI;
 using StardewValley;
-using StardewValley.BellsAndWhistles;
 using StardewValley.Menus;
-using xTile.Dimensions;
 
 namespace MoonvillageQuestBoard;
 
@@ -25,7 +24,7 @@ public sealed class MoonBoardMenu : IClickableMenu
 	private readonly List<ClickableComponent> completeButtons = new List<ClickableComponent>();
 
 	public MoonBoardMenu(BoardConfig config, QuestService service)
-		: base(((Rectangle)(ref Game1.uiViewport)).Width / 2 - 400, ((Rectangle)(ref Game1.uiViewport)).Height / 2 - 300, 800, 600, true)
+		: base(Game1.uiViewport.Width / 2 - 400, Game1.uiViewport.Height / 2 - 300, 800, 600, true)
 	{
 		this.config = config;
 		this.service = service;
@@ -81,22 +80,32 @@ public sealed class MoonBoardMenu : IClickableMenu
 				return;
 			}
 		}
-		((IClickableMenu)this).receiveLeftClick(x, y, playSound);
+		base.receiveLeftClick(x, y, playSound);
 	}
 
 	public override void draw(SpriteBatch b)
 	{
-		//IL_0019: Unknown result type (might be due to invalid IL or missing references)
-		//IL_009a: Unknown result type (might be due to invalid IL or missing references)
-		//IL_009f: Unknown result type (might be due to invalid IL or missing references)
-		//IL_012b: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0130: Unknown result type (might be due to invalid IL or missing references)
+		try
+		{
+			DrawContents(b);
+		}
+		catch (Exception ex)
+		{
+			ModEntry.MonitorRef?.Log($"Moon quest board failed while drawing: {ex}", LogLevel.Error);
+			Game1.drawDialogueBox(base.xPositionOnScreen, base.yPositionOnScreen, base.width, base.height, false, true);
+			Utility.drawTextWithShadow(b, "Moon quest board could not be drawn. Check the SMAPI log for details.", Game1.smallFont, new Vector2(base.xPositionOnScreen + 60, base.yPositionOnScreen + 80), Game1.textColor);
+		}
+		base.drawMouse(b, false, -1);
+	}
+
+	private void DrawContents(SpriteBatch b)
+	{
 		IClickableMenu.drawTextureBox(b, base.xPositionOnScreen, base.yPositionOnScreen, base.width, base.height, Color.White);
-		SpriteText.drawString(b, config.Title, base.xPositionOnScreen + 48, base.yPositionOnScreen + 32, 999999, -1, 999999, 1f, 0.88f, false, -1, "", (Color?)null, (ScrollTextAlignment)0);
+		Utility.drawTextWithShadow(b, SafeText(config.Title), Game1.dialogueFont, new Vector2(base.xPositionOnScreen + 48, base.yPositionOnScreen + 28), Game1.textColor);
 		int y = base.yPositionOnScreen + 110;
 		if (offers.Count == 0)
 		{
-			Utility.drawTextWithShadow(b, "No new Moonvillage requests are available today.", Game1.smallFont, new Vector2((float)(base.xPositionOnScreen + 60), (float)y), Game1.textColor, 1f, -1f, -1, -1, 1f, 3);
+			Utility.drawTextWithShadow(b, SafeText("i18n:questboard.no_offers"), Game1.smallFont, new Vector2((float)(base.xPositionOnScreen + 60), (float)y), Game1.textColor, 1f, -1f, -1, -1, 1f, 3);
 			y += 70;
 		}
 		else
@@ -109,7 +118,7 @@ public sealed class MoonBoardMenu : IClickableMenu
 		}
 		if (active.Count > 0)
 		{
-			Utility.drawTextWithShadow(b, "Active Moonvillage Requests", Game1.smallFont, new Vector2((float)(base.xPositionOnScreen + 60), (float)(y + 10)), Game1.textColor, 1f, -1f, -1, -1, 1f, 3);
+			Utility.drawTextWithShadow(b, SafeText("i18n:questboard.active"), Game1.smallFont, new Vector2((float)(base.xPositionOnScreen + 60), (float)(y + 10)), Game1.textColor, 1f, -1f, -1, -1, 1f, 3);
 			y += 55;
 			foreach (BoardQuest quest2 in active)
 			{
@@ -117,8 +126,6 @@ public sealed class MoonBoardMenu : IClickableMenu
 				y += 80;
 			}
 		}
-		((IClickableMenu)this).draw(b);
-		((IClickableMenu)this).drawMouse(b, false, -1);
 	}
 
 	private void DrawQuestRow(SpriteBatch b, BoardQuest quest, int y, bool activeQuest)
@@ -137,13 +144,17 @@ public sealed class MoonBoardMenu : IClickableMenu
 		//IL_0126: Unknown result type (might be due to invalid IL or missing references)
 		//IL_012b: Unknown result type (might be due to invalid IL or missing references)
 		int x = base.xPositionOnScreen + 60;
-		string title = (activeQuest ? ("• " + quest.Title) : quest.Title);
+		string title = activeQuest ? ("- " + SafeText(quest.Title)) : SafeText(quest.Title);
 		Utility.drawTextWithShadow(b, title, Game1.smallFont, new Vector2((float)x, (float)y), Game1.textColor, 1f, -1f, -1, -1, 1f, 3);
-		string body = (string.IsNullOrWhiteSpace(quest.ObjectiveText) ? quest.Description : quest.ObjectiveText);
+		string body = SafeText(string.IsNullOrWhiteSpace(quest.ObjectiveText) ? quest.Description : quest.ObjectiveText);
 		Utility.drawTextWithShadow(b, Game1.parseText(body, Game1.smallFont, base.width - 290), Game1.smallFont, new Vector2((float)x, (float)(y + 32)), Game1.textColor, 1f, -1f, -1, -1, 1f, 3);
-		Rectangle button = default(Rectangle);
-		((Rectangle)(ref button))._002Ector(base.xPositionOnScreen + base.width - 190, y + 10, 130, 48);
+		Rectangle button = new Rectangle(base.xPositionOnScreen + base.width - 190, y + 10, 130, 48);
 		IClickableMenu.drawTextureBox(b, button.X, button.Y, button.Width, button.Height, Color.White);
-		Utility.drawTextWithShadow(b, activeQuest ? "Check" : "Accept", Game1.smallFont, new Vector2((float)(button.X + 26), (float)(button.Y + 12)), Game1.textColor, 1f, -1f, -1, -1, 1f, 3);
+		Utility.drawTextWithShadow(b, SafeText(activeQuest ? "i18n:questboard.check" : "i18n:questboard.accept"), Game1.smallFont, new Vector2((float)(button.X + 26), (float)(button.Y + 12)), Game1.textColor, 1f, -1f, -1, -1, 1f, 3);
+	}
+
+	private static string SafeText(string? value)
+	{
+		return string.IsNullOrWhiteSpace(value) ? "" : I18n.Text(value) ?? "";
 	}
 }

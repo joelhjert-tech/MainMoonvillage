@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "LogName": "Add moonlit SpaceCore lights to Mazequest",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Maze",
+      "AddWarps": [
+        "24 0 Custom_Wizardfary 25 38"
+      ],
+      "MapProperties": {
+        "spacechase0.SpaceCore_ColoredLights": "1 1 4 1.4 140 180 255 8 8 4 0.9 100 170 255 18 12 4 1.0 160 120 255 28 25 4 1.2 110 220 210 40 39 4 1.4 230 120 255"
+      }
+    }
+  ]
+}

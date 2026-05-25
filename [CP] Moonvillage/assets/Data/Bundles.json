@@ -30,9 +30,13 @@
           "BundleDescription": "{{i18n:bundle.herbalist.desc}}",
           "DrawQuestionMark": true,
           "Price": {
-            "(O)771": 500,
-            "(O)256": 50,
-            "(O)595": 20
+            "(O)771": 200,
+            "(O)Moss": 50,
+            "(O)16": 5,
+            "(O)18": 5,
+            "(O)20": 5,
+            "(O)22": 5,
+            "(O){{ModId}}_HealingTea": 2
           },
           "BundleCompletedActions": [
             "UB_PlaceBundle MoonGroceryBundle",
@@ -47,9 +51,12 @@
           "BundleDescription": "{{i18n:bundle.moon_grocery.desc}}",
           "DrawQuestionMark": true,
           "Price": {
-            "(O)388": 500,
-            "(O)424": 50,
-            "(O)262": 100
+            "(O)388": 300,
+            "(O)428": 10,
+            "(O)335": 5,
+            "(O)247": 5,
+            "(O)246": 5,
+            "(O)432": 5
           },
           "BundleCompletedActions": [
             "UB_PlaceBundle SpiritHealerBundle",
@@ -64,9 +71,10 @@
           "BundleDescription": "{{i18n:bundle.spirit_healer.desc}}",
           "DrawQuestionMark": true,
           "Price": {
-            "(O)768": 50,
-            "(O)769": 50,
-            "(O)66": 50
+            "(O)768": 10,
+            "(O)769": 10,
+            "(O)80": 10,
+            "(O)66": 5
           },
           "BundleCompletedActions": [
             "UB_PlaceBundle MoonInnBundle",
@@ -81,9 +89,10 @@
           "BundleDescription": "{{i18n:bundle.moon_inn.desc}}",
           "DrawQuestionMark": true,
           "Price": {
-            "(O)709": 150,
-            "(O)346": 50,
-            "(O)303": 50
+            "(O)709": 100,
+            "(O)346": 12,
+            "(O)428": 8,
+            "(O)395": 10
           },
           "BundleCompletedActions": [
             "UB_PlaceBundle MoonGranaryBundle",
@@ -98,9 +107,11 @@
           "BundleDescription": "{{i18n:bundle.moon_granary.desc}}",
           "DrawQuestionMark": true,
           "Price": {
-            "(O)262": 200,
-            "(O)270": 100,
-            "(O)300": 50
+            "(O)178": 100,
+            "(O)262": 60,
+            "(O)300": 40,
+            "(O)831": 30,
+            "(O)771": 100
           },
           "BundleCompletedActions": [
             "AddMail Current MoonGranary_Ready Received",
