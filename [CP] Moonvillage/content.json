@@ -1,5 +1,83 @@
 {
   "Format": "2.9.0",
+  "ConfigSchema": {
+    "Debug_ForceAllProgressionFlags": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceSecretWoodsQuest": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceWizardInvite": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceWizardQuestStarted": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceAnnetteMet": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceGuildMeetingDone": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceArrivalDone": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceHiddenMazeQuestStarted": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceTownhallBundleComplete": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceTownhallFixed": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceAnnetteHouseReady": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceMoonInnReady": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceSpiritHealerReady": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceHerbalistHouseReady": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceMoonGranaryReady": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceMoonGroceryReady": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceLorilaiBedroomReady": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceMoonpartwestRoadReady": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Debug_ForceFinalRestorationComplete": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    }
+  },
   "CustomLocations": [
     {
       "Name": "Custom_Moonvillage",
@@ -175,6 +253,11 @@
       "LogName": "Ladda in Brev",
       "Action": "Include",
       "FromFile": "assets/Data/Mail.json"
+    },
+    {
+      "LogName": "Load progression failsafe flags",
+      "Action": "Include",
+      "FromFile": "assets/Data/DebugFailsafeFlags.json"
     },
     {
       "LogName": "Ladda in Butiker",

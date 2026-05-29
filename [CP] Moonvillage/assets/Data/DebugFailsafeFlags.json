@@ -1,0 +1,362 @@
+{
+  "Changes": [
+    {
+      "LogName": "Debug force flag - all progression flags",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceAllProgressionFlags": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_AllProgressionFlags": {
+          "Id": "{{ModId}}_DebugForce_AllProgressionFlags",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current JoelHjert.MoonVillage.SecretWoodsQuest Received",
+            "AddMail Current JoelHjert.MoonVillage.WizardInvite Received",
+            "AddMail Current JoelHjert.MoonVillage.WizardQuestStarted Received",
+            "AddMail Current JoelHjert.MoonVillage.AnnetteMet Received",
+            "AddMail Current JoelHjert.MoonVillage.GuildMeetingDone Received",
+            "AddMail Current JoelHjert.MoonVillage.ArrivalDone Received",
+            "AddMail Current JoelHjert.MoonVillage.HiddenMazeQuestStarted Received",
+            "AddMail Current JoelHjert.MoonVillage.TownhallBundleComplete Received",
+            "AddMail Current JoelHjert.MoonVillage.TownhallFixed Received",
+            "AddMail Current AnnetteHouse_Ready Received",
+            "AddMail Current MoonInn_Ready Received",
+            "AddMail Current SpiritHealer_Ready Received",
+            "AddMail Current HerbalistHouse_Ready Received",
+            "AddMail Current MoonGranary_Ready Received",
+            "AddMail Current MoonGrocery_Ready Received",
+            "AddMail Current LorilaiBedroom_Ready Received",
+            "AddMail Current MoonpartwestRoad_Ready Received",
+            "AddMail Current Moonvillage_FinalRestorationComplete Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Secret Woods quest",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceSecretWoodsQuest": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_SecretWoodsQuest": {
+          "Id": "{{ModId}}_DebugForce_SecretWoodsQuest",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current JoelHjert.MoonVillage.SecretWoodsQuest",
+          "Actions": [
+            "AddMail Current JoelHjert.MoonVillage.SecretWoodsQuest Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Wizard invite",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceWizardInvite": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_WizardInvite": {
+          "Id": "{{ModId}}_DebugForce_WizardInvite",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current JoelHjert.MoonVillage.WizardInvite",
+          "Actions": [
+            "AddMail Current JoelHjert.MoonVillage.WizardInvite Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Wizard quest started",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceWizardQuestStarted": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_WizardQuestStarted": {
+          "Id": "{{ModId}}_DebugForce_WizardQuestStarted",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current JoelHjert.MoonVillage.WizardQuestStarted",
+          "Actions": [
+            "AddMail Current JoelHjert.MoonVillage.WizardQuestStarted Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Annette met",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceAnnetteMet": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_AnnetteMet": {
+          "Id": "{{ModId}}_DebugForce_AnnetteMet",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current JoelHjert.MoonVillage.AnnetteMet",
+          "Actions": [
+            "AddMail Current JoelHjert.MoonVillage.AnnetteMet Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Guild meeting done",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceGuildMeetingDone": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_GuildMeetingDone": {
+          "Id": "{{ModId}}_DebugForce_GuildMeetingDone",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current JoelHjert.MoonVillage.GuildMeetingDone",
+          "Actions": [
+            "AddMail Current JoelHjert.MoonVillage.GuildMeetingDone Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Arrival done",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceArrivalDone": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_ArrivalDone": {
+          "Id": "{{ModId}}_DebugForce_ArrivalDone",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current JoelHjert.MoonVillage.ArrivalDone",
+          "Actions": [
+            "AddMail Current JoelHjert.MoonVillage.ArrivalDone Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Hidden maze quest started",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceHiddenMazeQuestStarted": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_HiddenMazeQuestStarted": {
+          "Id": "{{ModId}}_DebugForce_HiddenMazeQuestStarted",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current JoelHjert.MoonVillage.HiddenMazeQuestStarted",
+          "Actions": [
+            "AddMail Current JoelHjert.MoonVillage.HiddenMazeQuestStarted Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Townhall bundle complete",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceTownhallBundleComplete": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_TownhallBundleComplete": {
+          "Id": "{{ModId}}_DebugForce_TownhallBundleComplete",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current JoelHjert.MoonVillage.TownhallBundleComplete",
+          "Actions": [
+            "AddMail Current JoelHjert.MoonVillage.TownhallBundleComplete Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Townhall fixed",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceTownhallFixed": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_TownhallFixed": {
+          "Id": "{{ModId}}_DebugForce_TownhallFixed",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current JoelHjert.MoonVillage.TownhallFixed",
+          "Actions": [
+            "AddMail Current JoelHjert.MoonVillage.TownhallFixed Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Annette house ready",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceAnnetteHouseReady": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_AnnetteHouseReady": {
+          "Id": "{{ModId}}_DebugForce_AnnetteHouseReady",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current AnnetteHouse_Ready",
+          "Actions": [
+            "AddMail Current AnnetteHouse_Ready Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Moon Inn ready",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceMoonInnReady": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_MoonInnReady": {
+          "Id": "{{ModId}}_DebugForce_MoonInnReady",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current MoonInn_Ready",
+          "Actions": [
+            "AddMail Current MoonInn_Ready Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Spirit Healer ready",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceSpiritHealerReady": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_SpiritHealerReady": {
+          "Id": "{{ModId}}_DebugForce_SpiritHealerReady",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current SpiritHealer_Ready",
+          "Actions": [
+            "AddMail Current SpiritHealer_Ready Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Herbalist house ready",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceHerbalistHouseReady": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_HerbalistHouseReady": {
+          "Id": "{{ModId}}_DebugForce_HerbalistHouseReady",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current HerbalistHouse_Ready",
+          "Actions": [
+            "AddMail Current HerbalistHouse_Ready Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Moon Granary ready",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceMoonGranaryReady": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_MoonGranaryReady": {
+          "Id": "{{ModId}}_DebugForce_MoonGranaryReady",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current MoonGranary_Ready",
+          "Actions": [
+            "AddMail Current MoonGranary_Ready Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Moon Grocery ready",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceMoonGroceryReady": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_MoonGroceryReady": {
+          "Id": "{{ModId}}_DebugForce_MoonGroceryReady",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current MoonGrocery_Ready",
+          "Actions": [
+            "AddMail Current MoonGrocery_Ready Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Lorilai bedroom ready",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceLorilaiBedroomReady": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_LorilaiBedroomReady": {
+          "Id": "{{ModId}}_DebugForce_LorilaiBedroomReady",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current LorilaiBedroom_Ready",
+          "Actions": [
+            "AddMail Current LorilaiBedroom_Ready Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Moonpartwest road ready",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceMoonpartwestRoadReady": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_MoonpartwestRoadReady": {
+          "Id": "{{ModId}}_DebugForce_MoonpartwestRoadReady",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current MoonpartwestRoad_Ready",
+          "Actions": [
+            "AddMail Current MoonpartwestRoad_Ready Received"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Debug force flag - Final restoration complete",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Debug_ForceFinalRestorationComplete": "true"
+      },
+      "Entries": {
+        "{{ModId}}_DebugForce_FinalRestorationComplete": {
+          "Id": "{{ModId}}_DebugForce_FinalRestorationComplete",
+          "Trigger": "LocationChanged",
+          "Condition": "!PLAYER_HAS_MAIL Current Moonvillage_FinalRestorationComplete",
+          "Actions": [
+            "AddMail Current Moonvillage_FinalRestorationComplete Received"
+          ]
+        }
+      }
+    }
+  ]
+}
