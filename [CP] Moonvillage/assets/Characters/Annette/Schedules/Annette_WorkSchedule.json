@@ -5,8 +5,8 @@
       "Action": "EditData",
       "Target": "Characters/Schedules/Moonvillage_Annette",
       "Entries": {
-        "Tue": "610 Custom_AnnetteHouseInside 16 7 2/900 Custom_Moonvillage 20 25 2/930 Custom_Moongrocery 10 21 2/1700 Custom_Moonvillage 27 13 2/1800 Custom_AnnetteHouseInside 16 7 2",
-        "Thu": "610 Custom_AnnetteHouseInside 16 7 2/900 Custom_Moonvillage 20 25 2/930 Custom_Moongrocery 10 21 2/1700 Custom_Moonvillage 27 13 2/1800 Custom_AnnetteHouseInside 16 7 2"
+        "Tue": "600 Custom_AnnetteHouseInside 2 8 2",
+        "Thu": "600 Custom_AnnetteHouseInside 2 8 2"
       },
       "When": {
         "HasFlag": "MoonGrocery_Ready"

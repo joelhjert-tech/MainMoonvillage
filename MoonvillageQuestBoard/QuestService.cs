@@ -323,7 +323,13 @@ public sealed class QuestService
 		case "friendship":
 		{
 			string npc = (string.IsNullOrWhiteSpace(reward.Target) ? quest.Giver : reward.Target);
-			Game1.player.changeFriendship(reward.Amount, Game1.getCharacterFromName(npc, true, false));
+			NPC? character = Game1.getCharacterFromName(npc, true, false);
+			if (character == null)
+			{
+				monitor.Log($"Could not apply friendship reward for quest '{quest.Id}': NPC '{npc}' was not found.", LogLevel.Warn);
+				break;
+			}
+			Game1.player.changeFriendship(reward.Amount, character);
 			break;
 		}
 		case "item":

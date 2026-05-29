@@ -26,6 +26,10 @@
       "FromMapFile": "assets/Maps/oldMooninn.tmx"
     },
     {
+      "Name": "Custom_innfloor2",
+      "FromMapFile": "assets/Maps/innfloor2.tmx"
+    },
+    {
       "Name": "Custom_Spritshouse",
       "FromMapFile": "assets/Maps/Spritshouse.tmx"
     },
@@ -40,6 +44,10 @@
     {
       "Name": "Custom_Moongrocery",
       "FromMapFile": "assets/Maps/Moongrocery.tmx"
+    },
+    {
+      "Name": "Custom_Moonpartwest",
+      "FromMapFile": "assets/Maps/Moonpartwest.tmx"
     }
   ],
   "Changes": [
@@ -52,6 +60,11 @@
       "LogName": "Ladda in Moonvillage-ändringar",
       "Action": "Include",
       "FromFile": "assets/Maps/Moonvillage_Edits.json"
+    },
+    {
+      "LogName": "Load Moonpartwest edits",
+      "Action": "Include",
+      "FromFile": "assets/Maps/Moonpartwest_Edits.json"
     },
     {
       "LogName": "Ladda in Annettehouse-ändringar",
@@ -139,6 +152,16 @@
       "FromFile": "assets/Data/Characters.json"
     },
     {
+      "LogName": "Load expanded Moon Village characters",
+      "Action": "Include",
+      "FromFile": "assets/Data/ExpandedCharacters.json"
+    },
+    {
+      "LogName": "Ladda in basdialog",
+      "Action": "Include",
+      "FromFile": "assets/Data/BaseDialogue.json"
+    },
+    {
       "LogName": "Ladda in progression-dialog",
       "Action": "Include",
       "FromFile": "assets/Data/ProgressionDialogue.json"
@@ -164,6 +187,21 @@
       "FromFile": "assets/Data/Drinks.json"
     },
     {
+      "LogName": "Ladda in Junimo omens",
+      "Action": "Include",
+      "FromFile": "assets/Data/JunimoOmens.json"
+    },
+    {
+      "LogName": "Load Moon Village animals",
+      "Action": "Include",
+      "FromFile": "assets/Data/MoonAnimals.json"
+    },
+    {
+      "LogName": "Load Moon Village artifacts and minerals",
+      "Action": "Include",
+      "FromFile": "assets/Data/MoonArtifactsMinerals.json"
+    },
+    {
       "LogName": "Ladda in Special Orders",
       "Action": "Include",
       "FromFile": "assets/Data/SpecialOrders.json"
@@ -177,6 +215,11 @@
       "LogName": "Ladda in Moon Inn",
       "Action": "Include",
       "FromFile": "assets/Maps/oldMooninn_Edits.json"
+    },
+    {
+      "LogName": "Load Moon Inn floor 2",
+      "Action": "Include",
+      "FromFile": "assets/Maps/innfloor2_Edits.json"
     },
     {
       "LogName": "Ladda in Spirits House",
@@ -209,6 +252,12 @@
       "Action": "Load",
       "Target": "Characters/Monsters/Boss_moon",
       "FromFile": "assets/Characters/Monsters/Boss_moon.png"
+    },
+    {
+      "LogName": "Ladda in Chimera rex sprite",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Chimera_spritesheet",
+      "FromFile": "assets/Characters/Monsters/Chimera_spritesheet.png"
     }
   ]
 }

@@ -1,0 +1,440 @@
+{
+  "Changes": [
+    {
+      "LogName": "Define expanded Moon Village characters",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Moonvillage_RowanStormglow": {
+          "DisplayName": "{{i18n:rowan.name}}",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "BirthSeason": "fall",
+          "BirthDay": 21,
+          "HomeRegion": "Other",
+          "CanSocialize": true,
+          "CanBeRomanced": true,
+          "CanReceiveGifts": true,
+          "UnlockConditions": "PLAYER_HAS_MAIL Any MoonInn_Ready",
+          "GiftTastes": "Moonvillage_RowanStormglow",
+          "FriendsAndFamily": {
+            "Moonvillage_BlazeStormglow": "{{i18n:rowan.family.blaze}}",
+            "Moonvillage_EmberStormglow": "{{i18n:rowan.family.ember}}"
+          },
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Custom_oldMooninn",
+              "Tile": { "X": 4, "Y": 6 },
+              "Direction": "down"
+            }
+          ]
+        },
+        "Moonvillage_BlazeStormglow": {
+          "DisplayName": "{{i18n:blaze.name}}",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "BirthSeason": "summer",
+          "BirthDay": 17,
+          "HomeRegion": "Other",
+          "CanSocialize": true,
+          "CanBeRomanced": true,
+          "CanReceiveGifts": true,
+          "UnlockConditions": "PLAYER_HAS_MAIL Any MoonInn_Ready",
+          "GiftTastes": "Moonvillage_BlazeStormglow",
+          "FriendsAndFamily": {
+            "Moonvillage_RowanStormglow": "{{i18n:blaze.family.rowan}}",
+            "Moonvillage_EmberStormglow": "{{i18n:blaze.family.ember}}"
+          },
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Custom_oldMooninn",
+              "Tile": { "X": 3, "Y": 6 },
+              "Direction": "down"
+            }
+          ]
+        },
+        "Moonvillage_EmberStormglow": {
+          "DisplayName": "{{i18n:ember.name}}",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "BirthSeason": "summer",
+          "BirthDay": 18,
+          "HomeRegion": "Other",
+          "CanSocialize": true,
+          "CanBeRomanced": true,
+          "CanReceiveGifts": true,
+          "UnlockConditions": "PLAYER_HAS_MAIL Any MoonInn_Ready",
+          "GiftTastes": "Moonvillage_EmberStormglow",
+          "FriendsAndFamily": {
+            "Moonvillage_RowanStormglow": "{{i18n:ember.family.rowan}}",
+            "Moonvillage_BlazeStormglow": "{{i18n:ember.family.blaze}}"
+          },
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Custom_oldMooninn",
+              "Tile": { "X": 5, "Y": 6 },
+              "Direction": "down"
+            }
+          ]
+        },
+        "Moonvillage_RoryBrightleaf": {
+          "DisplayName": "{{i18n:rory.name}}",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Shy",
+          "Optimism": "Positive",
+          "BirthSeason": "winter",
+          "BirthDay": 8,
+          "HomeRegion": "Other",
+          "IsDarkSkinned": true,
+          "CanSocialize": true,
+          "CanBeRomanced": false,
+          "CanReceiveGifts": true,
+          "UnlockConditions": "PLAYER_HAS_MAIL Any MoonpartwestRoad_Ready",
+          "GiftTastes": "Moonvillage_RoryBrightleaf",
+          "FriendsAndFamily": {
+            "Moonvillage_FinnBrightleaf": "{{i18n:rory.family.finn}}",
+            "Moonvillage_AshBrightleaf": "{{i18n:rory.family.ash}}"
+          },
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Custom_Moonpartwest",
+              "Tile": { "X": 94, "Y": 37 },
+              "Direction": "down"
+            }
+          ]
+        },
+        "Moonvillage_FinnBrightleaf": {
+          "DisplayName": "{{i18n:finn.name}}",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "BirthSeason": "spring",
+          "BirthDay": 23,
+          "HomeRegion": "Other",
+          "CanSocialize": true,
+          "CanBeRomanced": false,
+          "CanReceiveGifts": true,
+          "UnlockConditions": "PLAYER_HAS_MAIL Any MoonpartwestRoad_Ready",
+          "GiftTastes": "Moonvillage_FinnBrightleaf",
+          "FriendsAndFamily": {
+            "Moonvillage_RoryBrightleaf": "{{i18n:finn.family.rory}}",
+            "Moonvillage_AshBrightleaf": "{{i18n:finn.family.ash}}"
+          },
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Custom_Moonpartwest",
+              "Tile": { "X": 95, "Y": 37 },
+              "Direction": "down"
+            }
+          ]
+        },
+        "Moonvillage_AshBrightleaf": {
+          "DisplayName": "{{i18n:ash.name}}",
+          "Gender": "Undefined",
+          "Age": "Teen",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Shy",
+          "Optimism": "Neutral",
+          "BirthSeason": "fall",
+          "BirthDay": 6,
+          "HomeRegion": "Other",
+          "CanSocialize": true,
+          "CanBeRomanced": false,
+          "CanReceiveGifts": true,
+          "UnlockConditions": "PLAYER_HAS_MAIL Any MoonpartwestRoad_Ready",
+          "GiftTastes": "Moonvillage_AshBrightleaf",
+          "FriendsAndFamily": {
+            "Moonvillage_RoryBrightleaf": "{{i18n:ash.family.rory}}",
+            "Moonvillage_FinnBrightleaf": "{{i18n:ash.family.finn}}"
+          },
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Custom_Moonpartwest",
+              "Tile": { "X": 96, "Y": 37 },
+              "Direction": "down"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Moonvillage_RowanStormglow",
+      "FromFile": "assets/Characters/RowanStormglow/Portraits/RowanStormglow_Portraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Moonvillage_RowanStormglow",
+      "FromFile": "assets/Characters/RowanStormglow/Sprites/RowanStormglow_Sprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/Moonvillage_RowanStormglow",
+      "FromFile": "assets/Characters/RowanStormglow/Schedules/RowanStormglow_Schedules.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Moonvillage_BlazeStormglow",
+      "FromFile": "assets/Characters/BlazeStormglow/Portraits/Annette_Portraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Moonvillage_BlazeStormglow",
+      "FromFile": "assets/Characters/BlazeStormglow/Sprites/Annette_Sprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/Moonvillage_BlazeStormglow",
+      "FromFile": "assets/Characters/BlazeStormglow/Schedules/BlazeStormglow_Schedules.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Moonvillage_EmberStormglow",
+      "FromFile": "assets/Characters/EmberStormglow/Portraits/Annette_Portraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Moonvillage_EmberStormglow",
+      "FromFile": "assets/Characters/EmberStormglow/Sprites/Annette_Sprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/Moonvillage_EmberStormglow",
+      "FromFile": "assets/Characters/EmberStormglow/Schedules/EmberStormglow_Schedules.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Moonvillage_RoryBrightleaf",
+      "FromFile": "assets/Characters/RoryBrightleaf/Portraits/RoryBrightleaf_Portraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Moonvillage_RoryBrightleaf",
+      "FromFile": "assets/Characters/RoryBrightleaf/Sprites/RoryBrightleaf_Sprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/Moonvillage_RoryBrightleaf",
+      "FromFile": "assets/Characters/RoryBrightleaf/Schedules/RoryBrightleaf_Schedules.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Moonvillage_FinnBrightleaf",
+      "FromFile": "assets/Characters/FinnBrightleaf/Portraits/Annette_Portraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Moonvillage_FinnBrightleaf",
+      "FromFile": "assets/Characters/FinnBrightleaf/Sprites/Annette_Sprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/Moonvillage_FinnBrightleaf",
+      "FromFile": "assets/Characters/FinnBrightleaf/Schedules/FinnBrightleaf_Schedules.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Moonvillage_AshBrightleaf",
+      "FromFile": "assets/Characters/AshBrightleaf/Portraits/Annette_Portraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Moonvillage_AshBrightleaf",
+      "FromFile": "assets/Characters/AshBrightleaf/Sprites/Annette_Sprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/Moonvillage_AshBrightleaf",
+      "FromFile": "assets/Characters/AshBrightleaf/Schedules/AshBrightleaf_Schedules.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Moonvillage_RowanStormglow",
+      "FromFile": "assets/Characters/RowanStormglow/Dialogue/RowanStormglow_Dialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Moonvillage_BlazeStormglow",
+      "FromFile": "assets/Characters/BlazeStormglow/Dialogue/BlazeStormglow_Dialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Moonvillage_EmberStormglow",
+      "FromFile": "assets/Characters/EmberStormglow/Dialogue/EmberStormglow_Dialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Moonvillage_RoryBrightleaf",
+      "FromFile": "assets/Characters/RoryBrightleaf/Dialogue/RoryBrightleaf_Dialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Moonvillage_FinnBrightleaf",
+      "FromFile": "assets/Characters/FinnBrightleaf/Dialogue/FinnBrightleaf_Dialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Moonvillage_AshBrightleaf",
+      "FromFile": "assets/Characters/AshBrightleaf/Dialogue/AshBrightleaf_Dialogue.json"
+    },
+    {
+      "LogName": "Expanded Moon Village gift tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Moonvillage_RowanStormglow": "{{i18n:rowan.gift.love}}/390 709 727/{{i18n:rowan.gift.like}}/224 216 220 206 336/{{i18n:rowan.gift.dislike}}/167/{{i18n:rowan.gift.hate}}/168 169/{{i18n:rowan.gift.neutral}}/388 390 709/",
+        "Moonvillage_BlazeStormglow": "{{i18n:blaze.gift.love}}/395 459 346 {{ModId}}_CoinOfTheTwins/{{i18n:blaze.gift.like}}/220 221 223 633/{{i18n:blaze.gift.dislike}}/390 388/{{i18n:blaze.gift.hate}}/167 168/{{i18n:blaze.gift.neutral}}/340 348/",
+        "Moonvillage_EmberStormglow": "{{i18n:ember.gift.love}}/346 459 220 {{ModId}}_CoinOfTheTwins/{{i18n:ember.gift.like}}/223 224 216 395/{{i18n:ember.gift.dislike}}/388 390/{{i18n:ember.gift.hate}}/167 168/{{i18n:ember.gift.neutral}}/340 348/",
+        "Moonvillage_RoryBrightleaf": "{{i18n:rory.gift.love}}/424 186 336/{{i18n:rory.gift.like}}/178 176 262 300/{{i18n:rory.gift.dislike}}/167/{{i18n:rory.gift.hate}}/168 169/{{i18n:rory.gift.neutral}}/709 388/",
+        "Moonvillage_FinnBrightleaf": "{{i18n:finn.gift.love}}/194 195 424/{{i18n:finn.gift.like}}/178 176 262 300 186/{{i18n:finn.gift.dislike}}/167/{{i18n:finn.gift.hate}}/168 169/{{i18n:finn.gift.neutral}}/388 390/",
+        "Moonvillage_AshBrightleaf": "{{i18n:ash.gift.love}}/635 613 340/{{i18n:ash.gift.like}}/190 262 300 296/{{i18n:ash.gift.dislike}}/167/{{i18n:ash.gift.hate}}/168 169/{{i18n:ash.gift.neutral}}/388 390/"
+      }
+    },
+    {
+      "LogName": "Expanded Moon Village base dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_RowanStormglow",
+      "Entries": {
+        "Introduction": "{{i18n:rowan.dialogue.Introduction}}",
+        "Mon": "{{i18n:rowan.dialogue.Mon}}",
+        "Tue": "{{i18n:rowan.dialogue.Tue}}",
+        "Wed": "{{i18n:rowan.dialogue.Wed}}",
+        "Thu": "{{i18n:rowan.dialogue.Thu}}",
+        "Fri": "{{i18n:rowan.dialogue.Fri}}",
+        "Sat": "{{i18n:rowan.dialogue.Sat}}",
+        "Sun": "{{i18n:rowan.dialogue.Sun}}",
+        "rain": "{{i18n:rowan.dialogue.rain}}",
+        "Custom_oldMooninn": "{{i18n:rowan.dialogue.Inn}}",
+        "Hearts_2": "{{i18n:rowan.dialogue.Hearts_2}}",
+        "Hearts_4": "{{i18n:rowan.dialogue.Hearts_4}}",
+        "Hearts_6": "{{i18n:rowan.dialogue.Hearts_6}}",
+        "Hearts_8": "{{i18n:rowan.dialogue.Hearts_8}}",
+        "FlowerDance_Accept": "{{i18n:rowan.dialogue.FlowerDance_Accept}}",
+        "FlowerDance_Decline": "{{i18n:rowan.dialogue.FlowerDance_Decline}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_BlazeStormglow",
+      "Entries": {
+        "Introduction": "{{i18n:blaze.dialogue.Introduction}}",
+        "Mon": "{{i18n:blaze.dialogue.Mon}}",
+        "Tue": "{{i18n:blaze.dialogue.Tue}}",
+        "Wed": "{{i18n:blaze.dialogue.Wed}}",
+        "Thu": "{{i18n:blaze.dialogue.Thu}}",
+        "Fri": "{{i18n:blaze.dialogue.Fri}}",
+        "Sat": "{{i18n:blaze.dialogue.Sat}}",
+        "Sun": "{{i18n:blaze.dialogue.Sun}}",
+        "rain": "{{i18n:blaze.dialogue.rain}}",
+        "Custom_oldMooninn": "{{i18n:blaze.dialogue.Inn}}",
+        "Hearts_2": "{{i18n:blaze.dialogue.Hearts_2}}",
+        "Hearts_4": "{{i18n:blaze.dialogue.Hearts_4}}",
+        "Hearts_6": "{{i18n:blaze.dialogue.Hearts_6}}",
+        "Hearts_8": "{{i18n:blaze.dialogue.Hearts_8}}",
+        "FlowerDance_Accept": "{{i18n:blaze.dialogue.FlowerDance_Accept}}",
+        "FlowerDance_Decline": "{{i18n:blaze.dialogue.FlowerDance_Decline}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_EmberStormglow",
+      "Entries": {
+        "Introduction": "{{i18n:ember.dialogue.Introduction}}",
+        "Mon": "{{i18n:ember.dialogue.Mon}}",
+        "Tue": "{{i18n:ember.dialogue.Tue}}",
+        "Wed": "{{i18n:ember.dialogue.Wed}}",
+        "Thu": "{{i18n:ember.dialogue.Thu}}",
+        "Fri": "{{i18n:ember.dialogue.Fri}}",
+        "Sat": "{{i18n:ember.dialogue.Sat}}",
+        "Sun": "{{i18n:ember.dialogue.Sun}}",
+        "rain": "{{i18n:ember.dialogue.rain}}",
+        "Custom_oldMooninn": "{{i18n:ember.dialogue.Inn}}",
+        "Hearts_2": "{{i18n:ember.dialogue.Hearts_2}}",
+        "Hearts_4": "{{i18n:ember.dialogue.Hearts_4}}",
+        "Hearts_6": "{{i18n:ember.dialogue.Hearts_6}}",
+        "Hearts_8": "{{i18n:ember.dialogue.Hearts_8}}",
+        "FlowerDance_Accept": "{{i18n:ember.dialogue.FlowerDance_Accept}}",
+        "FlowerDance_Decline": "{{i18n:ember.dialogue.FlowerDance_Decline}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_RoryBrightleaf",
+      "Entries": {
+        "Introduction": "{{i18n:rory.dialogue.Introduction}}",
+        "Mon": "{{i18n:rory.dialogue.Mon}}",
+        "Tue": "{{i18n:rory.dialogue.Tue}}",
+        "Wed": "{{i18n:rory.dialogue.Wed}}",
+        "Thu": "{{i18n:rory.dialogue.Thu}}",
+        "Fri": "{{i18n:rory.dialogue.Fri}}",
+        "Sat": "{{i18n:rory.dialogue.Sat}}",
+        "Sun": "{{i18n:rory.dialogue.Sun}}",
+        "rain": "{{i18n:rory.dialogue.rain}}",
+        "Custom_Moonpartwest": "{{i18n:rory.dialogue.Ranch}}",
+        "Hearts_2": "{{i18n:rory.dialogue.Hearts_2}}",
+        "Hearts_4": "{{i18n:rory.dialogue.Hearts_4}}",
+        "Hearts_6": "{{i18n:rory.dialogue.Hearts_6}}",
+        "Hearts_8": "{{i18n:rory.dialogue.Hearts_8}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_FinnBrightleaf",
+      "Entries": {
+        "Introduction": "{{i18n:finn.dialogue.Introduction}}",
+        "Mon": "{{i18n:finn.dialogue.Mon}}",
+        "Tue": "{{i18n:finn.dialogue.Tue}}",
+        "Wed": "{{i18n:finn.dialogue.Wed}}",
+        "Thu": "{{i18n:finn.dialogue.Thu}}",
+        "Fri": "{{i18n:finn.dialogue.Fri}}",
+        "Sat": "{{i18n:finn.dialogue.Sat}}",
+        "Sun": "{{i18n:finn.dialogue.Sun}}",
+        "rain": "{{i18n:finn.dialogue.rain}}",
+        "Custom_Moonpartwest": "{{i18n:finn.dialogue.Ranch}}",
+        "Hearts_2": "{{i18n:finn.dialogue.Hearts_2}}",
+        "Hearts_4": "{{i18n:finn.dialogue.Hearts_4}}",
+        "Hearts_6": "{{i18n:finn.dialogue.Hearts_6}}",
+        "Hearts_8": "{{i18n:finn.dialogue.Hearts_8}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Moonvillage_AshBrightleaf",
+      "Entries": {
+        "Introduction": "{{i18n:ash.dialogue.Introduction}}",
+        "Mon": "{{i18n:ash.dialogue.Mon}}",
+        "Tue": "{{i18n:ash.dialogue.Tue}}",
+        "Wed": "{{i18n:ash.dialogue.Wed}}",
+        "Thu": "{{i18n:ash.dialogue.Thu}}",
+        "Fri": "{{i18n:ash.dialogue.Fri}}",
+        "Sat": "{{i18n:ash.dialogue.Sat}}",
+        "Sun": "{{i18n:ash.dialogue.Sun}}",
+        "rain": "{{i18n:ash.dialogue.rain}}",
+        "Custom_Moonpartwest": "{{i18n:ash.dialogue.Ranch}}",
+        "Hearts_2": "{{i18n:ash.dialogue.Hearts_2}}",
+        "Hearts_4": "{{i18n:ash.dialogue.Hearts_4}}",
+        "Hearts_6": "{{i18n:ash.dialogue.Hearts_6}}",
+        "Hearts_8": "{{i18n:ash.dialogue.Hearts_8}}"
+      }
+    }
+  ]
+}

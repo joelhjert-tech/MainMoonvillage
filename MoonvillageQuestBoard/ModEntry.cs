@@ -47,6 +47,7 @@ public sealed class ModEntry : Mod
 		helper.Events.GameLoop.ReturnedToTitle += OnReturnedToTitle;
 		helper.Events.Input.ButtonPressed += OnButtonPressed;
 		helper.Events.Player.Warped += OnWarped;
+		helper.Events.GameLoop.UpdateTicked += OnUpdateTicked;
 		helper.Events.Display.RenderedWorld += OnRenderedWorld;
 		helper.Events.GameLoop.GameLaunched += OnGameLaunched;
 		helper.Events.World.NpcListChanged += OnNpcListChanged;
@@ -233,6 +234,20 @@ public sealed class ModEntry : Mod
 	private void OnReturnedToTitle(object? sender, ReturnedToTitleEventArgs e)
 	{
 		state = new SaveState();
+	}
+
+	private void OnUpdateTicked(object? sender, UpdateTickedEventArgs e)
+	{
+		if (!Context.IsWorldReady || Game1.currentLocation == null || Game1.activeClickableMenu != null)
+		{
+			return;
+		}
+
+		string location = Game1.currentLocation.NameOrUniqueName ?? Game1.currentLocation.Name ?? "";
+		if (IsBoardTile(location, Helper.Input.GetCursorPosition().GrabTile))
+		{
+			Game1.mouseCursor = 2;
+		}
 	}
 
 	private void OnButtonPressed(object? sender, ButtonPressedEventArgs e)

@@ -1,0 +1,13 @@
+﻿{
+  "Changes": [
+    {
+      "LogName": "Set SpaceCore dungeon map properties for moon_dungeon_boss_50_lava_dark",
+      "Action": "EditMap",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_boss_50_lava_dark",
+      "MapProperties": {
+        "spacechase0.SpaceCore_DungeonLadderEntrance": "25 25",
+        "spacechase0.SpaceCore_DungeonElevatorEntrance": "25 25"
+      }
+    }
+  ]
+}

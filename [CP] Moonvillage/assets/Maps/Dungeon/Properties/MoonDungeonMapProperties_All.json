@@ -6,9 +6,19 @@
       "FromFile": "assets/Maps/Dungeon/Properties/moon_dungeon_early_01_Properties.json"
     },
     {
+      "LogName": "Include SpaceCore dungeon map properties for moon_dungeon_early_01_frost",
+      "Action": "Include",
+      "FromFile": "assets/Maps/Dungeon/Properties/moon_dungeon_early_01_frost_Properties.json"
+    },
+    {
       "LogName": "Include SpaceCore dungeon map properties for moon_dungeon_early_02",
       "Action": "Include",
       "FromFile": "assets/Maps/Dungeon/Properties/moon_dungeon_early_02_Properties.json"
+    },
+    {
+      "LogName": "Include SpaceCore dungeon map properties for moon_dungeon_early_02_dino",
+      "Action": "Include",
+      "FromFile": "assets/Maps/Dungeon/Properties/moon_dungeon_early_02_dino_Properties.json"
     },
     {
       "LogName": "Include SpaceCore dungeon map properties for moon_dungeon_crystal_01",
@@ -16,9 +26,19 @@
       "FromFile": "assets/Maps/Dungeon/Properties/moon_dungeon_crystal_01_Properties.json"
     },
     {
+      "LogName": "Include SpaceCore dungeon map properties for moon_dungeon_crystal_01_frost_dark",
+      "Action": "Include",
+      "FromFile": "assets/Maps/Dungeon/Properties/moon_dungeon_crystal_01_frost_dark_Properties.json"
+    },
+    {
       "LogName": "Include SpaceCore dungeon map properties for moon_dungeon_crystal_02",
       "Action": "Include",
       "FromFile": "assets/Maps/Dungeon/Properties/moon_dungeon_crystal_02_Properties.json"
+    },
+    {
+      "LogName": "Include SpaceCore dungeon map properties for moon_dungeon_crystal_02_slime",
+      "Action": "Include",
+      "FromFile": "assets/Maps/Dungeon/Properties/moon_dungeon_crystal_02_slime_Properties.json"
     },
     {
       "LogName": "Include SpaceCore dungeon map properties for moon_dungeon_deep_01",
@@ -26,14 +46,29 @@
       "FromFile": "assets/Maps/Dungeon/Properties/moon_dungeon_deep_01_Properties.json"
     },
     {
+      "LogName": "Include SpaceCore dungeon map properties for moon_dungeon_deep_01_lava",
+      "Action": "Include",
+      "FromFile": "assets/Maps/Dungeon/Properties/moon_dungeon_deep_01_lava_Properties.json"
+    },
+    {
       "LogName": "Include SpaceCore dungeon map properties for moon_dungeon_deep_02",
       "Action": "Include",
       "FromFile": "assets/Maps/Dungeon/Properties/moon_dungeon_deep_02_Properties.json"
     },
     {
+      "LogName": "Include SpaceCore dungeon map properties for moon_dungeon_deep_02_dark",
+      "Action": "Include",
+      "FromFile": "assets/Maps/Dungeon/Properties/moon_dungeon_deep_02_dark_Properties.json"
+    },
+    {
       "LogName": "Include SpaceCore dungeon map properties for moon_dungeon_boss_50",
       "Action": "Include",
       "FromFile": "assets/Maps/Dungeon/Properties/moon_dungeon_boss_50_Properties.json"
+    },
+    {
+      "LogName": "Include SpaceCore dungeon map properties for moon_dungeon_boss_50_lava_dark",
+      "Action": "Include",
+      "FromFile": "assets/Maps/Dungeon/Properties/moon_dungeon_boss_50_lava_dark_Properties.json"
     }
   ]
 }

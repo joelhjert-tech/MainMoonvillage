@@ -8,10 +8,10 @@
         "Moonvillage.AnnetteNPC_MoonDungeon": {
           "ViewportFollowsPlayer": true,
           "LadderExitLocation": "Custom_AnnetteHouseInside",
-          "LadderExitTile": "31, 15",
+          "LadderExitTile": "31,15",
           "ElevatorExitLocation": "Custom_AnnetteHouseInside",
-          "ElevatorExitTile": "31, 15",
-          "FloorsWithElevator": [
+          "ElevatorExitTile": "31,15",
+          "FloorsWithElevators": [
             5,
             10,
             15,
@@ -42,8 +42,16 @@
                   "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_early_01"
                 },
                 {
+                  "Weight": 0.8,
+                  "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_early_01_frost"
+                },
+                {
                   "Weight": 1.0,
                   "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_early_02"
+                },
+                {
+                  "Weight": 0.8,
+                  "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_early_02_dino"
                 }
               ],
               "TriggerActionsOnEntry": [
@@ -62,8 +70,16 @@
                   "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_crystal_01"
                 },
                 {
+                  "Weight": 0.8,
+                  "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_crystal_01_frost_dark"
+                },
+                {
                   "Weight": 1.0,
                   "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_crystal_02"
+                },
+                {
+                  "Weight": 0.8,
+                  "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_crystal_02_slime"
                 }
               ],
               "TriggerActionsOnEntry": [
@@ -82,8 +98,16 @@
                   "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_deep_01"
                 },
                 {
+                  "Weight": 0.9,
+                  "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_deep_01_lava"
+                },
+                {
                   "Weight": 1.0,
                   "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_deep_02"
+                },
+                {
+                  "Weight": 0.9,
+                  "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_deep_02_dark"
                 }
               ],
               "TriggerActionsOnEntry": [
@@ -100,6 +124,10 @@
                 {
                   "Weight": 1.0,
                   "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_boss_50"
+                },
+                {
+                  "Weight": 1.0,
+                  "Value": "Maps/Moonvillage/Dungeon/moon_dungeon_boss_50_lava_dark"
                 }
               ],
               "TriggerActionsOnEntry": [

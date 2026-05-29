@@ -18,7 +18,9 @@
         "HerbalistHouse_Ready": "{{i18n:mail.herbalist_ready}}",
         "MoonGranary_Ready": "{{i18n:mail.granary_ready}}",
         "LorilaiBedroom_Ready": "{{i18n:mail.lorilai_bedroom_ready}}",
-        "MoonGrocery_Ready": "{{i18n:mail.grocery_ready}}"
+        "MoonGrocery_Ready": "{{i18n:mail.grocery_ready}}",
+        "MoonpartwestRoad_Ready": "{{i18n:mail.moonpartwest_road_ready}}",
+        "JoelHjert.MoonVillage.AllBundlesDone": "{{i18n:mail.all_bundles_done}}"
       }
     }
   ]

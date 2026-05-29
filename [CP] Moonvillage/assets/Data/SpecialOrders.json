@@ -61,6 +61,17 @@
                 "DropBoxIndicatorLocation": "31.5 18.4",
                 "AcceptedContextTags": "item_maple_syrup"
               }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[Moonvillage.SpecialOrder.FinalRestoration_Objective5_Text]",
+              "RequiredCount": "3",
+              "Data": {
+                "DropBox": "MoonvillageFinalRestoration",
+                "DropBoxGameLocation": "Custom_Moonvillage",
+                "DropBoxIndicatorLocation": "31.5 18.4",
+                "AcceptedContextTags": "moonvillage_omen"
+              }
             }
           ],
           "Rewards": [

@@ -2379,12 +2379,12 @@
  <tileset firstgid="12391" name="z_SVEbuildingShadow" tilewidth="16" tileheight="16" tilecount="600" columns="24">
   <image source="Tilesheet/z_SVEbuildingShadow.png" width="384" height="400"/>
  </tileset>
- <tileset firstgid="12991" name="zGrandpasFarm_CanopyShadow" tilewidth="16" tileheight="16" tilecount="0" columns="38">
-  <image source="../../../Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Tilesheets/zGrandpasFarm_CanopyShadow.png" width="616" height="1552"/>
- </tileset>
- <tileset firstgid="16557" name="zGrandpasFarm_UnderCanopyShadow" tilewidth="16" tileheight="16" tilecount="0" columns="38">
-  <image source="../../../Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/[CP] Stardew Valley Expanded/assets/Tilesheets/zGrandpasFarm_UnderCanopyShadow.png" width="616" height="1552"/>
- </tileset>
+<tileset firstgid="12991" name="zGrandpasFarm_CanopyShadow" tilewidth="16" tileheight="16" tilecount="0" columns="38">
+ <image source="Tilesheet/zGrandpasFarm_CanopyShadow.png" width="616" height="1552"/>
+</tileset>
+<tileset firstgid="16557" name="zGrandpasFarm_UnderCanopyShadow" tilewidth="16" tileheight="16" tilecount="0" columns="38">
+ <image source="Tilesheet/zGrandpasFarm_UnderCanopyShadow.png" width="616" height="1552"/>
+</tileset>
  <tileset firstgid="20129" name="z_outdoors2" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
   <image source="Tilesheet/spring_outdoorsTileSheet.png" width="400" height="1264"/>
   <tile id="16">

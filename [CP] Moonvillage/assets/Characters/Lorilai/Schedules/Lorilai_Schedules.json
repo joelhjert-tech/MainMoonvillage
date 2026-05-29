@@ -1,3 +1,7 @@
 {
-  "spring": "600 Custom_AnnetteHouseInside 21 44 2"
+  "spring": "600 Custom_AnnetteHouseInside 2 10 2",
+  "summer": "600 Custom_AnnetteHouseInside 2 10 2",
+  "fall": "600 Custom_AnnetteHouseInside 2 10 2",
+  "winter": "600 Custom_AnnetteHouseInside 2 10 2",
+  "rain": "600 Custom_AnnetteHouseInside 2 10 2"
 }

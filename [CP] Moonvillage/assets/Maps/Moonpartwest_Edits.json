@@ -1,0 +1,13 @@
+{
+  "Changes": [
+    {
+      "LogName": "Add return road from Moonpartwest",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Moonpartwest",
+      "MapProperties": {
+        "Warp": "99 37 Custom_Moonvillage 1 47",
+        "NPCWarp": "99 37 Custom_Moonvillage 1 47"
+      }
+    }
+  ]
+}

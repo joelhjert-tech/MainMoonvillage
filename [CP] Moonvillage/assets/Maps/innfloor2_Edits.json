@@ -1,0 +1,16 @@
+{
+  "Changes": [
+    {
+      "LogName": "Moon Inn floor 2 return stairs",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_innfloor2",
+      "AddWarps": [
+        "21 14 Custom_oldMooninn 46 34",
+        "22 14 Custom_oldMooninn 47 34"
+      ],
+      "MapProperties": {
+        "NPCWarp": "21 14 Custom_oldMooninn 46 34 22 14 Custom_oldMooninn 47 34"
+      }
+    }
+  ]
+}

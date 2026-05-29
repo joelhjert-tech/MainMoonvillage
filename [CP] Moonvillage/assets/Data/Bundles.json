@@ -19,7 +19,9 @@
           "BundleCompletedActions": [
             "UB_PlaceBundle HerbalistHouseBundle",
             "AddMail Current JoelHjert.MoonVillage.TownhallBundleComplete Received",
-            "AddMail Current AnnetteHouse_Ready Received"
+            "AddMail Current AnnetteHouse_Ready Received",
+            "AddMail Current JoelHjert.MoonVillage.Milestone.TownhallBundleComplete Received",
+            "AddMail Current JoelHjert.MoonVillage.Milestone.AnnetteHouseReady Received"
           ]
         },
         "HerbalistHouseBundle": {
@@ -40,7 +42,8 @@
           },
           "BundleCompletedActions": [
             "UB_PlaceBundle MoonGroceryBundle",
-            "AddMail Current HerbalistHouse_Ready Received"
+            "AddMail Current HerbalistHouse_Ready Received",
+            "AddMail Current JoelHjert.MoonVillage.Milestone.HerbalistHouseReady Received"
           ]
         },
         "MoonGroceryBundle": {
@@ -60,7 +63,8 @@
           },
           "BundleCompletedActions": [
             "UB_PlaceBundle SpiritHealerBundle",
-            "AddMail Current MoonGrocery_Ready Received"
+            "AddMail Current MoonGrocery_Ready Received",
+            "AddMail Current JoelHjert.MoonVillage.Milestone.MoonGroceryReady Received"
           ]
         },
         "SpiritHealerBundle": {
@@ -78,7 +82,8 @@
           },
           "BundleCompletedActions": [
             "UB_PlaceBundle MoonInnBundle",
-            "AddMail Current SpiritHealer_Ready Received"
+            "AddMail Current SpiritHealer_Ready Received",
+            "AddMail Current JoelHjert.MoonVillage.Milestone.SpiritHealerReady Received"
           ]
         },
         "MoonInnBundle": {
@@ -96,7 +101,8 @@
           },
           "BundleCompletedActions": [
             "UB_PlaceBundle MoonGranaryBundle",
-            "AddMail Current MoonInn_Ready Received"
+            "AddMail Current MoonInn_Ready Received",
+            "AddMail Current JoelHjert.MoonVillage.Milestone.MoonInnReady Received"
           ]
         },
         "MoonGranaryBundle": {
@@ -115,7 +121,29 @@
           },
           "BundleCompletedActions": [
             "AddMail Current MoonGranary_Ready Received",
-            "AddMail Current JoelHjert.MoonVillage.AllBundlesDone Received"
+            "AddMail Current JoelHjert.MoonVillage.Milestone.MoonGranaryReady Received",
+            "UB_PlaceBundle MoonpartwestRoadBundle"
+          ]
+        },
+        "MoonpartwestRoadBundle": {
+          "ShopType": "CCBundle",
+          "Location": "Custom_Moonvillage",
+          "ShopPosition": "3, 48",
+          "BundleName": "{{i18n:bundle.moonpartwest_road.name}}",
+          "BundleDescription": "{{i18n:bundle.moonpartwest_road.desc}}",
+          "DrawQuestionMark": true,
+          "Price": {
+            "(O)390": 500,
+            "(O)388": 300,
+            "(O)709": 50,
+            "(O)771": 100,
+            "(O)Moss": 40
+          },
+          "BundleCompletedActions": [
+            "AddMail Current MoonpartwestRoad_Ready Received",
+            "AddMail Current JoelHjert.MoonVillage.AllBundlesDone Received",
+            "AddMail Current JoelHjert.MoonVillage.Milestone.MoonpartwestRoadReady Received",
+            "AddMail Current JoelHjert.MoonVillage.Milestone.AllBundlesDone Received"
           ]
         }
       }

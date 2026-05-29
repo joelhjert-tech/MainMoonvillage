@@ -1,0 +1,299 @@
+{
+  "Changes": [
+    {
+      "LogName": "Moon Village zodiac artifacts and minerals",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_CoinOfTheRam": {
+          "Name": "{{ModId}}_CoinOfTheRam",
+          "DisplayName": "{{i18n:item.coin_ram.name}}",
+          "Description": "{{i18n:item.coin_ram.desc}}",
+          "Type": "Arch",
+          "Category": -4,
+          "Price": 180,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 96,
+          "ContextTags": [ "artifact_item", "moonvillage_zodiac_coin" ]
+        },
+        "{{ModId}}_CoinOfTheLion": {
+          "Name": "{{ModId}}_CoinOfTheLion",
+          "DisplayName": "{{i18n:item.coin_lion.name}}",
+          "Description": "{{i18n:item.coin_lion.desc}}",
+          "Type": "Arch",
+          "Category": -4,
+          "Price": 220,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 97,
+          "ContextTags": [ "artifact_item", "moonvillage_zodiac_coin" ]
+        },
+        "{{ModId}}_CoinOfTheArcher": {
+          "Name": "{{ModId}}_CoinOfTheArcher",
+          "DisplayName": "{{i18n:item.coin_archer.name}}",
+          "Description": "{{i18n:item.coin_archer.desc}}",
+          "Type": "Arch",
+          "Category": -4,
+          "Price": 200,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 98,
+          "ContextTags": [ "artifact_item", "moonvillage_zodiac_coin" ]
+        },
+        "{{ModId}}_CoinOfTheBull": {
+          "Name": "{{ModId}}_CoinOfTheBull",
+          "DisplayName": "{{i18n:item.coin_bull.name}}",
+          "Description": "{{i18n:item.coin_bull.desc}}",
+          "Type": "Arch",
+          "Category": -4,
+          "Price": 190,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 99,
+          "ContextTags": [ "artifact_item", "moonvillage_zodiac_coin" ]
+        },
+        "{{ModId}}_CoinOfTheMaiden": {
+          "Name": "{{ModId}}_CoinOfTheMaiden",
+          "DisplayName": "{{i18n:item.coin_maiden.name}}",
+          "Description": "{{i18n:item.coin_maiden.desc}}",
+          "Type": "Arch",
+          "Category": -4,
+          "Price": 210,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 100,
+          "ContextTags": [ "artifact_item", "moonvillage_zodiac_coin" ]
+        },
+        "{{ModId}}_CoinOfTheGoat": {
+          "Name": "{{ModId}}_CoinOfTheGoat",
+          "DisplayName": "{{i18n:item.coin_goat.name}}",
+          "Description": "{{i18n:item.coin_goat.desc}}",
+          "Type": "Arch",
+          "Category": -4,
+          "Price": 200,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 101,
+          "ContextTags": [ "artifact_item", "moonvillage_zodiac_coin" ]
+        },
+        "{{ModId}}_CoinOfTheTwins": {
+          "Name": "{{ModId}}_CoinOfTheTwins",
+          "DisplayName": "{{i18n:item.coin_twins.name}}",
+          "Description": "{{i18n:item.coin_twins.desc}}",
+          "Type": "Arch",
+          "Category": -4,
+          "Price": 280,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 102,
+          "ContextTags": [ "artifact_item", "moonvillage_zodiac_coin", "moonvillage_twins_coin" ]
+        },
+        "{{ModId}}_CoinOfTheWaterBearer": {
+          "Name": "{{ModId}}_CoinOfTheWaterBearer",
+          "DisplayName": "{{i18n:item.coin_water_bearer.name}}",
+          "Description": "{{i18n:item.coin_water_bearer.desc}}",
+          "Type": "Arch",
+          "Category": -4,
+          "Price": 210,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 103,
+          "ContextTags": [ "artifact_item", "moonvillage_zodiac_coin" ]
+        },
+        "{{ModId}}_CoinOfTheCrab": {
+          "Name": "{{ModId}}_CoinOfTheCrab",
+          "DisplayName": "{{i18n:item.coin_crab.name}}",
+          "Description": "{{i18n:item.coin_crab.desc}}",
+          "Type": "Arch",
+          "Category": -4,
+          "Price": 190,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 104,
+          "ContextTags": [ "artifact_item", "moonvillage_zodiac_coin" ]
+        },
+        "{{ModId}}_CoinOfTheScorpion": {
+          "Name": "{{ModId}}_CoinOfTheScorpion",
+          "DisplayName": "{{i18n:item.coin_scorpion.name}}",
+          "Description": "{{i18n:item.coin_scorpion.desc}}",
+          "Type": "Arch",
+          "Category": -4,
+          "Price": 240,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 105,
+          "ContextTags": [ "artifact_item", "moonvillage_zodiac_coin" ]
+        },
+        "{{ModId}}_CoinOfTheFish": {
+          "Name": "{{ModId}}_CoinOfTheFish",
+          "DisplayName": "{{i18n:item.coin_fish.name}}",
+          "Description": "{{i18n:item.coin_fish.desc}}",
+          "Type": "Arch",
+          "Category": -4,
+          "Price": 180,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 106,
+          "ContextTags": [ "artifact_item", "moonvillage_zodiac_coin" ]
+        },
+        "{{ModId}}_Moonstone": {
+          "Name": "{{ModId}}_Moonstone",
+          "DisplayName": "{{i18n:item.moonstone.name}}",
+          "Description": "{{i18n:item.moonstone.desc}}",
+          "Type": "Minerals",
+          "Category": -12,
+          "Price": 340,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 539,
+          "ContextTags": [ "mineral_item", "gem_item", "moonvillage_mineral" ]
+        },
+        "{{ModId}}_StarSapphire": {
+          "Name": "{{ModId}}_StarSapphire",
+          "DisplayName": "{{i18n:item.star_sapphire.name}}",
+          "Description": "{{i18n:item.star_sapphire.desc}}",
+          "Type": "Minerals",
+          "Category": -12,
+          "Price": 520,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 60,
+          "ContextTags": [ "mineral_item", "gem_item", "moonvillage_mineral" ]
+        },
+        "{{ModId}}_Garnet": {
+          "Name": "{{ModId}}_Garnet",
+          "DisplayName": "{{i18n:item.garnet.name}}",
+          "Description": "{{i18n:item.garnet.desc}}",
+          "Type": "Minerals",
+          "Category": -12,
+          "Price": 260,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 64,
+          "ContextTags": [ "mineral_item", "gem_item", "moonvillage_mineral" ]
+        },
+        "{{ModId}}_Peridot": {
+          "Name": "{{ModId}}_Peridot",
+          "DisplayName": "{{i18n:item.peridot.name}}",
+          "Description": "{{i18n:item.peridot.desc}}",
+          "Type": "Minerals",
+          "Category": -12,
+          "Price": 240,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 62,
+          "ContextTags": [ "mineral_item", "gem_item", "moonvillage_mineral" ]
+        },
+        "{{ModId}}_Turquoise": {
+          "Name": "{{ModId}}_Turquoise",
+          "DisplayName": "{{i18n:item.turquoise.name}}",
+          "Description": "{{i18n:item.turquoise.desc}}",
+          "Type": "Minerals",
+          "Category": -12,
+          "Price": 220,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 66,
+          "ContextTags": [ "mineral_item", "gem_item", "moonvillage_mineral" ]
+        },
+        "{{ModId}}_RoseQuartz": {
+          "Name": "{{ModId}}_RoseQuartz",
+          "DisplayName": "{{i18n:item.rose_quartz.name}}",
+          "Description": "{{i18n:item.rose_quartz.desc}}",
+          "Type": "Minerals",
+          "Category": -12,
+          "Price": 150,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 82,
+          "ContextTags": [ "mineral_item", "gem_item", "moonvillage_mineral" ]
+        },
+        "{{ModId}}_RedDiamond": {
+          "Name": "{{ModId}}_RedDiamond",
+          "DisplayName": "{{i18n:item.red_diamond.name}}",
+          "Description": "{{i18n:item.red_diamond.desc}}",
+          "Type": "Minerals",
+          "Category": -12,
+          "Price": 1400,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 72,
+          "ContextTags": [ "mineral_item", "gem_item", "moonvillage_mineral" ]
+        },
+        "{{ModId}}_Jet": {
+          "Name": "{{ModId}}_Jet",
+          "DisplayName": "{{i18n:item.jet.name}}",
+          "Description": "{{i18n:item.jet.desc}}",
+          "Type": "Minerals",
+          "Category": -12,
+          "Price": 180,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 574,
+          "ContextTags": [ "mineral_item", "moonvillage_mineral" ]
+        },
+        "{{ModId}}_LapisLazuli": {
+          "Name": "{{ModId}}_LapisLazuli",
+          "DisplayName": "{{i18n:item.lapis_lazuli.name}}",
+          "Description": "{{i18n:item.lapis_lazuli.desc}}",
+          "Type": "Minerals",
+          "Category": -12,
+          "Price": 300,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 570,
+          "ContextTags": [ "mineral_item", "gem_item", "moonvillage_mineral" ]
+        },
+        "{{ModId}}_Onyx": {
+          "Name": "{{ModId}}_Onyx",
+          "DisplayName": "{{i18n:item.onyx.name}}",
+          "Description": "{{i18n:item.onyx.desc}}",
+          "Type": "Minerals",
+          "Category": -12,
+          "Price": 260,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 575,
+          "ContextTags": [ "mineral_item", "gem_item", "moonvillage_mineral" ]
+        },
+        "{{ModId}}_Bismuth": {
+          "Name": "{{ModId}}_Bismuth",
+          "DisplayName": "{{i18n:item.bismuth.name}}",
+          "Description": "{{i18n:item.bismuth.desc}}",
+          "Type": "Minerals",
+          "Category": -12,
+          "Price": 360,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 577,
+          "ContextTags": [ "mineral_item", "moonvillage_mineral" ]
+        },
+        "{{ModId}}_Sunstone": {
+          "Name": "{{ModId}}_Sunstone",
+          "DisplayName": "{{i18n:item.sunstone.name}}",
+          "Description": "{{i18n:item.sunstone.desc}}",
+          "Type": "Minerals",
+          "Category": -12,
+          "Price": 420,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 578,
+          "ContextTags": [ "mineral_item", "gem_item", "moonvillage_mineral" ]
+        }
+      }
+    },
+    {
+      "LogName": "Rose Quartz to Refined Quartz",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [ "(BC)13", "OutputRules" ],
+      "Entries": {
+        "{{ModId}}.RoseQuartzToRefinedQuartz": {
+          "Id": "{{ModId}}.RoseQuartzToRefinedQuartz",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "(O){{ModId}}_RoseQuartz",
+              "RequiredCount": 1
+            }
+          ],
+          "UseFirstValidOutput": true,
+          "OutputItem": [
+            {
+              "Id": "{{ModId}}.RoseQuartzRefinedQuartz",
+              "ItemId": "(O)338",
+              "MinStack": 2
+            }
+          ],
+          "AdditionalConsumedItems": [
+            {
+              "ItemId": "(O)382",
+              "RequiredCount": 1,
+              "InvalidCountMessage": "{{i18n:machine.rose_quartz.missing_coal}}"
+            }
+          ],
+          "MinutesUntilReady": 120,
+          "DaysUntilReady": -1
+        }
+      }
+    }
+  ]
+}

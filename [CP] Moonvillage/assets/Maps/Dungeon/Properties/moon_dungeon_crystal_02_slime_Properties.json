@@ -1,0 +1,13 @@
+﻿{
+  "Changes": [
+    {
+      "LogName": "Set SpaceCore dungeon map properties for moon_dungeon_crystal_02_slime",
+      "Action": "EditMap",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_crystal_02_slime",
+      "MapProperties": {
+        "spacechase0.SpaceCore_DungeonLadderEntrance": "25 28",
+        "spacechase0.SpaceCore_DungeonElevatorEntrance": "25 28"
+      }
+    }
+  ]
+}

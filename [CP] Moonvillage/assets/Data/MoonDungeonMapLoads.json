@@ -7,10 +7,22 @@
       "FromFile": "assets/Maps/Dungeon/moon_dungeon_early_01.tmx"
     },
     {
+      "LogName": "Load Moon Dungeon moon_dungeon_early_01_frost",
+      "Action": "Load",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_early_01_frost",
+      "FromFile": "assets/Maps/Dungeon/moon_dungeon_early_01_frost.tmx"
+    },
+    {
       "LogName": "Load Moon Dungeon moon_dungeon_early_02",
       "Action": "Load",
       "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_early_02",
       "FromFile": "assets/Maps/Dungeon/moon_dungeon_early_02.tmx"
+    },
+    {
+      "LogName": "Load Moon Dungeon moon_dungeon_early_02_dino",
+      "Action": "Load",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_early_02_dino",
+      "FromFile": "assets/Maps/Dungeon/moon_dungeon_early_02_dino.tmx"
     },
     {
       "LogName": "Load Moon Dungeon moon_dungeon_crystal_01",
@@ -19,10 +31,22 @@
       "FromFile": "assets/Maps/Dungeon/moon_dungeon_crystal_01.tmx"
     },
     {
+      "LogName": "Load Moon Dungeon moon_dungeon_crystal_01_frost_dark",
+      "Action": "Load",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_crystal_01_frost_dark",
+      "FromFile": "assets/Maps/Dungeon/moon_dungeon_crystal_01_frost_dark.tmx"
+    },
+    {
       "LogName": "Load Moon Dungeon moon_dungeon_crystal_02",
       "Action": "Load",
       "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_crystal_02",
       "FromFile": "assets/Maps/Dungeon/moon_dungeon_crystal_02.tmx"
+    },
+    {
+      "LogName": "Load Moon Dungeon moon_dungeon_crystal_02_slime",
+      "Action": "Load",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_crystal_02_slime",
+      "FromFile": "assets/Maps/Dungeon/moon_dungeon_crystal_02_slime.tmx"
     },
     {
       "LogName": "Load Moon Dungeon moon_dungeon_deep_01",
@@ -31,16 +55,34 @@
       "FromFile": "assets/Maps/Dungeon/moon_dungeon_deep_01.tmx"
     },
     {
+      "LogName": "Load Moon Dungeon moon_dungeon_deep_01_lava",
+      "Action": "Load",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_deep_01_lava",
+      "FromFile": "assets/Maps/Dungeon/moon_dungeon_deep_01_lava.tmx"
+    },
+    {
       "LogName": "Load Moon Dungeon moon_dungeon_deep_02",
       "Action": "Load",
       "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_deep_02",
       "FromFile": "assets/Maps/Dungeon/moon_dungeon_deep_02.tmx"
     },
     {
+      "LogName": "Load Moon Dungeon moon_dungeon_deep_02_dark",
+      "Action": "Load",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_deep_02_dark",
+      "FromFile": "assets/Maps/Dungeon/moon_dungeon_deep_02_dark.tmx"
+    },
+    {
       "LogName": "Load Moon Dungeon moon_dungeon_boss_50",
       "Action": "Load",
       "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_boss_50",
       "FromFile": "assets/Maps/Dungeon/moon_dungeon_boss_50.tmx"
+    },
+    {
+      "LogName": "Load Moon Dungeon moon_dungeon_boss_50_lava_dark",
+      "Action": "Load",
+      "Target": "Maps/Moonvillage/Dungeon/moon_dungeon_boss_50_lava_dark",
+      "FromFile": "assets/Maps/Dungeon/moon_dungeon_boss_50_lava_dark.tmx"
     }
   ]
 }

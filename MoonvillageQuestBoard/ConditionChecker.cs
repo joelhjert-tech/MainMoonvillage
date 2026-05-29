@@ -106,7 +106,8 @@ public sealed class ConditionChecker
 			return helperRef != null && helperRef.ModRegistry.IsLoaded(value);
 		}
 		default:
-			return true;
+			ModEntry.MonitorRef?.Log($"Unknown Moonvillage quest board condition '{key}' with value '{value}'. The condition will fail closed.", LogLevel.Warn);
+			return false;
 		}
 	}
 

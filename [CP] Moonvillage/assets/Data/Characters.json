@@ -14,7 +14,7 @@
           "HomeRegion": "Other",
           "CanSocialize": true,
           "CanReceiveGifts": true,
-          "UnlockConditions": "PLAYER_HAS_MAIL Any JoelHjert.MoonVillage.AnnetteMet",
+          "UnlockConditions": "PLAYER_HAS_MAIL Any AnnetteHouse_Ready",
           "GiftTastes": "Moonvillage_Annette",
           "Home": [
             {
@@ -37,7 +37,7 @@
           "HomeRegion": "Other",
           "CanSocialize": true,
           "CanReceiveGifts": true,
-          "UnlockConditions": "PLAYER_HAS_MAIL Any JoelHjert.MoonVillage.AnnetteMet",
+          "UnlockConditions": "PLAYER_HAS_MAIL Any AnnetteHouse_Ready",
           "GiftTastes": "Moonvillage_Kira",
           "Size": {
             "X": 32,
@@ -91,7 +91,7 @@
           "HomeRegion": "Other",
           "CanSocialize": true,
           "CanReceiveGifts": true,
-          "UnlockConditions": "PLAYER_HAS_MAIL Any MoonGrocery_Ready",
+          "UnlockConditions": "PLAYER_HAS_MAIL Any SpiritHealer_Ready",
           "GiftTastes": "Moonvillage_Venessa",
           "Home": [
             {

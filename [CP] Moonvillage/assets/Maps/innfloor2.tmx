@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="47" height="24" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="14">
+ <properties>
+  <property name="AmbienteLight" value="95 95 95"/>
+  <property name="DayTiles" value="Buildings 3 9 1344 Buildings 7 9 1344 Buildings 35 9 1344 Buildings 39 9 1344 Front 13 1 1344 Front 19 1 1344 Front 24 1 1344 Front 29 1 1344 Front 17 1 256 Front 16 1 256 Front 17 2 288 Front 16 2 288 Front 23 7 1346 Front 30 10 1346"/>
+  <property name="Doors" value="37 11 1 120 5 11 1 120 6 18 1 120 16 18 1 120 29 18 1 120 40 18 1 120"/>
+  <property name="NightTiles" value="Buildings 3 9 1345 Buildings 7 9 1345 Buildings 35 9 1345 Buildings 39 9 1345 Front 13 1 1345 Front 19 1 1345 Front 24 1 1345 Front 29 1 1345 Front 17 1 1253 Front 16 1 1253 Front 17 2 1285 Front 16 2 1285 Front 23 7 1347 Front 30 10 1347"/>
+  <property name="Warp" value="21 17 BackwoodsPlateau 48 11 22 17 BackwoodsPlateau 48 11 44 7 BoardingHouse2 44 7 45 7 BoardingHouse2 45 7"/>
+ </properties>
+ <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="Tilesheet/paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="688" columns="16">
+  <image source="Tilesheet/walls_and_floors.png" width="256" height="688"/>
+ </tileset>
+ <tileset firstgid="753" name="bathhouse_tiles" tilewidth="16" tileheight="16" tilecount="240" columns="15">
+  <image source="Tilesheet/bathhouse_tiles.png" width="240" height="256"/>
+ </tileset>
+ <tileset firstgid="993" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="Tilesheet/townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="3937" name="indoor" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="Tilesheet/townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="6113" name="2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="Tilesheet/townInterior_2.png" width="512" height="656"/>
+ </tileset>
+ <layer id="1" name="Back" width="47" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzVVsFRwzAQVAwzUAC/9AFV5MEH+5O33SNfGkg6CCUwFEA09pFltXdSPPmwMzu2pM3d+WKtdbpL6dRAwzXaFrTEi2K+bOs0PF+hvZUOtYx+W6fh7QrtrXSoZbzez/xIPn/zdCWHM0+by32kRRqivFabh6mLiXnGZTx2l/se5iao36vZdLX8PVy9dx7rsd7hPdc+Qn58hhHyDmKNdZxf5eX8DNby/ShqVz0agjWl4/wqL2sZQ/eXE91z7VYD94jfCV5jHedXeTk/43DeZ8fN5Zr1OM5Xrh3rxvcD/xfuH+vW5P9+mGnYEXNNPGfknmKPbO2YZuKa0nk5ovxc+56Y8/CckXs6deX//Zlm4prSeTmitafHmQa152q+2eKrtfFX0sxrnt9jDHuHcS95nsVe6l1VHDX2ni3qHcZIqdxznmcp31VXFcfb22t6ZjFSKvec51nspR5VHDVe2zOLkVGcORefUufQSKd8LIq9pme7VHo+e5HyMKVFPzOwF7R4YGsd+1SCvSjH5zmlRT/zwHGmxti1OjLwu2XjXJOdP/EcmtdwburicyrrD8tZ+b0hdlSHwd7BGmtaBdar70fvxGYfZb09L/u0V1uk9fquvFCdsT2t+jZgb9iL+He2ryOt13flheqM7WnVtwN7U/vmYG88jdd3zwtxrkXL+v+MH0L6h6Q=
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="47" height="24">
+  <properties>
+   <property name="Doors" value="13 11 1 120 20 11 1 120 14 16 1 120"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzNWDtoFFEUfZKZ2d3K3UVstFmNoAQ16Ra0CWTTRbRMI0j8VImCoEWCnWJtBIWkSYJa+0HQtQmovR+EaBU2mjhr76/xPGYec/fNfZ+JwXjhMDPvnXvvYfZx57BxnxBdoMOgS/ANWPWEjFjL5yBrxh79O4b+jUCIMeHGAfDWwb9SEda4XEm4sq4rFK/mgOJy2oc8oPoMFuBuFU9xOe2tUIhR4FRghupz0sLRuVvBuw5dN0Kzdj3Wwd0AqhF+M6AeZX0uAWdKGQZxRoYq2bW5iTNzCPUPA0eAo1HyzHE57Q3o3Bfm+c+w9hxoh1mfJtEpo5leByrZnkn76RKvfZnRqmI/evcXeO8qVpDzEfgU8npulYWYBW6Xs7UBov0OtN4tJVeJawbtO7R1LjjtwxbtP6H5F/AbmGC0P4Lmx8CTcu96kTMj+w97aJf9477sWc1XOlOX0p6LQX7eLml63kLzO+C9pl3mSu495hyqWI3sPVz99ffTwO89kz5PB8mzjKfpdcbjXapcF1eek+mU8zCw9/8Q5PtL7Qs7kUuwt5rs7an2rtM9V8yh7rxDuzwnc8wcV3m2Par9DcFx6FvB9Vi1d13t+UQbdV84tMvz1GbmucwbD8x7uvbaLnOPyZoQU8BF4GrNT/u/CKV9rC7ECSDYvd2K/ENqX4b2SeieAhbr263IPybSea/7UDqndB9KuYpH9xvamdxsbReXflup56RzSvehOleG7lNV/G1tG9fkg01zivOsMlw+1Va7X/q8iK9t00Hrm+aU8qDUs1LPPB70elpO+0toewW8jrLaN3EfAyNAK+Jrm+alrv088i8AHeStGb7l+nf4YJTf57SvgfcZ+EL4G7j/CpwFzkXu2vfx/CDiz4wplAel2k2euYhP7Yb5XFttUx8fz0fr+9SktUfw/W8Boxa/6Os99T42H0xDzlQT93uYzVzdY/9wvEeVW0SH738W/yv+ADEBZlQ=
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings"/>
+ <layer id="5" name="Front" width="47" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzlVz1PwkAYPtIPrEQpEhOMiYlB2HR3BI1O6uisqJMbg65+BP8Buyb+CEeDica4OOGKOjKIv8CnoU2vx921VwQSeJIn7ftx7z1pr3dvCVHDp0bIVwjbmmLRf0BLl9sJ2NOubzHZO57nW7aCdZx7xxdnfhZ11CkYhBTBhMFoNXpz64J5ZaDr8GqKYo59DJ4wfhobiG1S8Wfcv4A/YAf8ZcaWkz5tzJ2x/GvO4ufx6MEyCZkBZ8G02bU9XGDuS4n2CmJHkjiNHKXTsx2kLD8mwhJnTYXhFrruImrrFylXexXXs6TPc/DUlI+dJJTwLdcoXrnf9jXjj4O8ZP08mvHm9/bhUSIfY+1HwULM56yCBKW9yrwflfnfs0H7IR1fU1TI1tO6gvZOVhzbyRCyC+6B+5noNYeF1TlC1sDv+VErmSyYdpCa3fXrdm/sXvdJ72esz/PXIu6BPMpyxxVR9yk2jz5rKoIaKntgWC6vr/X2KbYHpXtmOs9DSwtSVpung64ty6WxhTN6G2xg3BM1lteDlmCXwSlOb8VqV4Wodg32jWIvx+tBD2AfCvpSnnYdZ6gBmtRZ+ioYL6r9NoQelKd9BZoLYLGPHqY9QO1N91nxtH+E/Ds0+/i3YPtQEcNyB1l73Pb2P4LjgOE=
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="AlwaysFront" width="47" height="24">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjaoJiTMCbFLGLNpYX9o2AUoIOHzBBML9DCRh1zYO6mp9upCYa6+4cLwFaWUlLOEqsWnx2j5fwoGAWjYDABYsopbGqR+TDQxgLBlJpNSC0twFCus0fdPgpGwShABgCdfjTX
+  </data>
+ </layer>
+ <objectgroup id="8" name="AlwaysFront"/>
+ <layer id="9" name="Paths" width="47" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt1bEKACAIRVFX//+HG9oEwcheCPcsRUP1LMoMk3hxbDJlRg+t2u/1f4iZu7J70letj416ar2sd5xbfbbVv+BmX9m7cZKdOw8AALosujEA/Q==
+  </data>
+ </layer>
+ <objectgroup id="10" name="Paths"/>
+</map>

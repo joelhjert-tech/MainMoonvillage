@@ -5,6 +5,7 @@
   "questboard.active": "Active Moonvillage Requests",
   "questboard.accept": "Accept",
   "questboard.check": "Check",
+  "questboard.draw_error": "Moon quest board could not be drawn. Check the SMAPI log for details.",
 
   "config.section.board": "Board",
   "config.board_tile_x": "Board tile X",

@@ -12,11 +12,11 @@
         "Height": 19
       },
       "AddWarps": [
-        "76 65 Custom_Moonvillage 37 21",
-        "77 65 Custom_Moonvillage 37 20"
+        "76 65 Custom_Moonvillage 97 18",
+        "77 65 Custom_Moonvillage 97 18"
       ],
       "MapProperties": {
-        "NPCWarp": "76 65 Custom_Moonvillage 37 21 77 65 Custom_Moonvillage 37 20"
+        "NPCWarp": "76 65 Custom_Moonvillage 97 18 77 65 Custom_Moonvillage 97 18"
       }
     },
     {
@@ -34,7 +34,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "MagicWarp Custom_Moonvillage 25 25"
+            "TouchAction": "MagicWarp Custom_Moonvillage 97 18"
           }
         }
       ]
@@ -49,7 +49,8 @@
           "Trigger": "LocationChanged",
           "Actions": [
             "spacechase0.SpaceCore_PlayEvent none/-1000 -1000/message \"{{i18n:message.magic_disturbance}}\"/end",
-            "AddMail Current JoelHjert.MoonVillage.WizardInvite"
+            "AddMail Current JoelHjert.MoonVillage.WizardInvite",
+            "AddMail Current JoelHjert.MoonVillage.Milestone.WizardInviteSent Received"
           ],
           "Condition": "LOCATION_NAME Here Woods, !PLAYER_HAS_MAIL Current JoelHjert.MoonVillage.WizardInvite"
         }

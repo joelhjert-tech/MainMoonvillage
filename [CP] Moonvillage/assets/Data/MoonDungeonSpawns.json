@@ -9,7 +9,7 @@
           "Type": "Minable",
           "MinableTool": "Pickaxe",
           "MinableObjectId": "343",
-          "MinableHealth": 2,
+          "MineableHealth": 2,
           "MinableExperienceGranted": 1,
           "MinableDrops": [
             [
@@ -26,7 +26,7 @@
           "Type": "Minable",
           "MinableTool": "Pickaxe",
           "MinableObjectId": "751",
-          "MinableHealth": 3,
+          "MineableHealth": 3,
           "MinableExperienceGranted": 5,
           "MinableDrops": [
             [
@@ -35,6 +35,86 @@
                 "MinimumStack": 1,
                 "MaximumStack": 3,
                 "Weight": 1.0
+              }
+            ]
+          ]
+        },
+        "Moonvillage.AnnetteNPC_MoonDungeonIronNode": {
+          "Type": "Minable",
+          "MinableTool": "Pickaxe",
+          "MinableObjectId": "290",
+          "MineableHealth": 4,
+          "MinableExperienceGranted": 8,
+          "MinableDrops": [
+            [
+              {
+                "ItemId": "(O)380",
+                "MinimumStack": 1,
+                "MaximumStack": 3,
+                "Weight": 1.0
+              }
+            ]
+          ]
+        },
+        "Moonvillage.AnnetteNPC_MoonDungeonGoldNode": {
+          "Type": "Minable",
+          "MinableTool": "Pickaxe",
+          "MinableObjectId": "764",
+          "MineableHealth": 6,
+          "MinableExperienceGranted": 12,
+          "MinableDrops": [
+            [
+              {
+                "ItemId": "(O)384",
+                "MinimumStack": 1,
+                "MaximumStack": 3,
+                "Weight": 1.0
+              }
+            ]
+          ]
+        },
+        "Moonvillage.AnnetteNPC_MoonDungeonIridiumNode": {
+          "Type": "Minable",
+          "MinableTool": "Pickaxe",
+          "MinableObjectId": "765",
+          "MineableHealth": 8,
+          "MinableExperienceGranted": 20,
+          "MinableDrops": [
+            [
+              {
+                "ItemId": "(O)386",
+                "MinimumStack": 1,
+                "MaximumStack": 2,
+                "Weight": 1.0
+              }
+            ]
+          ]
+        },
+        "Moonvillage.AnnetteNPC_MoonDungeonGemNode": {
+          "Type": "Minable",
+          "MinableTool": "Pickaxe",
+          "MinableObjectId": "44",
+          "MineableHealth": 5,
+          "MinableExperienceGranted": 10,
+          "MinableDrops": [
+            [
+              {
+                "ItemId": "(O)80",
+                "MinimumStack": 1,
+                "MaximumStack": 2,
+                "Weight": 0.45
+              },
+              {
+                "ItemId": "(O)66",
+                "MinimumStack": 1,
+                "MaximumStack": 1,
+                "Weight": 0.25
+              },
+              {
+                "ItemId": "(O)82",
+                "MinimumStack": 1,
+                "MaximumStack": 1,
+                "Weight": 0.15
               }
             ]
           ]
@@ -93,6 +173,120 @@
               }
             ]
           ]
+        },
+        "Moonvillage.AnnetteNPC_MoonDungeonHerbalForage": {
+          "Type": "Forageable",
+          "ForageableExpiresWeekly": false,
+          "ForageableItemData": [
+            {
+              "Weight": 0.35,
+              "Value": {
+                "ItemId": "(O)771",
+                "MinStack": 1,
+                "MaxStack": 3
+              }
+            },
+            {
+              "Weight": 0.25,
+              "Value": {
+                "ItemId": "(O)815",
+                "MinStack": 1,
+                "MaxStack": 2
+              }
+            },
+            {
+              "Weight": 0.2,
+              "Value": {
+                "ItemId": "(O)404",
+                "MinStack": 1,
+                "MaxStack": 1
+              }
+            },
+            {
+              "Weight": 0.2,
+              "Value": {
+                "ItemId": "(O)78",
+                "MinStack": 1,
+                "MaxStack": 2
+              }
+            }
+          ]
+        },
+        "Moonvillage.AnnetteNPC_MoonDungeonCrystalForage": {
+          "Type": "Forageable",
+          "ForageableExpiresWeekly": false,
+          "ForageableItemData": [
+            {
+              "Weight": 0.45,
+              "Value": {
+                "ItemId": "(O)80",
+                "MinStack": 1,
+                "MaxStack": 2
+              }
+            },
+            {
+              "Weight": 0.25,
+              "Value": {
+                "ItemId": "(O)86",
+                "MinStack": 1,
+                "MaxStack": 1
+              }
+            },
+            {
+              "Weight": 0.2,
+              "Value": {
+                "ItemId": "(O)84",
+                "MinStack": 1,
+                "MaxStack": 1
+              }
+            },
+            {
+              "Weight": 0.1,
+              "Value": {
+                "ItemId": "(O)66",
+                "MinStack": 1,
+                "MaxStack": 1
+              }
+            }
+          ]
+        },
+        "Moonvillage.AnnetteNPC_MoonDungeonDeepForage": {
+          "Type": "Forageable",
+          "ForageableExpiresWeekly": false,
+          "ForageableItemData": [
+            {
+              "Weight": 0.35,
+              "Value": {
+                "ItemId": "(O)78",
+                "MinStack": 1,
+                "MaxStack": 2
+              }
+            },
+            {
+              "Weight": 0.25,
+              "Value": {
+                "ItemId": "(O)422",
+                "MinStack": 1,
+                "MaxStack": 1
+              }
+            },
+            {
+              "Weight": 0.25,
+              "Value": {
+                "ItemId": "(O)82",
+                "MinStack": 1,
+                "MaxStack": 1
+              }
+            },
+            {
+              "Weight": 0.15,
+              "Value": {
+                "ItemId": "(O)414",
+                "MinStack": 1,
+                "MaxStack": 1
+              }
+            }
+          ]
         }
       }
     },
@@ -122,6 +316,16 @@
               ],
               "Minimum": 3,
               "Maximum": 8
+            },
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonHerbalForage"
+                }
+              ],
+              "Minimum": 2,
+              "Maximum": 5
             },
             {
               "SpawnableIds": [
@@ -160,10 +364,28 @@
                 {
                   "Weight": 1.0,
                   "Value": "Moonvillage.AnnetteNPC_MoonDungeonCopperNode"
+                },
+                {
+                  "Weight": 0.65,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonIronNode"
+                },
+                {
+                  "Weight": 0.25,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonGemNode"
                 }
               ],
               "Minimum": 30,
               "Maximum": 45
+            },
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonCrystalForage"
+                }
+              ],
+              "Minimum": 3,
+              "Maximum": 6
             },
             {
               "SpawnableIds": [
@@ -202,10 +424,32 @@
                 {
                   "Weight": 1.0,
                   "Value": "Moonvillage.AnnetteNPC_MoonDungeonCopperNode"
+                },
+                {
+                  "Weight": 0.85,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonIronNode"
+                },
+                {
+                  "Weight": 0.5,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonGoldNode"
+                },
+                {
+                  "Weight": 0.25,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonGemNode"
                 }
               ],
               "Minimum": 40,
               "Maximum": 60
+            },
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonDeepForage"
+                }
+              ],
+              "Minimum": 4,
+              "Maximum": 8
             },
             {
               "SpawnableIds": [
@@ -240,10 +484,32 @@
                 {
                   "Weight": 1.0,
                   "Value": "Moonvillage.AnnetteNPC_MoonDungeonStone"
+                },
+                {
+                  "Weight": 0.4,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonGoldNode"
+                },
+                {
+                  "Weight": 0.15,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonIridiumNode"
+                },
+                {
+                  "Weight": 0.25,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonGemNode"
                 }
               ],
               "Minimum": 10,
               "Maximum": 20
+            },
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "Moonvillage.AnnetteNPC_MoonDungeonDeepForage"
+                }
+              ],
+              "Minimum": 2,
+              "Maximum": 4
             },
             {
               "SpawnableIds": [
@@ -268,7 +534,7 @@
           "Id": "Moonvillage.AnnetteNPC_MoonDungeonEarlySpawns",
           "Trigger": "Manual",
           "Actions": [
-            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonEarlyGroup Target 2,2,46,46"
+            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonEarlyGroup Target 2,2,46,21"
           ],
           "HostOnly": true,
           "MarkActionApplied": false
@@ -277,7 +543,7 @@
           "Id": "Moonvillage.AnnetteNPC_MoonDungeonCrystalSpawns",
           "Trigger": "Manual",
           "Actions": [
-            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonCrystalGroup Target 2,2,46,46"
+            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonCrystalGroup Target 2,2,46,26"
           ],
           "HostOnly": true,
           "MarkActionApplied": false
@@ -286,7 +552,7 @@
           "Id": "Moonvillage.AnnetteNPC_MoonDungeonDeepSpawns",
           "Trigger": "Manual",
           "Actions": [
-            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonDeepGroup Target 2,2,46,46"
+            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonDeepGroup Target 2,2,26,26"
           ],
           "HostOnly": true,
           "MarkActionApplied": false
@@ -295,7 +561,7 @@
           "Id": "Moonvillage.AnnetteNPC_MoonDungeonBossSpawns",
           "Trigger": "Manual",
           "Actions": [
-            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonBossGroup Target 2,2,46,46"
+            "spacechase0.SpaceCore_TriggerSpawnGroup Moonvillage.AnnetteNPC_MoonDungeonBossGroup Target 2,2,33,35"
           ],
           "HostOnly": true,
           "MarkActionApplied": false

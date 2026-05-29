@@ -23,6 +23,8 @@ public sealed class MoonBoardMenu : IClickableMenu
 
 	private readonly List<ClickableComponent> completeButtons = new List<ClickableComponent>();
 
+	private bool drawFailureLogged;
+
 	public MoonBoardMenu(BoardConfig config, QuestService service)
 		: base(Game1.uiViewport.Width / 2 - 400, Game1.uiViewport.Height / 2 - 300, 800, 600, true)
 	{
@@ -91,9 +93,13 @@ public sealed class MoonBoardMenu : IClickableMenu
 		}
 		catch (Exception ex)
 		{
-			ModEntry.MonitorRef?.Log($"Moon quest board failed while drawing: {ex}", LogLevel.Error);
+			if (!drawFailureLogged)
+			{
+				drawFailureLogged = true;
+				ModEntry.MonitorRef?.Log($"Moon quest board failed while drawing: {ex}", LogLevel.Error);
+			}
 			Game1.drawDialogueBox(base.xPositionOnScreen, base.yPositionOnScreen, base.width, base.height, false, true);
-			Utility.drawTextWithShadow(b, "Moon quest board could not be drawn. Check the SMAPI log for details.", Game1.smallFont, new Vector2(base.xPositionOnScreen + 60, base.yPositionOnScreen + 80), Game1.textColor);
+			Utility.drawTextWithShadow(b, SafeText("i18n:questboard.draw_error"), Game1.smallFont, new Vector2(base.xPositionOnScreen + 60, base.yPositionOnScreen + 80), Game1.textColor);
 		}
 		base.drawMouse(b, false, -1);
 	}

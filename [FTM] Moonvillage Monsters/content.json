@@ -62,6 +62,62 @@
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
+      },
+      {
+        "SpringItemIndex": [
+          "Moonvillage.AnnetteNPC_MoonstoneOmen",
+          "Moonvillage.AnnetteNPC_PathstoneOmen",
+          "Moonvillage.AnnetteNPC_StarAcornOmen"
+        ],
+        "SummerItemIndex": [
+          "Moonvillage.AnnetteNPC_MoonstoneOmen",
+          "Moonvillage.AnnetteNPC_PathstoneOmen",
+          "Moonvillage.AnnetteNPC_StarAcornOmen"
+        ],
+        "FallItemIndex": [
+          "Moonvillage.AnnetteNPC_MoonstoneOmen",
+          "Moonvillage.AnnetteNPC_PathstoneOmen",
+          "Moonvillage.AnnetteNPC_StarAcornOmen"
+        ],
+        "WinterItemIndex": [
+          "Moonvillage.AnnetteNPC_MoonstoneOmen",
+          "Moonvillage.AnnetteNPC_PathstoneOmen",
+          "Moonvillage.AnnetteNPC_StarAcornOmen"
+        ],
+        "UniqueAreaID": "MoonvillageJunimoOmenSpawn",
+        "MapName": "Custom_Moonvillage",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "0, 0; 99, 59"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Medium",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag": "AnnetteHouse_Ready"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
       }
     ],
     "PercentExtraSpawnsPerForagingLevel": 0,
@@ -238,26 +294,138 @@
       {
         "MonsterTypes": [
           {
-            "MonsterName": "Boss_moon",
+            "MonsterName": "Bat",
             "Settings": {
+              "HP": 999,
+              "Damage": 0,
+              "Sprite": "Characters/Monsters/MoonBat_Unique",
+              "EXP": 0,
+              "Loot": []
+            }
+          }
+        ],
+        "UniqueAreaID": "MoonvillageAmbientMoonMoths",
+        "MapName": "Custom_Moonvillage",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 4,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "4, 4; 96, 56"
+        ],
+        "ExcludeCoordinates": [
+          "25, 25; 45, 50",
+          "0, 46; 6, 50",
+          "20, 40; 30, 46"
+        ],
+        "StrictTileChecking": "Medium",
+        "SpawnTiming": {
+          "StartTime": 1800,
+          "EndTime": 2550,
+          "MinimumTimeBetweenSpawns": 30,
+          "MaximumSimultaneousSpawns": 4,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag": "AnnetteHouse_Ready"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 4
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Bat",
+            "Settings": {
+              "HP": 999,
+              "Damage": 0,
+              "Sprite": "Characters/Monsters/MoonBat_Unique",
+              "EXP": 0,
+              "Loot": []
+            }
+          }
+        ],
+        "UniqueAreaID": "MoonpartwestAmbientMoonMoths",
+        "MapName": "Custom_Moonpartwest",
+        "MinimumSpawnsPerDay": 3,
+        "MaximumSpawnsPerDay": 6,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "6, 6; 92, 68"
+        ],
+        "ExcludeCoordinates": [
+          "94, 32; 99, 40"
+        ],
+        "StrictTileChecking": "Medium",
+        "SpawnTiming": {
+          "StartTime": 1800,
+          "EndTime": 2550,
+          "MinimumTimeBetweenSpawns": 30,
+          "MaximumSimultaneousSpawns": 6,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag": "MoonpartwestRoad_Ready"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 6
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Pepper Rex",
+            "Settings": {
+              "HP": 1800,
+              "Damage": 55,
+              "Sprite": "Characters/Monsters/Chimera_spritesheet",
+              "EXP": 120,
+              "SpawnWeight": 1,
+              "InstantKillImmunity": true,
+              "StunImmunity": true,
               "Loot": [
                 "Diamond",
-                "Prismatic Shard"
+                "Prismatic Shard",
+                "Solar Essence",
+                "Void Essence",
+                "Fire Quartz"
               ]
             }
           }
         ],
-        "UniqueAreaID": "MoonvillageBossSpawn",
-        "MapName": "Custom_Moonvillage",
+        "UniqueAreaID": "MoonvillageDungeonChimeraBossSpawn",
+        "MapName": "Maps/Moonvillage/Dungeon/moon_dungeon_boss_50",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
-          "25, 25; 45, 50"
+          "17, 10; 17, 10"
         ],
         "ExcludeCoordinates": [],
-        "StrictTileChecking": "Medium",
+        "StrictTileChecking": "High",
         "SpawnTiming": {
           "StartTime": 600,
           "EndTime": 2550,

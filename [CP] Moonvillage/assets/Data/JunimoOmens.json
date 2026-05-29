@@ -1,0 +1,81 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Moonstone Whisper texture",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/MoonstoneOmen",
+      "FromFile": "assets/Textures/Moonstone-1.png.png"
+    },
+    {
+      "LogName": "Load Pathstone texture",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/PathstoneOmen",
+      "FromFile": "assets/Textures/pathstone-1.png.png"
+    },
+    {
+      "LogName": "Load Star Acorn texture",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/StarAcornOmen",
+      "FromFile": "assets/Textures/staracorn-1.png.png"
+    },
+    {
+      "LogName": "Add Junimo omen objects",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_MoonstoneOmen": {
+          "Name": "{{ModId}}_MoonstoneOmen",
+          "DisplayName": "{{i18n:junimoomen.moonstone.name}}",
+          "Description": "{{i18n:junimoomen.moonstone.desc}}",
+          "Type": "Basic",
+          "Category": -81,
+          "Price": 90,
+          "Texture": "Mods/{{ModId}}/MoonstoneOmen",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "ContextTags": [
+            "forage_item",
+            "moonvillage_omen",
+            "junimo_omen",
+            "moonvillage_moonstone_omen"
+          ]
+        },
+        "{{ModId}}_PathstoneOmen": {
+          "Name": "{{ModId}}_PathstoneOmen",
+          "DisplayName": "{{i18n:junimoomen.pathstone.name}}",
+          "Description": "{{i18n:junimoomen.pathstone.desc}}",
+          "Type": "Basic",
+          "Category": -81,
+          "Price": 65,
+          "Texture": "Mods/{{ModId}}/PathstoneOmen",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "ContextTags": [
+            "forage_item",
+            "moonvillage_omen",
+            "junimo_omen",
+            "moonvillage_pathstone_omen"
+          ]
+        },
+        "{{ModId}}_StarAcornOmen": {
+          "Name": "{{ModId}}_StarAcornOmen",
+          "DisplayName": "{{i18n:junimoomen.staracorn.name}}",
+          "Description": "{{i18n:junimoomen.staracorn.desc}}",
+          "Type": "Basic",
+          "Category": -81,
+          "Price": 120,
+          "Texture": "Mods/{{ModId}}/StarAcornOmen",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "ContextTags": [
+            "forage_item",
+            "seed_item",
+            "moonvillage_omen",
+            "junimo_omen",
+            "moonvillage_star_acorn_omen"
+          ]
+        }
+      }
+    }
+  ]
+}

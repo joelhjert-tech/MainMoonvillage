@@ -1,0 +1,425 @@
+{
+  "Changes": [
+    {
+      "LogName": "Moon Village animal texture - Phoenix",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Animals/Phoenix",
+      "FromFile": "assets/Textures/Phoenix_spritesheet.png"
+    },
+    {
+      "LogName": "Moon Village animal texture - Cockatrice",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Animals/Cockatrice",
+      "FromFile": "assets/Textures/Cockatrice_spritesheet_32x32.png"
+    },
+    {
+      "LogName": "Moon Village animal texture - Chimera",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Animals/Chimera",
+      "FromFile": "assets/Textures/Chimera_spritesheet.png"
+    },
+    {
+      "LogName": "Moon Village animal texture - Golden Sheep adult",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Animals/GoldenSheep",
+      "FromFile": "assets/Textures/GoldenSheepAdult.png"
+    },
+    {
+      "LogName": "Moon Village animal texture - Golden Sheep sheared",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Animals/GoldenSheepSheared",
+      "FromFile": "assets/Textures/GoldenSheep_sheared.png"
+    },
+    {
+      "LogName": "Moon Village animal texture - Golden Sheep baby",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Animals/GoldenSheepBaby",
+      "FromFile": "assets/Textures/BabyGoldenSheep.png"
+    },
+    {
+      "LogName": "Moon Village animal products",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_PhoenixEgg": {
+          "Name": "{{ModId}}_PhoenixEgg",
+          "DisplayName": "{{i18n:animal.product.phoenix_egg.name}}",
+          "Description": "{{i18n:animal.product.phoenix_egg.desc}}",
+          "Type": "Basic",
+          "Category": -5,
+          "Price": 420,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 107,
+          "Edibility": -300,
+          "ContextTags": [ "egg_item", "animal_product_item" ]
+        },
+        "{{ModId}}_PhoenixFeather": {
+          "Name": "{{ModId}}_PhoenixFeather",
+          "DisplayName": "{{i18n:animal.product.phoenix_feather.name}}",
+          "Description": "{{i18n:animal.product.phoenix_feather.desc}}",
+          "Type": "Basic",
+          "Category": -18,
+          "Price": 900,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 814,
+          "ContextTags": [ "animal_product_item", "artisan_good" ]
+        },
+        "{{ModId}}_CockatriceEgg": {
+          "Name": "{{ModId}}_CockatriceEgg",
+          "DisplayName": "{{i18n:animal.product.cockatrice_egg.name}}",
+          "Description": "{{i18n:animal.product.cockatrice_egg.desc}}",
+          "Type": "Basic",
+          "Category": -5,
+          "Price": 260,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 176,
+          "Edibility": -300,
+          "ContextTags": [ "egg_item", "animal_product_item" ]
+        },
+        "{{ModId}}_BlackMilk": {
+          "Name": "{{ModId}}_BlackMilk",
+          "DisplayName": "{{i18n:animal.product.black_milk.name}}",
+          "Description": "{{i18n:animal.product.black_milk.desc}}",
+          "Type": "Basic",
+          "Category": -6,
+          "Price": 380,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 186,
+          "Edibility": 18,
+          "ContextTags": [ "milk_item", "animal_product_item" ]
+        },
+        "{{ModId}}_ToxicCheese": {
+          "Name": "{{ModId}}_ToxicCheese",
+          "DisplayName": "{{i18n:animal.product.toxic_cheese.name}}",
+          "Description": "{{i18n:animal.product.toxic_cheese.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 760,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 424,
+          "Edibility": -300,
+          "ContextTags": [ "cheese_item", "artisan_good" ]
+        },
+        "{{ModId}}_GoldenFleece": {
+          "Name": "{{ModId}}_GoldenFleece",
+          "DisplayName": "{{i18n:animal.product.golden_fleece.name}}",
+          "Description": "{{i18n:animal.product.golden_fleece.desc}}",
+          "Type": "Basic",
+          "Category": -18,
+          "Price": 500,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 440,
+          "ContextTags": [ "animal_product_item", "fleece_item" ]
+        },
+        "{{ModId}}_LunarMilk": {
+          "Name": "{{ModId}}_LunarMilk",
+          "DisplayName": "{{i18n:animal.product.lunar_milk.name}}",
+          "Description": "{{i18n:animal.product.lunar_milk.desc}}",
+          "Type": "Basic",
+          "Category": -6,
+          "Price": 430,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 186,
+          "Edibility": 35,
+          "ContextTags": [ "milk_item", "animal_product_item" ],
+          "CustomFields": {
+            "{{ModId}}/DesignNote": "True status-effect cleanse needs C#; data-only item is tagged for cheese processing."
+          }
+        },
+        "{{ModId}}_LunarCheese": {
+          "Name": "{{ModId}}_LunarCheese",
+          "DisplayName": "{{i18n:animal.product.lunar_cheese.name}}",
+          "Description": "{{i18n:animal.product.lunar_cheese.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 690,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 424,
+          "Edibility": 50,
+          "ContextTags": [ "cheese_item", "artisan_good" ]
+        },
+        "{{ModId}}_IridiumDragonScale": {
+          "Name": "{{ModId}}_IridiumDragonScale",
+          "DisplayName": "{{i18n:animal.product.iridium_dragon_scale.name}}",
+          "Description": "{{i18n:animal.product.iridium_dragon_scale.desc}}",
+          "Type": "Basic",
+          "Category": -18,
+          "Price": 650,
+          "Texture": "Maps/springobjects",
+          "SpriteIndex": 386,
+          "ContextTags": [ "animal_product_item", "scale_item" ]
+        }
+      }
+    },
+    {
+      "LogName": "Moon Village farm animals",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "{{ModId}}_Phoenix": {
+          "DisplayName": "{{i18n:animal.phoenix.name}}",
+          "House": "Coop",
+          "PurchasePrice": -1,
+          "EggItemIds": [ "{{ModId}}_PhoenixEgg" ],
+          "IncubationTime": 9000,
+          "BirthText": "{{i18n:animal.phoenix.birth}}",
+          "DaysToMature": 7,
+          "ProduceItemIds": [
+            { "ItemId": "{{ModId}}_PhoenixEgg" }
+          ],
+          "DeluxeProduceItemIds": [
+            { "ItemId": "{{ModId}}_PhoenixFeather", "MinimumFriendship": 600 }
+          ],
+          "DaysToProduce": 2,
+          "HarvestType": "DropOvernight",
+          "Sound": "Duck",
+          "Texture": "Mods/{{ModId}}/Animals/Phoenix",
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "SellPrice": 5000
+        },
+        "{{ModId}}_Cockatrice": {
+          "DisplayName": "{{i18n:animal.cockatrice.name}}",
+          "House": "Coop",
+          "PurchasePrice": -1,
+          "EggItemIds": [ "{{ModId}}_CockatriceEgg" ],
+          "IncubationTime": 9000,
+          "BirthText": "{{i18n:animal.cockatrice.birth}}",
+          "DaysToMature": 5,
+          "ProduceItemIds": [
+            { "ItemId": "{{ModId}}_CockatriceEgg" }
+          ],
+          "DaysToProduce": 2,
+          "HarvestType": "DropOvernight",
+          "Sound": "Duck",
+          "Texture": "Mods/{{ModId}}/Animals/Cockatrice",
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "SellPrice": 3200,
+          "CustomFields": {
+            "{{ModId}}/DesignOption": "Coop animal implemented as requested option A; enemy/trinket versions can be separate content later."
+          }
+        },
+        "{{ModId}}_Chimera": {
+          "DisplayName": "{{i18n:animal.chimera.name}}",
+          "House": "Barn",
+          "PurchasePrice": -1,
+          "DaysToMature": 8,
+          "ProduceItemIds": [
+            { "ItemId": "{{ModId}}_BlackMilk" }
+          ],
+          "DaysToProduce": 2,
+          "HarvestType": "HarvestWithTool",
+          "HarvestTool": "Milk Pail",
+          "Sound": "goat",
+          "Texture": "Mods/{{ModId}}/Animals/Chimera",
+          "SpriteWidth": 64,
+          "SpriteHeight": 64,
+          "SellPrice": 6500
+        },
+        "{{ModId}}_GoldenSheep": {
+          "DisplayName": "{{i18n:animal.golden_sheep.name}}",
+          "House": "Barn",
+          "PurchasePrice": -1,
+          "DaysToMature": 6,
+          "ProduceItemIds": [
+            { "ItemId": "{{ModId}}_GoldenFleece" }
+          ],
+          "DaysToProduce": 3,
+          "HarvestType": "HarvestWithTool",
+          "HarvestTool": "Shears",
+          "Sound": "shwip",
+          "Texture": "Mods/{{ModId}}/Animals/GoldenSheep",
+          "HarvestedTexture": "Mods/{{ModId}}/Animals/GoldenSheepSheared",
+          "BabyTexture": "Mods/{{ModId}}/Animals/GoldenSheepBaby",
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "SellPrice": 4500
+        },
+        "{{ModId}}_LunarCow": {
+          "DisplayName": "{{i18n:animal.lunar_cow.name}}",
+          "House": "Barn",
+          "PurchasePrice": -1,
+          "DaysToMature": 5,
+          "ProduceItemIds": [
+            { "ItemId": "{{ModId}}_LunarMilk" }
+          ],
+          "DaysToProduce": 1,
+          "HarvestType": "HarvestWithTool",
+          "HarvestTool": "Milk Pail",
+          "CanEatGoldenCrackers": false,
+          "Sound": "Cow",
+          "Texture": "Animals/White Cow",
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "SellPrice": 6000
+        },
+        "{{ModId}}_IridiumDragon": {
+          "DisplayName": "{{i18n:animal.iridium_dragon.name}}",
+          "House": "Barn",
+          "PurchasePrice": -1,
+          "DaysToMature": 12,
+          "ProduceItemIds": [
+            { "ItemId": "{{ModId}}_IridiumDragonScale" }
+          ],
+          "DaysToProduce": 4,
+          "HarvestType": "DropOvernight",
+          "CanEatGoldenCrackers": false,
+          "Sound": "croak",
+          "Texture": "Animals/Ostrich",
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "SellPrice": 12000
+        }
+      }
+    },
+    {
+      "LogName": "Moon Village animal product machine processing",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [ "(BC)24", "OutputRules" ],
+      "Entries": {
+        "{{ModId}}.PhoenixEggToMayo": {
+          "Id": "{{ModId}}.PhoenixEggToMayo",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "(O){{ModId}}_PhoenixEgg",
+              "RequiredCount": 1
+            }
+          ],
+          "UseFirstValidOutput": true,
+          "OutputItem": [
+            {
+              "Id": "{{ModId}}.PhoenixMayo",
+              "ItemId": "(O)306",
+              "MinStack": 1,
+              "CopyQuality": true
+            }
+          ],
+          "MinutesUntilReady": 180,
+          "DaysUntilReady": -1
+        },
+        "{{ModId}}.CockatriceEggToMayo": {
+          "Id": "{{ModId}}.CockatriceEggToMayo",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "(O){{ModId}}_CockatriceEgg",
+              "RequiredCount": 1
+            }
+          ],
+          "UseFirstValidOutput": true,
+          "OutputItem": [
+            {
+              "Id": "{{ModId}}.CockatriceMayo",
+              "ItemId": "(O)306",
+              "MinStack": 1,
+              "CopyQuality": true
+            }
+          ],
+          "MinutesUntilReady": 180,
+          "DaysUntilReady": -1
+        }
+      }
+    },
+    {
+      "LogName": "Moon Village milk product machine processing",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [ "(BC)16", "OutputRules" ],
+      "Entries": {
+        "{{ModId}}.BlackMilkToToxicCheese": {
+          "Id": "{{ModId}}.BlackMilkToToxicCheese",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "(O){{ModId}}_BlackMilk",
+              "RequiredCount": 1
+            }
+          ],
+          "UseFirstValidOutput": true,
+          "OutputItem": [
+            {
+              "Id": "{{ModId}}.ToxicCheese",
+              "ItemId": "(O){{ModId}}_ToxicCheese",
+              "MinStack": 1,
+              "CopyQuality": true
+            }
+          ],
+          "MinutesUntilReady": 200,
+          "DaysUntilReady": -1
+        },
+        "{{ModId}}.LunarMilkToLunarCheese": {
+          "Id": "{{ModId}}.LunarMilkToLunarCheese",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "(O){{ModId}}_LunarMilk",
+              "RequiredCount": 1
+            }
+          ],
+          "UseFirstValidOutput": true,
+          "OutputItem": [
+            {
+              "Id": "{{ModId}}.LunarCheese",
+              "ItemId": "(O){{ModId}}_LunarCheese",
+              "MinStack": 1,
+              "CopyQuality": true
+            }
+          ],
+          "MinutesUntilReady": 200,
+          "DaysUntilReady": -1
+        }
+      }
+    },
+    {
+      "LogName": "Moon Village furnace animal product processing",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [ "(BC)13", "OutputRules" ],
+      "Entries": {
+        "{{ModId}}.GoldenFleeceToGoldBar": {
+          "Id": "{{ModId}}.GoldenFleeceToGoldBar",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "(O){{ModId}}_GoldenFleece",
+              "RequiredCount": 1
+            }
+          ],
+          "UseFirstValidOutput": true,
+          "OutputItem": [
+            {
+              "Id": "{{ModId}}.GoldenFleeceGoldBar",
+              "ItemId": "(O)336",
+              "MinStack": 1
+            }
+          ],
+          "MinutesUntilReady": 120,
+          "DaysUntilReady": -1
+        },
+        "{{ModId}}.DragonScalesToIridiumBar": {
+          "Id": "{{ModId}}.DragonScalesToIridiumBar",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "(O){{ModId}}_IridiumDragonScale",
+              "RequiredCount": 2
+            }
+          ],
+          "UseFirstValidOutput": true,
+          "OutputItem": [
+            {
+              "Id": "{{ModId}}.DragonScaleIridiumBar",
+              "ItemId": "(O)337",
+              "MinStack": 1
+            }
+          ],
+          "MinutesUntilReady": 240,
+          "DaysUntilReady": -1
+        }
+      }
+    }
+  ]
+}
