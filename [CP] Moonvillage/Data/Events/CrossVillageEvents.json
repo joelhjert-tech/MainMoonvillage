@@ -1,0 +1,45 @@
+{
+  "Changes": [
+    {
+      "LogName": "Cross Village Event - Annette and Lewis",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_Moonvillage",
+      "Entries": {
+        "99110001/HostOrLocalMail JoelHjert.MoonVillage.ArrivalDone/Friendship Moonvillage_Annette 0/Time 900 1700/Weather sunny": "none/25 25 0/farmer 25 28 0 Moonvillage_Annette 25 25 2 Lewis 27 25 3/skippable/viewport 26 25 true/pause 500/speak Lewis \"{{i18n:event.crossvillage.annette_lewis.1}}\"/pause 300/speak Moonvillage_Annette \"{{i18n:event.crossvillage.annette_lewis.2}}\"/emote Lewis 8/pause 300/speak Lewis \"{{i18n:event.crossvillage.annette_lewis.3}}\"/pause 300/speak Moonvillage_Annette \"{{i18n:event.crossvillage.annette_lewis.4}}\"/pause 300/speak Lewis \"{{i18n:event.crossvillage.annette_lewis.5}}\"/pause 300/speak Moonvillage_Annette \"{{i18n:event.crossvillage.annette_lewis.6}}\"/pause 300/speak Lewis \"{{i18n:event.crossvillage.annette_lewis.7}}\"/friendship Moonvillage_Annette 50/friendship Lewis 25/end"
+      }
+    },
+    {
+      "LogName": "Cross Village Event - Lowa, Vincent, and Jas",
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "Entries": {
+        "99110002/HostOrLocalMail JoelHjert.MoonVillage.ArrivalDone/HostOrLocalMail MoonGrocery_Ready/Friendship Moonvillage_Lowa 0 Vincent 0 Jas 0/Time 1000 1600/Weather sunny": "none/34 80 2/farmer 35 83 0 Moonvillage_Lowa 34 80 2 Vincent 36 80 3 Jas 35 81 0/skippable/viewport 35 80 true/pause 500/speak Moonvillage_Lowa \"{{i18n:event.crossvillage.lowa_junior_guild.1}}\"/emote Vincent 32/pause 250/speak Vincent \"{{i18n:event.crossvillage.lowa_junior_guild.2}}\"/pause 250/speak Jas \"{{i18n:event.crossvillage.lowa_junior_guild.3}}\"/pause 250/speak Moonvillage_Lowa \"{{i18n:event.crossvillage.lowa_junior_guild.4}}\"/pause 250/question fork1 \"{{i18n:event.crossvillage.lowa_junior_guild.choice_courage}}#{{i18n:event.crossvillage.lowa_junior_guild.choice_snacks}}#{{i18n:event.crossvillage.lowa_junior_guild.choice_rules}}\"/fork 99110002_choice",
+        "99110002_choice": "pause 250/speak Moonvillage_Lowa \"{{i18n:event.crossvillage.lowa_junior_guild.5}}\"/pause 250/speak Jas \"{{i18n:event.crossvillage.lowa_junior_guild.6}}\"/pause 250/speak Vincent \"{{i18n:event.crossvillage.lowa_junior_guild.7}}\"/emote Moonvillage_Lowa 32/friendship Moonvillage_Lowa 50/friendship Vincent 25/friendship Jas 25/end"
+      }
+    },
+    {
+      "LogName": "Cross Village Event - Agust, Molly, and Pierre",
+      "Action": "EditData",
+      "Target": "Data/Events/SeedShop",
+      "Entries": {
+        "99110003/HostOrLocalMail JoelHjert.MoonVillage.ArrivalDone/HostOrLocalMail MoonGrocery_Ready/Friendship Moonvillage_Agust 0 Moonvillage_Molly 0 Pierre 0/Time 900 1700": "none/5 17 0/farmer 6 18 0 Pierre 4 17 2 Moonvillage_Agust 7 17 3 Moonvillage_Molly 7 18 3/skippable/viewport 6 17 true/pause 500/emote Pierre 8/pause 250/speak Pierre \"{{i18n:event.crossvillage.agust_molly_pierre.1}}\"/pause 250/speak Moonvillage_Agust \"{{i18n:event.crossvillage.agust_molly_pierre.2}}\"/pause 250/speak Moonvillage_Molly \"{{i18n:event.crossvillage.agust_molly_pierre.3}}\"/pause 250/speak Pierre \"{{i18n:event.crossvillage.agust_molly_pierre.4}}\"/pause 250/speak Moonvillage_Agust \"{{i18n:event.crossvillage.agust_molly_pierre.5}}\"/emote Moonvillage_Molly 16/pause 250/speak Pierre \"{{i18n:event.crossvillage.agust_molly_pierre.6}}\"/friendship Moonvillage_Agust 50/friendship Moonvillage_Molly 50/friendship Pierre 25/end"
+      }
+    },
+    {
+      "LogName": "Cross Village Event - Blaze, Ember, and Gus",
+      "Action": "EditData",
+      "Target": "Data/Events/Saloon",
+      "Entries": {
+        "99110004/HostOrLocalMail JoelHjert.MoonVillage.ArrivalDone/HostOrLocalMail MoonInn_Ready/Friendship Moonvillage_BlazeStormglow 0 Moonvillage_EmberStormglow 0 Gus 0/Time 1800 2300": "none/10 20 0/farmer 10 22 0 Gus 12 18 3 Moonvillage_BlazeStormglow 8 18 2 Moonvillage_EmberStormglow 9 18 2/skippable/viewport 10 19 true/pause 500/speak Moonvillage_BlazeStormglow \"{{i18n:event.crossvillage.blaze_ember_gus.1}}\"/pause 250/speak Moonvillage_EmberStormglow \"{{i18n:event.crossvillage.blaze_ember_gus.2}}\"/pause 250/speak Gus \"{{i18n:event.crossvillage.blaze_ember_gus.3}}\"/pause 250/playSound dwop/pause 600/emote Gus 32/speak Gus \"{{i18n:event.crossvillage.blaze_ember_gus.4}}\"/pause 250/speak Moonvillage_EmberStormglow \"{{i18n:event.crossvillage.blaze_ember_gus.5}}\"/friendship Moonvillage_BlazeStormglow 50/friendship Moonvillage_EmberStormglow 50/friendship Gus 25/end"
+      }
+    },
+    {
+      "LogName": "Cross Village Event - Grandmother Blackthorne and Linus",
+      "Action": "EditData",
+      "Target": "Data/Events/Mountain",
+      "Entries": {
+        "99110005/HostOrLocalMail JoelHjert.MoonVillage.ArrivalDone/HostOrLocalMail AnnetteHouse_Ready/Friendship Moonvillage_Grandmother 0 Linus 0/Time 700 1800/Weather sunny": "none/35 8 2/farmer 35 10 0 Linus 33 8 2 Moonvillage_Grandmother 36 8 3/skippable/viewport 35 8 true/pause 500/speak Linus \"{{i18n:event.crossvillage.blackthorne_linus.1}}\"/pause 300/speak Moonvillage_Grandmother \"{{i18n:event.crossvillage.blackthorne_linus.2}}\"/pause 300/speak Linus \"{{i18n:event.crossvillage.blackthorne_linus.3}}\"/pause 300/speak Moonvillage_Grandmother \"{{i18n:event.crossvillage.blackthorne_linus.4}}\"/pause 300/speak Moonvillage_Grandmother \"{{i18n:event.crossvillage.blackthorne_linus.5}}\"/addItem (O)16 1/friendship Moonvillage_Grandmother 50/friendship Linus 25/end"
+      }
+    }
+  ]
+}

@@ -215,6 +215,11 @@
       "FromFile": "assets/Data/Events.json"
     },
     {
+      "LogName": "Include Moonvillage Cross Village Events",
+      "Action": "Include",
+      "FromFile": "Data/Events/CrossVillageEvents.json"
+    },
+    {
       "LogName": "Ladda in Quests",
       "Action": "Include",
       "FromFile": "assets/Data/Quests.json"
